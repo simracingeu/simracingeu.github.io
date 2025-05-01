@@ -1,0 +1,258 @@
+const acLogo = document.getElementById('ac-logo');
+const acOptions = document.getElementById('ac-options');
+const addCommunityBtn = acOptions.querySelector('button:nth-child(1)'); 
+const addDriverBtn = acOptions.querySelector('button:nth-child(3)');
+const addCommunityForm = document.getElementById('add-community-form');
+const addDriverForm = document.getElementById('add-driver-form');
+const cancelAddCommunityBtn = document.getElementById('cancel-add-community');
+const cancelAddDriverBtn = document.getElementById('cancel-add-driver');
+const gameContainer = document.querySelector('.game-container'); 
+const viewCommunitiesBtn = document.getElementById('view-communities-btn');
+const viewCalendarBtn = document.getElementById('view-calendar-btn');
+const communitiesListContainer = document.getElementById('communities-list');
+const driverCommunitySelect = document.getElementById('driver-community');
+
+acLogo.addEventListener('click', function() {
+    var options = document.getElementById('ac-options');
+    if (options.style.display === 'none') {
+        options.style.display = 'block';
+    } else {
+        options.style.display = 'none';
+    }
+});
+
+addCommunityBtn.addEventListener('click', function() {
+    gameContainer.style.display = 'none'; 
+    addCommunityForm.style.display = 'block';
+    addDriverForm.style.display = 'none';
+});
+
+addDriverBtn.addEventListener('click', async function() {
+    gameContainer.style.display = 'none';
+    addCommunityForm.style.display = 'none';
+    addDriverForm.style.display = 'block';
+    
+    try {
+        const response = await fetch('/api/communities/?game=AC');
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+        const communities = await response.json();
+        
+        driverCommunitySelect.innerHTML = '';
+        communities.forEach(community => {
+            const option = document.createElement('option');
+            option.value = community.id;
+            option.textContent = community.name;
+            driverCommunitySelect.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Error loading communities:', error);
+        alert('Error loading communities. Please try again.');
+    }
+});
+
+cancelAddCommunityBtn.addEventListener('click', function() {
+    addCommunityForm.style.display = 'none'; 
+    gameContainer.style.display = 'flex'; 
+    acOptions.style.display = 'none'; 
+});
+
+cancelAddDriverBtn.addEventListener('click', function() {
+    addDriverForm.style.display = 'none';
+    gameContainer.style.display = 'flex';
+    acOptions.style.display = 'none';
+});
+
+viewCommunitiesBtn.addEventListener('click', async function() {
+    console.log('"View communities" button clicked.');
+    gameContainer.style.display = 'none'; 
+    addCommunityForm.style.display = 'none';
+    communitiesListContainer.style.display = 'block';
+    communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Loading...</p>';
+}); 
+
+viewCalendarBtn.addEventListener('click', async function() {
+    console.log('"View event calendar" button clicked.');
+    gameContainer.style.display = 'none';
+    addCommunityForm.style.display = 'none';
+    communitiesListContainer.style.display = 'block';
+    communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Coming soon...</p>'; 
+
+    try {
+        const response = await fetch('/api/communities?game=ac'); 
+        if (!response.ok) {
+            throw new Error(`HTTP Error: ${response.status}`);
+        }
+        const communities = await response.json();
+
+        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2>'; 
+
+        if (communities.length === 0) {
+            communitiesListContainer.innerHTML += '<p>No communities registered for this game.</p>';
+            // Add Back button when no communities
+            const backButton = document.createElement('button');
+            backButton.textContent = 'Back';
+            backButton.style.marginTop = '1rem'; // Add some spacing
+            backButton.addEventListener('click', () => {
+                communitiesListContainer.style.display = 'none';
+                gameContainer.style.display = 'flex';
+                acOptions.style.display = 'none'; // Ensure options are hidden too
+            });
+            communitiesListContainer.appendChild(backButton);
+            return;
+        }
+
+        communities.forEach(community => {
+            const communityElement = document.createElement('div');
+            communityElement.style.border = '1px solid #ccc';
+            communityElement.style.marginBottom = '10px';
+            communityElement.style.padding = '10px';
+            communityElement.style.display = 'flex';
+            communityElement.style.alignItems = 'center';
+
+            const img = document.createElement('img');
+            img.src = community.imageUrl; 
+            img.alt = `${community.name} Logo`;
+            img.style.width = '50px';
+            img.style.height = '50px';
+            img.style.marginRight = '10px';
+
+            const infoDiv = document.createElement('div');
+            const nameElement = document.createElement('p');
+            nameElement.textContent = `Name: ${community.name}`;
+            const statusElement = document.createElement('p');
+            statusElement.textContent = `Status: ${community.isAuthorized ? 'Authorized' : 'Pending authorization'}`;
+            statusElement.style.fontWeight = community.isAuthorized ? 'bold' : 'normal';
+            statusElement.style.color = community.isAuthorized ? 'green' : 'orange';
+
+            infoDiv.appendChild(nameElement);
+            infoDiv.appendChild(statusElement);
+
+            communityElement.appendChild(img);
+            communityElement.appendChild(infoDiv);
+            communitiesListContainer.appendChild(communityElement);
+        });
+
+    } catch (error) {
+        console.error('Error loading communities:', error);
+        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
+        // Add Back button on error
+        const backButton = document.createElement('button');
+        backButton.textContent = 'Back';
+        backButton.style.marginTop = '1rem'; // Add some spacing
+        backButton.addEventListener('click', () => {
+            communitiesListContainer.style.display = 'none';
+            gameContainer.style.display = 'flex';
+            acOptions.style.display = 'none'; // Ensure options are hidden too
+        });
+        communitiesListContainer.appendChild(backButton);
+    }
+});
+
+addCommunityForm.addEventListener('submit', async function(event) {
+    event.preventDefault(); 
+
+    const communityNameInput = document.getElementById('community-name');
+    const communityImageInput = document.getElementById('community-image');
+    const communityName = communityNameInput.value;
+    const communityImage = communityImageInput.files[0];
+
+    if (!communityName || !communityImage) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('name', communityName);
+    formData.append('logo', communityImage);
+    formData.append('game', 'AC');
+
+    try {
+        const response = await fetch('/api/communities/', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            const result = await response.json();
+            console.log('Server response:', result);
+            alert('Community added successfully!');
+            addCommunityForm.reset();
+            addCommunityForm.style.display = 'none';
+            gameContainer.style.display = 'flex';
+            acOptions.style.display = 'none';
+        } else {
+            let errorText = `Server error: ${response.status} ${response.statusText}`;
+            try {
+                const errorResult = await response.json();
+                errorText += ` - ${errorResult.message || JSON.stringify(errorResult)}`;
+            } catch (e) {
+                try {
+                    const textError = await response.text();
+                    if (textError) errorText += ` - ${textError}`;
+                } catch (e2) {}
+            }
+            console.error(errorText);
+            alert(`Error adding community: ${errorText}`);
+        }
+    } catch (error) {
+        console.error('Network error or error submitting the form:', error);
+        alert('Network error trying to add the community. Check the console for more details.');
+    }
+});
+
+addDriverForm.addEventListener('submit', async function(event) {
+    event.preventDefault();
+    
+    const driverNameInput = document.getElementById('driver-name');
+    const driverImageInput = document.getElementById('driver-image');
+    const driverCommunityInput = document.getElementById('driver-community');
+    
+    const driverName = driverNameInput.value;
+    const driverImage = driverImageInput.files[0];
+    const communityId = driverCommunityInput.value;
+    
+    if (!driverName || !driverImage || !communityId) {
+        alert('Please fill in all fields.');
+        return;
+    }
+    
+    const formData = new FormData();
+    formData.append('nombre', driverName);
+    formData.append('imagen', driverImage);
+    formData.append('comunidad', communityId);
+    
+    try {
+        const response = await fetch('/api/drivers/', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            const result = await response.json();
+            console.log('Server response:', result);
+            alert('Community added successfully!');
+            addCommunityForm.reset(); 
+            addCommunityForm.style.display = 'none';
+            gameContainer.style.display = 'flex';
+            acOptions.style.display = 'none';
+        } else {
+            let errorText = `Server error: ${response.status} ${response.statusText}`;
+            try {
+                const errorResult = await response.json();
+                errorText += ` - ${errorResult.message || JSON.stringify(errorResult)}`;
+            } catch (e) {
+                try {
+                    const textError = await response.text();
+                    if (textError) errorText += ` - ${textError}`;
+                } catch (e2) {
+
+                }
+            }
+            console.error(errorText);
+            alert(`Error adding community: ${errorText}`);
+        }
+    } catch (error) {
+        console.error('Network error or error submitting the form:', error);
+        alert('Network error trying to add the community. Check the console for more details.');
+    }
+});

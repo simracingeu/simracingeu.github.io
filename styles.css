@@ -10,13 +10,13 @@ body {
     min-height: 100vh;
 }
 header {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 1rem;
     text-align: center;
 }
 .logo {
-    max-width: 200px;
+    max-width: 1500px;
     height: auto;
 }
 main {
@@ -32,15 +32,46 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-.footer-logo {
-    max-width: 80px;
+.main-logo {
+    max-width: 250px; 
     height: auto;
+    margin: 10px; 
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.game-block {
+    text-align: center; 
+    margin: 1rem; 
+    flex-basis: 30%; 
+}
+
+.options-container {
+    margin-top: 10px;
+}
+
+.options-container button {
+    margin: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
 }
 @media (max-width: 600px) {
     .logo {
-        max-width: 150px;
+        max-width: 1500px;
     }
     .footer-logo {
-        max-width: 60px;
+        max-width: 100px;
+    }
+    .game-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .game-block {
+        flex-basis: 80%; 
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +8,55 @@
 </head>
 <body>
     <header>
-        <img src="img/simracingeu.png" alt="Logo SimRacing EU" class="logo">
+        <img src="img/simracingeu.png" alt="SimRacing EU Logo" class="logo">
     </header>
     
     <main>
-        <h1>Bienvenido a SimRacingEU</h1>
-        <p>Selecciona un juego para inscribir una comunidad o un piloto</p>
+        <h1>Welcome to SimRacingEU</h1>
+        <p>Select a game to register a community or a driver</p>
         <div class="game-container">
             <div class="game-block">
-                <img src="img/ac.png" alt="Logo Assetto Corsa" class="main-logo" id="ac-logo">
+                <img src="img/ac.png" alt="Assetto Corsa Logo" class="main-logo" id="ac-logo">
                 <div id="ac-options" class="options-container" style="display: none;">
-                    <button>Añadir comunidad</button>
-                    <button id="view-communities-btn">Ver comunidades</button> <!-- Nuevo botón -->
-                    <button>Añadir piloto</button>
+                    <button>Add community</button>
+                    <button id="view-communities-btn">View communities</button> <!-- New button -->
+                    <button>Add driver</button>
                 </div>
             </div>
             <div class="game-block">
-                <img src="img/acc.png" alt="Logo Assetto Corsa Competizione" class="main-logo">
-                <p>próximamente</p>
+                <img src="img/acc.png" alt="Assetto Corsa Competizione Logo" class="main-logo">
+                <p>coming soon</p>
             </div>
             <div class="game-block">
-                <img src="img/lmu.png" alt="Logo Le Mans Ultimate" class="main-logo">
-                <p>próximamente</p>
+                <img src="img/lmu.png" alt="Le Mans Ultimate Logo" class="main-logo">
+                <p>coming soon</p>
             </div>
         </div>
 
         <!-- Formulario para añadir comunidad (inicialmente oculto) -->
         <form id="add-community-form" style="display: none; margin-top: 2rem; text-align: left; max-width: 400px; margin-left: auto; margin-right: auto;">
-            <h2>Añadir Nueva Comunidad</h2>
+            <h2>Add New Community</h2>
             <div>
-                <label for="community-name">Nombre de la Comunidad:</label><br>
+                <label for="community-name">Community Name:</label><br>
                 <input type="text" id="community-name" name="community-name" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
             </div>
             <div>
-                <label for="community-image">Logo de la Comunidad:</label><br>
+                <label for="community-image">Community Logo:</label><br>
                 <input type="file" id="community-image" name="community-image" accept="image/*" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
             </div>
-            <button type="submit" style="padding: 10px 20px; cursor: pointer;">Enviar</button>
-            <button type="button" id="cancel-add-community" style="padding: 10px 20px; cursor: pointer; margin-left: 10px;">Cancelar</button>
+            <button type="submit" style="padding: 10px 20px; cursor: pointer;">Submit</button>
+            <button type="button" id="cancel-add-community" style="padding: 10px 20px; cursor: pointer; margin-left: 10px;">Cancel</button>
         </form>
 
         <!-- Contenedor para mostrar la lista de comunidades (inicialmente oculto) -->
         <div id="communities-list" style="display: none; margin-top: 2rem;">
-            <h2>Comunidades de Assetto Corsa</h2>
-            <!-- Las comunidades se cargarán aquí dinámicamente -->
+            <h2>Assetto Corsa Communities</h2>
+            <!-- Communities will be loaded here dynamically -->
         </div>
     </main>
     
     <footer>
-        <p>&copy; 2024 SimRacing EU. Todos los derechos reservados.</p>
+        <p>&copy; 2024 SimRacing EU. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

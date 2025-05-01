@@ -31,25 +31,25 @@ cancelAddCommunityBtn.addEventListener('click', function() {
 
 // Controlador para el botón 'Ver comunidades'
 viewCommunitiesBtn.addEventListener('click', async function() {
-    console.log('Botón "Ver comunidades" clicado.');
+    console.log('"View communities" button clicked.');
     gameContainer.style.display = 'none'; 
     addCommunityForm.style.display = 'none';
     communitiesListContainer.style.display = 'block';
-    communitiesListContainer.innerHTML = '<h2>Comunidades de Assetto Corsa</h2><p>Cargando...</p>'; // Mensaje de carga
+    communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Loading...</p>'; // Loading message
 
     try {
         // TODO: Reemplazar con la URL real del endpoint cuando esté disponible
         const response = await fetch('/api/communities?game=ac'); 
         if (!response.ok) {
-            throw new Error(`Error HTTP: ${response.status}`);
+            throw new Error(`HTTP Error: ${response.status}`);
         }
         const communities = await response.json();
 
         // Limpiar el contenedor antes de añadir nuevos elementos
-        communitiesListContainer.innerHTML = '<h2>Comunidades de Assetto Corsa</h2>'; 
+        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2>'; 
 
         if (communities.length === 0) {
-            communitiesListContainer.innerHTML += '<p>No hay comunidades registradas para este juego.</p>';
+            communitiesListContainer.innerHTML += '<p>No communities registered for this game.</p>';
             return;
         }
 
@@ -64,17 +64,17 @@ viewCommunitiesBtn.addEventListener('click', async function() {
             const img = document.createElement('img');
             // TODO: Asegurarse que la API devuelva la URL completa de la imagen o construirla
             img.src = community.imageUrl; // Asumiendo que la API devuelve 'imageUrl'
-            img.alt = `Logo de ${community.name}`;
+            img.alt = `${community.name} Logo`;
             img.style.width = '50px';
             img.style.height = '50px';
             img.style.marginRight = '10px';
 
             const infoDiv = document.createElement('div');
             const nameElement = document.createElement('p');
-            nameElement.textContent = `Nombre: ${community.name}`;
+            nameElement.textContent = `Name: ${community.name}`;
             const statusElement = document.createElement('p');
             // Asumiendo que la API devuelve un booleano 'isAuthorized'
-            statusElement.textContent = `Estado: ${community.isAuthorized ? 'Autorizada' : 'Pendiente de autorización'}`;
+            statusElement.textContent = `Status: ${community.isAuthorized ? 'Authorized' : 'Pending authorization'}`;
             statusElement.style.fontWeight = community.isAuthorized ? 'bold' : 'normal';
             statusElement.style.color = community.isAuthorized ? 'green' : 'orange';
 
@@ -87,8 +87,8 @@ viewCommunitiesBtn.addEventListener('click', async function() {
         });
 
     } catch (error) {
-        console.error('Error al cargar las comunidades:', error);
-        communitiesListContainer.innerHTML = '<h2>Comunidades de Assetto Corsa</h2><p>Error al cargar las comunidades. Inténtalo de nuevo más tarde.</p>';
+        console.error('Error loading communities:', error);
+        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
     }
 });
 
@@ -102,7 +102,7 @@ addCommunityForm.addEventListener('submit', async function(event) {
     const communityImage = communityImageInput.files[0];
 
     if (!communityName || !communityImage) {
-        alert('Por favor, completa todos los campos.');
+        alert('Please fill in all fields.');
         return;
     }
 
@@ -119,8 +119,8 @@ addCommunityForm.addEventListener('submit', async function(event) {
 
         if (response.ok) {
             const result = await response.json();
-            console.log('Respuesta del servidor:', result);
-            alert('Comunidad añadida con éxito!');
+            console.log('Server response:', result);
+            alert('Community added successfully!');
             // Opcional: Limpiar formulario y volver a la vista principal
             addCommunityForm.reset(); // Limpiar el formulario
             addCommunityForm.style.display = 'none';
@@ -128,7 +128,7 @@ addCommunityForm.addEventListener('submit', async function(event) {
             acOptions.style.display = 'none';
         } else {
             // Intentar leer el cuerpo del error si existe
-            let errorText = `Error del servidor: ${response.status} ${response.statusText}`;
+            let errorText = `Server error: ${response.status} ${response.statusText}`;
             try {
                 const errorResult = await response.json();
                 errorText += ` - ${errorResult.message || JSON.stringify(errorResult)}`;
@@ -140,10 +140,10 @@ addCommunityForm.addEventListener('submit', async function(event) {
                 } catch (e2) { /* Ignorar si no se puede leer el texto */ }
             }
             console.error(errorText);
-            alert(`Error al añadir la comunidad: ${errorText}`);
+            alert(`Error adding community: ${errorText}`);
         }
     } catch (error) {
-        console.error('Error de red o al enviar el formulario:', error);
-        alert('Error de red al intentar añadir la comunidad. Revisa la consola para más detalles.');
+        console.error('Network error or error submitting the form:', error);
+        alert('Network error trying to add the community. Check the console for more details.');
     }
 });

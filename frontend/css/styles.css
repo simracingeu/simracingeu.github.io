@@ -409,8 +409,16 @@ header {
     font-size: 0.9rem;
 }
 .logo {
-    max-width: 1500px;
+    max-width: 100%;
     height: auto;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* Estilos para el formulario de añadir comunidad */
@@ -1479,7 +1487,15 @@ footer {
 }
 @media (max-width: 600px) {
     .logo {
-        max-width: 1500px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    @media (max-width: 768px) {
+        .logo {
+            max-width: 80%;
+            margin: 0 auto;
+        }
     }
 
 /* Estilos para el formulario de añadir comunidad */

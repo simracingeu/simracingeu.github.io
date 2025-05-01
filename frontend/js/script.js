@@ -33,7 +33,12 @@ addDriverBtn.addEventListener('click', async function() {
     addDriverForm.style.display = 'block';
     
     try {
-        const response = await fetch('/api/communities/?game=AC');
+        const baseUrl = 'http://localhost:8000/api';
+        const response = await fetch(`${baseUrl}/communities/`, {
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
         if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
         const communities = await response.json();
         
@@ -78,7 +83,8 @@ viewCalendarBtn.addEventListener('click', async function() {
     communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Coming soon...</p>'; 
 
     try {
-        const response = await fetch('/api/communities?game=ac'); 
+        const baseUrl = 'http://localhost:8000/api';
+        const response = await fetch(`${baseUrl}/communities?game=ac`); 
         if (!response.ok) {
             throw new Error(`HTTP Error: ${response.status}`);
         }
@@ -167,7 +173,8 @@ addCommunityForm.addEventListener('submit', async function(event) {
     formData.append('game', 'AC');
 
     try {
-        const response = await fetch('/api/communities/', {
+        const baseUrl = 'http://localhost:8000/api';
+        const response = await fetch(`${baseUrl}/communities/`, {
             method: 'POST',
             body: formData
         });
@@ -222,7 +229,8 @@ addDriverForm.addEventListener('submit', async function(event) {
     formData.append('comunidad', communityId);
     
     try {
-        const response = await fetch('/api/drivers/', {
+        const baseUrl = 'http://localhost:8000/api';
+        const response = await fetch(`${baseUrl}/drivers/`, {
             method: 'POST',
             body: formData
         });

@@ -3,7 +3,7 @@ import uuid
 
 class Community(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(blank=True)
     email = models.EmailField(blank=True)
     is_accepted = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -23,6 +23,7 @@ class Piloto(models.Model):
     comunidad = models.ForeignKey(Community, on_delete=models.CASCADE, related_name='pilotos')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    steam_id = models.CharField(max_length=100, blank=True)
     
     def __str__(self):
         return self.nombre
@@ -53,6 +54,7 @@ class Evento(models.Model):
     nombre = models.CharField(max_length=100)
     campeonato = models.ForeignKey(Campeonato, on_delete=models.CASCADE)
     fecha = models.DateTimeField()
+    download_url = models.URLField(blank=True)
     
     def __str__(self):
         return self.nombre

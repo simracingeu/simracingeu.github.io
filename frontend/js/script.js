@@ -173,79 +173,69 @@ viewCommunitiesBtn.addEventListener('click', async function() {
 }); 
 
 viewCalendarBtn.addEventListener('click', async function() {
-    console.log('"View event calendar" button clicked.');
-    gameContainer.style.display = 'none';
-    addCommunityForm.style.display = 'none';
-    communitiesListContainer.style.display = 'block';
-    communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Coming soon...</p>'; 
+    console.log('"View event calendar" button clicked.'); 
+    gameContainer.style.display = 'none'; 
+    addCommunityForm.style.display = 'none'; 
+    communitiesListContainer.style.display = 'block'; 
+    communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Loading events...</p>'; 
 
-    try {
-        const response = await fetch(`${baseUrl}/communities?game=ac`); 
-        if (!response.ok) {
-            throw new Error(`HTTP Error: ${response.status}`);
-        }
-        const communities = await response.json();
+    try { 
+        const response = await fetch(`${baseUrl}/events/dates/`); 
+        if (!response.ok) { 
+            throw new Error(`HTTP Error: ${response.status}`); 
+        } 
+        const eventDates = await response.json(); 
 
-        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2>'; 
+        communitiesListContainer.innerHTML = '<h2>Event Calendar</h2>'; 
 
-        if (communities.length === 0) {
-            communitiesListContainer.innerHTML += '<p>No communities registered for this game.</p>';
-            const backButton = document.createElement('button');
-            backButton.textContent = 'Back';
+        if (eventDates.length === 0) { 
+            communitiesListContainer.innerHTML += '<p>No events scheduled yet.</p>'; 
+            const backButton = document.createElement('button'); 
+            backButton.textContent = 'Back'; 
             backButton.className = 'form-button'; 
-            backButton.addEventListener('click', () => {
-                communitiesListContainer.style.display = 'none';
-                gameContainer.style.display = 'flex';
+            backButton.addEventListener('click', () => { 
+                communitiesListContainer.style.display = 'none'; 
+                gameContainer.style.display = 'flex'; 
                 acOptions.style.display = 'none'; 
-            });
-            communitiesListContainer.appendChild(backButton);
-            return;
-        }
+            }); 
+            communitiesListContainer.appendChild(backButton); 
+            return; 
+        } 
 
-        communities.forEach(community => {
-            const communityElement = document.createElement('div');
-            communityElement.style.border = '1px solid #ccc';
-            communityElement.style.marginBottom = '10px';
-            communityElement.style.padding = '10px';
-            communityElement.style.display = 'flex';
-            communityElement.style.alignItems = 'center';
-
-            const img = document.createElement('img');
-            img.src = community.logo_url;
-            img.alt = `${community.name} Logo`;
-            img.style.width = '50px';
-            img.style.height = '50px';
-            img.style.marginRight = '10px';
-
-            const infoDiv = document.createElement('div');
-            const nameElement = document.createElement('p');
-            nameElement.textContent = `Name: ${community.name}`;
-            const statusElement = document.createElement('p');
-            statusElement.textContent = `Status: ${community.isAuthorized ? 'Authorized' : 'Pending authorization'}`;
-            statusElement.style.fontWeight = community.isAuthorized ? 'bold' : 'normal';
-            statusElement.style.color = community.isAuthorized ? 'green' : 'orange';
-
-            infoDiv.appendChild(nameElement);
-            infoDiv.appendChild(statusElement);
-
-            communityElement.appendChild(img);
-            communityElement.appendChild(infoDiv);
-            communitiesListContainer.appendChild(communityElement);
+        eventDates.forEach(eventDate => {
+            const eventElement = document.createElement('div');
+            eventElement.style.border = '1px solid #ccc';
+            eventElement.style.marginBottom = '10px';
+            eventElement.style.padding = '10px';
+            
+            const eventName = document.createElement('h3');
+            eventName.textContent = eventDate.event.nombre;
+            
+            const eventDateInfo = document.createElement('p');
+            eventDateInfo.textContent = `Date: ${eventDate.fecha} ${eventDate.hora}`;
+            
+            const championshipInfo = document.createElement('p');
+            championshipInfo.textContent = `Championship: ${eventDate.event.campeonato.nombre}`;
+            
+            eventElement.appendChild(eventName);
+            eventElement.appendChild(eventDateInfo);
+            eventElement.appendChild(championshipInfo);
+            communitiesListContainer.appendChild(eventElement);
         });
 
-    } catch (error) {
-        console.error('Error loading communities:', error);
-        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
-        const backButton = document.createElement('button');
-        backButton.textContent = 'Back';
+    } catch (error) { 
+        console.error('Error loading events:', error); 
+        communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Error loading events. Please try again later.</p>'; 
+        const backButton = document.createElement('button'); 
+        backButton.textContent = 'Back'; 
         backButton.style.marginTop = '1rem'; 
-        backButton.addEventListener('click', () => {
-            communitiesListContainer.style.display = 'none';
-            gameContainer.style.display = 'flex';
+        backButton.addEventListener('click', () => { 
+            communitiesListContainer.style.display = 'none'; 
+            gameContainer.style.display = 'flex'; 
             acOptions.style.display = 'none'; 
-        });
-        communitiesListContainer.appendChild(backButton);
-    }
+        }); 
+        communitiesListContainer.appendChild(backButton); 
+    } 
 });
 
 addCommunityForm.addEventListener('submit', async function(event) {

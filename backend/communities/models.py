@@ -66,4 +66,4 @@ class EventDate(models.Model):
     hora = models.TimeField()
     
     def __str__(self):
-        return f"{self.event.nombre} - {self.fecha} {self.hora}"
+        return f"{self.evento.nombre} - {self.fecha} {self.hora}"

@@ -3,6 +3,7 @@ from .models import Community, Driver
 
 class CommunitySerializer(serializers.ModelSerializer):
     logo_url = serializers.SerializerMethodField()
+    drivers_count = serializers.SerializerMethodField()
 
     class Meta:
         model = Community
@@ -15,6 +16,9 @@ class CommunitySerializer(serializers.ModelSerializer):
         if obj.logo:
             return self.context['request'].build_absolute_uri(obj.logo.url)
         return None
+        
+    def get_drivers_count(self, obj):
+        return obj.drivers.count()
 
 
 class DriverSerializer(serializers.ModelSerializer):

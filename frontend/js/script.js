@@ -106,7 +106,7 @@ viewCommunitiesBtn.addEventListener('click', async function() {
             communitiesListContainer.innerHTML += '<p>No communities found.</p>';
             const backButton = document.createElement('button');
             backButton.textContent = 'Back';
-            backButton.style.marginTop = '1rem';
+            backButton.className = 'form-button';
             backButton.addEventListener('click', () => {
                 communitiesListContainer.style.display = 'none';
                 gameContainer.style.display = 'flex';
@@ -129,23 +129,27 @@ viewCommunitiesBtn.addEventListener('click', async function() {
                 const logoElement = document.createElement('img');
                 logoElement.src = community.logo_url.startsWith('http') ? community.logo_url : `${baseUrl}${community.logo_url}`;
                 logoElement.alt = `${community.name} logo`;
-                logoElement.style.maxWidth = '100px';
+                logoElement.style.maxWidth = '200px';
+                logoElement.style.width = '200px';
                 logoElement.style.height = 'auto';
-                logoElement.style.marginTop = '10px';
-                communityElement.appendChild(logoElement);
+                logoElement.style.marginTop = '5px';
+                nameElement.appendChild(document.createElement('br'));
+                nameElement.appendChild(logoElement);
             }
             
-            const descriptionElement = document.createElement('p');
-            descriptionElement.textContent = community.description || 'No description provided';
+            const driversCountElement = document.createElement('p');
+            driversCountElement.textContent = `Drivers: ${community.drivers_count || 0}`;
+            driversCountElement.style.textAlign = 'right';
+            driversCountElement.style.marginLeft = 'auto';
             
             communityElement.appendChild(nameElement);
-            communityElement.appendChild(descriptionElement);
+            communityElement.appendChild(driversCountElement);
             communitiesListContainer.appendChild(communityElement);
         });
         
         const backButton = document.createElement('button');
         backButton.textContent = 'Back';
-        backButton.style.marginTop = '1rem';
+        backButton.className = 'form-button';
         backButton.addEventListener('click', () => {
             communitiesListContainer.style.display = 'none';
             gameContainer.style.display = 'flex';
@@ -158,7 +162,7 @@ viewCommunitiesBtn.addEventListener('click', async function() {
         communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
         const backButton = document.createElement('button');
         backButton.textContent = 'Back';
-        backButton.style.marginTop = '1rem';
+        backButton.className = 'form-button';
         backButton.addEventListener('click', () => {
             communitiesListContainer.style.display = 'none';
             gameContainer.style.display = 'flex';
@@ -188,7 +192,7 @@ viewCalendarBtn.addEventListener('click', async function() {
             communitiesListContainer.innerHTML += '<p>No communities registered for this game.</p>';
             const backButton = document.createElement('button');
             backButton.textContent = 'Back';
-            backButton.style.marginTop = '1rem'; 
+            backButton.className = 'form-button'; 
             backButton.addEventListener('click', () => {
                 communitiesListContainer.style.display = 'none';
                 gameContainer.style.display = 'flex';

@@ -11,15 +11,15 @@ const viewCommunitiesBtn = document.getElementById('view-communities-btn');
 const viewCalendarBtn = document.getElementById('view-calendar-btn');
 const communitiesListContainer = document.getElementById('communities-list');
 const driverCommunitySelect = document.getElementById('driver-community');
+const baseUrl = 'http://localhost:8000/api'
+//'http://192.168.1.20/api'
 
-// Función para obtener el valor de una cookie por su nombre
 function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {
         const cookies = document.cookie.split(';');
         for (let i = 0; i < cookies.length; i++) {
             const cookie = cookies[i].trim();
-            // Does this cookie string begin with the name we want?
             if (cookie.substring(0, name.length + 1) === (name + '=')) {
                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                 break;
@@ -50,7 +50,6 @@ addDriverBtn.addEventListener('click', async function() {
     addDriverForm.style.display = 'block';
     
     try {
-        const baseUrl = 'http://192.168.1.20/api';
         const response = await fetch(`${baseUrl}/communities/`, {
             headers: {
                 'Accept': 'application/json'
@@ -90,6 +89,83 @@ viewCommunitiesBtn.addEventListener('click', async function() {
     addCommunityForm.style.display = 'none';
     communitiesListContainer.style.display = 'block';
     communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Loading...</p>';
+    
+    try {
+        const response = await fetch(`${baseUrl}/communities/`, {
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+        const communities = await response.json();
+        
+        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2>';
+        
+        if (communities.length === 0) {
+            communitiesListContainer.innerHTML += '<p>No communities found.</p>';
+            const backButton = document.createElement('button');
+            backButton.textContent = 'Back';
+            backButton.style.marginTop = '1rem';
+            backButton.addEventListener('click', () => {
+                communitiesListContainer.style.display = 'none';
+                gameContainer.style.display = 'flex';
+                acOptions.style.display = 'none';
+            });
+            communitiesListContainer.appendChild(backButton);
+            return;
+        }
+        
+        communities.forEach(community => {
+            const communityElement = document.createElement('div');
+            communityElement.style.border = '1px solid #ccc';
+            communityElement.style.marginBottom = '10px';
+            communityElement.style.padding = '10px';
+            
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = community.name;
+            
+            if (community.logo_url) {
+                const logoElement = document.createElement('img');
+                logoElement.src = `${baseUrl}${community.logo_url}`;
+                logoElement.alt = `${community.name} logo`;
+                logoElement.style.maxWidth = '100px';
+                logoElement.style.height = 'auto';
+                logoElement.style.marginTop = '10px';
+                communityElement.appendChild(logoElement);
+            }
+            
+            const descriptionElement = document.createElement('p');
+            descriptionElement.textContent = community.description || 'No description provided';
+            
+            communityElement.appendChild(nameElement);
+            communityElement.appendChild(descriptionElement);
+            communitiesListContainer.appendChild(communityElement);
+        });
+        
+        const backButton = document.createElement('button');
+        backButton.textContent = 'Back';
+        backButton.style.marginTop = '1rem';
+        backButton.addEventListener('click', () => {
+            communitiesListContainer.style.display = 'none';
+            gameContainer.style.display = 'flex';
+            acOptions.style.display = 'none';
+        });
+        communitiesListContainer.appendChild(backButton);
+        
+    } catch (error) {
+        console.error('Error loading communities:', error);
+        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
+        const backButton = document.createElement('button');
+        backButton.textContent = 'Back';
+        backButton.style.marginTop = '1rem';
+        backButton.addEventListener('click', () => {
+            communitiesListContainer.style.display = 'none';
+            gameContainer.style.display = 'flex';
+            acOptions.style.display = 'none';
+        });
+        communitiesListContainer.appendChild(backButton);
+    }
 }); 
 
 viewCalendarBtn.addEventListener('click', async function() {
@@ -100,7 +176,6 @@ viewCalendarBtn.addEventListener('click', async function() {
     communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Coming soon...</p>'; 
 
     try {
-        const baseUrl = 'http://192.168.1.20/api';
         const response = await fetch(`${baseUrl}/communities?game=ac`); 
         if (!response.ok) {
             throw new Error(`HTTP Error: ${response.status}`);
@@ -111,14 +186,13 @@ viewCalendarBtn.addEventListener('click', async function() {
 
         if (communities.length === 0) {
             communitiesListContainer.innerHTML += '<p>No communities registered for this game.</p>';
-            // Add Back button when no communities
             const backButton = document.createElement('button');
             backButton.textContent = 'Back';
-            backButton.style.marginTop = '1rem'; // Add some spacing
+            backButton.style.marginTop = '1rem'; 
             backButton.addEventListener('click', () => {
                 communitiesListContainer.style.display = 'none';
                 gameContainer.style.display = 'flex';
-                acOptions.style.display = 'none'; // Ensure options are hidden too
+                acOptions.style.display = 'none'; 
             });
             communitiesListContainer.appendChild(backButton);
             return;
@@ -133,7 +207,7 @@ viewCalendarBtn.addEventListener('click', async function() {
             communityElement.style.alignItems = 'center';
 
             const img = document.createElement('img');
-            img.src = community.imageUrl; 
+            img.src = community.logo_url;
             img.alt = `${community.name} Logo`;
             img.style.width = '50px';
             img.style.height = '50px';
@@ -158,14 +232,13 @@ viewCalendarBtn.addEventListener('click', async function() {
     } catch (error) {
         console.error('Error loading communities:', error);
         communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
-        // Add Back button on error
         const backButton = document.createElement('button');
         backButton.textContent = 'Back';
-        backButton.style.marginTop = '1rem'; // Add some spacing
+        backButton.style.marginTop = '1rem'; 
         backButton.addEventListener('click', () => {
             communitiesListContainer.style.display = 'none';
             gameContainer.style.display = 'flex';
-            acOptions.style.display = 'none'; // Ensure options are hidden too
+            acOptions.style.display = 'none'; 
         });
         communitiesListContainer.appendChild(backButton);
     }
@@ -190,7 +263,6 @@ addCommunityForm.addEventListener('submit', async function(event) {
     formData.append('game', 'AC');
 
     try {
-        const baseUrl = 'http://192.168.1.20/api';
         const csrftoken = getCookie('csrftoken');
 
         const response = await fetch(`${baseUrl}/communities/`, {
@@ -235,23 +307,29 @@ addDriverForm.addEventListener('submit', async function(event) {
     const driverNameInput = document.getElementById('driver-name');
     const driverImageInput = document.getElementById('driver-image');
     const driverCommunityInput = document.getElementById('driver-community');
+    const driverSteamIdInput = document.getElementById('driver-steam-id');
     
     const driverName = driverNameInput.value;
     const driverImage = driverImageInput.files[0];
     const communityId = driverCommunityInput.value;
+    const steamId = driverSteamIdInput.value;
     
-    if (!driverName || !driverImage || !communityId) {
-        alert('Please fill in all fields.');
+    if (!driverName || !communityId) {
+        alert('Please fill in the required fields.');
         return;
     }
     
     const formData = new FormData();
     formData.append('nombre', driverName);
-    formData.append('imagen', driverImage);
+    if (driverImage) {
+        formData.append('imagen', driverImage);
+    }
     formData.append('comunidad', communityId);
+    if (steamId) {
+        formData.append('steam_id', steamId);
+    }
     
     try {
-        const baseUrl = 'http://192.168.1.20/api';
         const response = await fetch(`${baseUrl}/drivers/`, {
             method: 'POST',
             body: formData
@@ -260,7 +338,7 @@ addDriverForm.addEventListener('submit', async function(event) {
         if (response.ok) {
             const result = await response.json();
             console.log('Server response:', result);
-            alert('Community added successfully!');
+            alert('Driver added successfully!');
             addCommunityForm.reset(); 
             addCommunityForm.style.display = 'none';
             gameContainer.style.display = 'flex';

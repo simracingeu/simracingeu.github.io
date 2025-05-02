@@ -10,17 +10,17 @@ class Community(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     discord_url = models.URLField(blank=True)
     website_url = models.URLField(blank=True)
-    logo = models.ImageField(upload_to='community_logos/', blank=True)
+    logo = models.ImageField(upload_to='static/community_logos/', blank=True)
     
     def __str__(self):
         return self.name
 
 
-class Piloto(models.Model):
+class Driver(models.Model):
     nombre = models.CharField(max_length=100)
     guid = models.UUIDField(default=uuid.uuid4, editable=False)
-    imagen = models.ImageField(upload_to='pilotos/', blank=True, null=True)
-    comunidad = models.ForeignKey(Community, on_delete=models.CASCADE, related_name='pilotos')
+    imagen = models.ImageField(upload_to='driver/', blank=True, null=True)
+    comunidad = models.ForeignKey(Community, on_delete=models.CASCADE, related_name='drivers')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     steam_id = models.CharField(max_length=100, blank=True)
@@ -28,7 +28,7 @@ class Piloto(models.Model):
     def __str__(self):
         return self.nombre
 
-class Juego(models.Model):
+class Game(models.Model):
     nombre = models.CharField(max_length=50, choices=[
         ('AC', 'Assetto Corsa'),
         ('ACC', 'Assetto Corsa Competizione'),
@@ -38,10 +38,10 @@ class Juego(models.Model):
     def __str__(self):
         return self.get_nombre_display()
 
-class Campeonato(models.Model):
+class Championship(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True)
-    juego = models.ForeignKey(Juego, on_delete=models.CASCADE)
+    juego = models.ForeignKey(Game, on_delete=models.CASCADE)
 
     
     class Meta:
@@ -50,9 +50,9 @@ class Campeonato(models.Model):
     def __str__(self):
         return self.nombre
 
-class Evento(models.Model):
+class Event(models.Model):
     nombre = models.CharField(max_length=100)
-    campeonato = models.ForeignKey(Campeonato, on_delete=models.CASCADE)
+    campeonato = models.ForeignKey(Championship, on_delete=models.CASCADE)
     fecha = models.DateTimeField()
     download_url = models.URLField(blank=True)
     
@@ -60,10 +60,10 @@ class Evento(models.Model):
         return self.nombre
 
 
-class FechaEvento(models.Model):
-    evento = models.ForeignKey(Evento, on_delete=models.CASCADE, related_name='fechas')
+class EventDate(models.Model):
+    evento = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='dates')
     fecha = models.DateField()
     hora = models.TimeField()
     
     def __str__(self):
-        return f"{self.evento.nombre} - {self.fecha} {self.hora}"
+        return f"{self.event.nombre} - {self.fecha} {self.hora}"

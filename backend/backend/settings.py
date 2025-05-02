@@ -23,9 +23,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0$jn)m8!bt#t0v!6i1-+zm(+l_5$a4%bfyq%_p6^_l46p()*o='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.20']
+ALLOWED_HOSTS = ['192.168.1.20', 'localhost', '127.0.0.1']
+
+# CORS Configuration
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost",
+    "http://127.0.0.1",
+]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^file:///.*$",
+]
 
 
 # Application definition
@@ -120,7 +130,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
 STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
@@ -128,16 +137,8 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:8000",
-    "http://192.168.1.20",
-]
 
-
-# Logging Configuration
+    
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

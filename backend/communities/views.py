@@ -1,12 +1,12 @@
 from rest_framework import viewsets
-from .models import Community, Piloto
-from .serializers import CommunitySerializer, PilotoSerializer
+from .models import Community, Driver
+from .serializers import CommunitySerializer, DriverSerializer
 
 class CommunityViewSet(viewsets.ModelViewSet):
     queryset = Community.objects.all()
     serializer_class = CommunitySerializer
 
 
-class PilotoViewSet(viewsets.ModelViewSet):
-    queryset = Piloto.objects.all()
-    serializer_class = PilotoSerializer
+class DriverViewSet(viewsets.ModelViewSet):
+    queryset = Driver.objects.all()
+    serializer_class = DriverSerializer

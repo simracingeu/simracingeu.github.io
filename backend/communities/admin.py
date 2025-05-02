@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Community, Evento, FechaEvento, Piloto, Campeonato, Juego
+from .models import Community, Event, EventDate, Driver, Championship, Game
 
 admin.site.register(Community)
-admin.site.register(Evento)
-admin.site.register(FechaEvento)
-admin.site.register(Piloto)
-admin.site.register(Campeonato)
-admin.site.register(Juego)
+admin.site.register(Event)
+admin.site.register(EventDate)
+admin.site.register(Driver)
+admin.site.register(Championship)
+admin.site.register(Game)

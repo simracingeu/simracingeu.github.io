@@ -127,7 +127,7 @@ viewCommunitiesBtn.addEventListener('click', async function() {
             
             if (community.logo_url) {
                 const logoElement = document.createElement('img');
-                logoElement.src = `${baseUrl}${community.logo_url}`;
+                logoElement.src = community.logo_url.startsWith('http') ? community.logo_url : `${baseUrl}${community.logo_url}`;
                 logoElement.alt = `${community.name} logo`;
                 logoElement.style.maxWidth = '100px';
                 logoElement.style.height = 'auto';

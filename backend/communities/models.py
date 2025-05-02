@@ -19,7 +19,7 @@ class Community(models.Model):
 class Piloto(models.Model):
     nombre = models.CharField(max_length=100)
     guid = models.UUIDField(default=uuid.uuid4, editable=False)
-    imagen = models.ImageField(upload_to='pilotos/', blank=True)
+    imagen = models.ImageField(upload_to='pilotos/', blank=True, null=True)
     comunidad = models.ForeignKey(Community, on_delete=models.CASCADE, related_name='pilotos')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

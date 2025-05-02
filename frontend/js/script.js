@@ -12,6 +12,23 @@ const viewCalendarBtn = document.getElementById('view-calendar-btn');
 const communitiesListContainer = document.getElementById('communities-list');
 const driverCommunitySelect = document.getElementById('driver-community');
 
+// Función para obtener el valor de una cookie por su nombre
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
 acLogo.addEventListener('click', function() {
     var options = document.getElementById('ac-options');
     if (options.style.display === 'none') {
@@ -33,7 +50,7 @@ addDriverBtn.addEventListener('click', async function() {
     addDriverForm.style.display = 'block';
     
     try {
-        const baseUrl = 'http://localhost:8000/api';
+        const baseUrl = 'http://192.168.1.20/api';
         const response = await fetch(`${baseUrl}/communities/`, {
             headers: {
                 'Accept': 'application/json'
@@ -83,7 +100,7 @@ viewCalendarBtn.addEventListener('click', async function() {
     communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Coming soon...</p>'; 
 
     try {
-        const baseUrl = 'http://localhost:8000/api';
+        const baseUrl = 'http://192.168.1.20/api';
         const response = await fetch(`${baseUrl}/communities?game=ac`); 
         if (!response.ok) {
             throw new Error(`HTTP Error: ${response.status}`);
@@ -173,9 +190,14 @@ addCommunityForm.addEventListener('submit', async function(event) {
     formData.append('game', 'AC');
 
     try {
-        const baseUrl = 'http://localhost:8000/api';
+        const baseUrl = 'http://192.168.1.20/api';
+        const csrftoken = getCookie('csrftoken');
+
         const response = await fetch(`${baseUrl}/communities/`, {
             method: 'POST',
+            headers: {
+                'X-CSRFToken': csrftoken
+            },
             body: formData
         });
 
@@ -229,7 +251,7 @@ addDriverForm.addEventListener('submit', async function(event) {
     formData.append('comunidad', communityId);
     
     try {
-        const baseUrl = 'http://localhost:8000/api';
+        const baseUrl = 'http://192.168.1.20/api';
         const response = await fetch(`${baseUrl}/drivers/`, {
             method: 'POST',
             body: formData

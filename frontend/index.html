@@ -17,11 +17,11 @@
         <div class="game-container">
             <div class="game-block">
                 <img src="img/ac.png" alt="Assetto Corsa Logo" class="main-logo" id="ac-logo">
-                <div id="ac-options" class="options-container" style="display: flex; flex-direction: column; gap: 10px; display: none;">
-                    <button>Add community</button>
-                    <button id="view-communities-btn">View communities</button>
-                    <button>Add driver</button>
+                <div id="ac-options" class="options-container" style="display: none; flex-direction: column; gap: 10px;">
                     <button id="view-calendar-btn">View event calendar</button>
+                    <button id="view-communities-btn">View communities</button>
+                    <button>Add community</button>
+                    <button>Add driver</button>
                 </div>
             </div>
             <div class="game-block">
@@ -55,12 +55,12 @@
                 <input type="text" id="driver-name" name="driver-name" required>
             </div>
             <div>
-                <label for="driver-image">Steam ID:</label><br>
-                <input type="text" id="driver-steam-id" name="driver-steam-id">
+                <label for="driver-image">Steam ID (opcional):</label><br>
+                <input type="text" id="driver-steam-id" name="driver-steam-id" placeholder="Opcional">
             </div>
             <div>
-                <label for="driver-image">Driver Photo:</label><br>
-                <input type="file" id="driver-image" name="driver-image" accept="image/*" >
+                <label for="driver-image">Driver Photo (opcional):</label><br>
+                <input type="file" id="driver-image" name="driver-image" accept="image/*" placeholder="Opcional">
             </div>
             <div>
                 <label for="driver-community">Community:</label><br>

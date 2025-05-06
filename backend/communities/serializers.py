@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Community, Driver, EventDate
+from .models import Community, Driver, Event
 
 class CommunitySerializer(serializers.ModelSerializer):
     logo_url = serializers.SerializerMethodField()
@@ -30,9 +30,9 @@ class DriverSerializer(serializers.ModelSerializer):
             'steam_id': {'required': False, 'allow_null': True}
         }
 
-class EventDateSerializer(serializers.ModelSerializer):
+class EventSerializer(serializers.ModelSerializer):
     class Meta:
-        model = EventDate
+        model = Event
         fields = '__all__'
         extra_kwargs = {
             'imagen': {'required': False, 'allow_null': True},

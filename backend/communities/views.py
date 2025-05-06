@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .models import Community, Driver, EventDate
-from .serializers import CommunitySerializer, DriverSerializer, EventDateSerializer
+from .models import Community, Driver, Event
+from .serializers import CommunitySerializer, DriverSerializer, EventSerializer
 
 class CommunityViewSet(viewsets.ModelViewSet):
     queryset = Community.objects.all()
@@ -10,6 +10,6 @@ class DriverViewSet(viewsets.ModelViewSet):
     queryset = Driver.objects.all()
     serializer_class = DriverSerializer
 
-class EventDateViewSet(viewsets.ModelViewSet):
-    queryset = EventDate.objects.all()
-    serializer_class = EventDateSerializer
+class EventViewSet(viewsets.ModelViewSet):
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer

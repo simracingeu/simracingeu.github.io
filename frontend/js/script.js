@@ -180,15 +180,15 @@ viewCalendarBtn.addEventListener('click', async function() {
     communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Loading events...</p>'; 
 
     try { 
-        const response = await fetch(`${baseUrl}/events/dates/`); 
+        const response = await fetch(`${baseUrl}/events/`); 
         if (!response.ok) { 
             throw new Error(`HTTP Error: ${response.status}`); 
         } 
-        const eventDates = await response.json(); 
+        const events = await response.json(); 
 
         communitiesListContainer.innerHTML = '<h2>Event Calendar</h2>'; 
 
-        if (eventDates.length === 0) { 
+        if (events.length === 0) { 
             communitiesListContainer.innerHTML += '<p>No events scheduled yet.</p>'; 
             const backButton = document.createElement('button'); 
             backButton.textContent = 'Back'; 
@@ -202,24 +202,28 @@ viewCalendarBtn.addEventListener('click', async function() {
             return; 
         } 
 
-        eventDates.forEach(eventDate => {
+        events.forEach(event => {
             const eventElement = document.createElement('div');
             eventElement.style.border = '1px solid #ccc';
             eventElement.style.marginBottom = '10px';
             eventElement.style.padding = '10px';
             
             const eventName = document.createElement('h3');
-            eventName.textContent = eventDate.event.nombre;
+            eventName.textContent = event.nombre;
+            eventName.style.padding = '10px';
             
             const eventDateInfo = document.createElement('p');
-            eventDateInfo.textContent = `Date: ${eventDate.fecha} ${eventDate.hora}`;
-            
-            const championshipInfo = document.createElement('p');
-            championshipInfo.textContent = `Championship: ${eventDate.event.campeonato.nombre}`;
-            
+            const [dateStr, timeStr] = event.fecha.replace('Z', '').split('T');
+            const [year, month, day] = dateStr.split('-');
+            const [hours, minutes] = timeStr.split(':');
+            const eventDate = new Date(year, month-1, day, hours, minutes);
+            const formattedDate = eventDate.toLocaleDateString('es-ES');
+            const formattedTime = eventDate.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false });
+            eventDateInfo.textContent = `Date: ${formattedDate} Starts at: ${formattedTime.replace('.', ':')}`;
+            eventDateInfo.style.padding = '10px';
+
             eventElement.appendChild(eventName);
             eventElement.appendChild(eventDateInfo);
-            eventElement.appendChild(championshipInfo);
             communitiesListContainer.appendChild(eventElement);
         });
 
@@ -228,6 +232,7 @@ viewCalendarBtn.addEventListener('click', async function() {
         communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Error loading events. Please try again later.</p>'; 
         const backButton = document.createElement('button'); 
         backButton.textContent = 'Back'; 
+        backButton.className = 'form-button';
         backButton.style.marginTop = '1rem'; 
         backButton.addEventListener('click', () => { 
             communitiesListContainer.style.display = 'none'; 

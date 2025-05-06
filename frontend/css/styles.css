@@ -494,18 +494,25 @@ footer {
 
 
 .options-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    display: table;
+    width: 100%;
+    padding: 15px;
+}
+
+.options-container button {
+    display: table-row;
+    width: 100%;
+    margin: 5px 0;
 }
 
 
 #ac-options {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre botones, ajustable según necesidad */
-  }
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+}
 
 
 .options-container button {

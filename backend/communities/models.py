@@ -55,15 +55,7 @@ class Event(models.Model):
     campeonato = models.ForeignKey(Championship, on_delete=models.CASCADE)
     fecha = models.DateTimeField()
     download_url = models.URLField(blank=True)
-    
+    formato = models.CharField(default='pactice: 20h qualy: 15m race: 40m', max_length=100)
     def __str__(self):
         return self.nombre
 
-
-class EventDate(models.Model):
-    evento = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='dates')
-    fecha = models.DateField()
-    hora = models.TimeField()
-    
-    def __str__(self):
-        return f"{self.evento.nombre} - {self.fecha} {self.hora}"

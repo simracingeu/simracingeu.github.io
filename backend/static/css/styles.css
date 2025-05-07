@@ -4,7 +4,50 @@
     box-sizing: border-box;
 }
 
-/* Estilos para los formularios de añadir comunidad y piloto */
+.esrc-banner {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.esrc-banner h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.esrc-banner h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.esrc-banner h3 {
+    font-size: 1.4rem;
+    color: #7f8c8d;
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+.esrc-banner p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.read-more-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+
 #add-community-form,
 #add-driver-form {
     background-color: #f9f9f9;
@@ -12,8 +55,8 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Aumentado para mejor espaciado */
-    margin: 2rem auto; /* Centrado y con margen superior/inferior */
+    max-width: 500px; 
+    margin: 2rem auto; 
 }
 
 #add-community-form h2,
@@ -121,8 +164,6 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-
-
 #communities-list .community-info p {
     margin: 5px 0;
     text-align: left;
@@ -138,10 +179,123 @@
     font-size: 0.9rem;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.esrc-banner {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem 3rem;
+    margin: 2rem auto;
+    border-radius: 16px;
+    max-width: 1200px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-summary {
+    transition: all 0.3s ease;
+}
+
+.banner-full-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.esrc-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: -0.5px;
+    color: #ffffff;
+}
+
+.esrc-banner h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.esrc-banner h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.esrc-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+
+.esrc-banner ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.esrc-banner li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.read-more-btn {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(255,107,107,0.3);
+    font-weight: 600;
+}
+
+.read-more-btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+}
+
+.cta-section {
+    background-color: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76,175,80,0.3);
 }
 
 #add-community-form {
@@ -262,8 +416,6 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-
-
 #communities-list .community-info p {
     margin: 5px 0;
     text-align: left;
@@ -283,6 +435,116 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+.esrc-banner {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem 3rem;
+    margin: 2rem auto;
+    border-radius: 16px;
+    max-width: 1200px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-summary {
+    transition: all 0.3s ease;
+}
+
+.banner-full-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.esrc-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: -0.5px;
+    color: #ffffff;
+}
+
+.esrc-banner h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.esrc-banner h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.esrc-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+
+.esrc-banner ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.esrc-banner li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.read-more-btn {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(255,107,107,0.3);
+    font-weight: 600;
+}
+
+.read-more-btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+}
+
+.cta-section {
+    background-color: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76,175,80,0.3);
 }
 
 #add-community-form {
@@ -438,17 +700,11 @@ header {
     }
 }
 
-
-
-
 main {
     flex: 1;
     padding: 2rem;
     text-align: center;
 }
-
-
-
 
 footer {
     background-color: #333;
@@ -459,39 +715,26 @@ footer {
     align-items: center;
 }
 
-
-
-
 .main-logo {
     max-width: 250px; 
     height: auto;
     margin: 10px; 
 }
 
-
-
-
-
 .game-container {
     display: flex;
     justify-content: space-around; 
     align-items: flex-start; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-
-
-
 
 .game-block {
     text-align: center; 
     margin: 1rem; 
     flex-basis: 30%; 
 }
-
-
-
-
 
 .options-container {
     display: table;
@@ -521,9 +764,6 @@ footer {
     cursor: pointer;
 }
 
-
-
-
 @media (max-width: 600px) {
     .logo {
         max-width: 100%;
@@ -537,29 +777,12 @@ footer {
         }
     }
 
-
-
-
     .footer-logo {
         max-width: 100px;
     }
-
-
-
 
     .game-container {
         flex-direction: column; 
         align-items: center; 
     }
-
-
-
-
-    .game-block {
-        flex-basis: 80%; 
-    }
-
-
-
-
 }

@@ -1,14 +1,13 @@
 const acLogo = document.getElementById('ac-logo');
 const acOptions = document.getElementById('ac-options');
 const addCommunityBtn = acOptions.querySelector('button:nth-child(3)'); 
-const addDriverBtn = acOptions.querySelector('button:nth-child(3)');
+const addDriverBtn = acOptions.querySelector('button:nth-child(4)');
 const gameContainer = document.querySelector('.game-container'); 
 const viewCommunitiesBtn = document.getElementById('view-communities-btn');
 const viewCalendarBtn = document.getElementById('view-calendar-btn');
 const communitiesListContainer = document.getElementById('communities-list');
 const driverCommunitySelect = document.getElementById('driver-community');
-const baseUrl = 'http://localhost:8000/api'
-//'http://192.168.1.20/api'
+const baseUrl = window.BASE_API_URL || 'http://localhost:8000/api';
 
 function getCookie(name) {
     let cookieValue = null;
@@ -181,7 +180,7 @@ addCommunityBtn.addEventListener('click', function() {
     form.appendChild(patreonGroup);
     
     const emailLabel = document.createElement('label');
-    emailLabel.textContent = 'Email de contacto:';
+    emailLabel.textContent = 'Contact Email';
     emailLabel.className = 'form-label';
     const emailInput = document.createElement('input');
     emailInput.type = 'email';
@@ -216,7 +215,7 @@ addCommunityBtn.addEventListener('click', function() {
         }
         
         try {
-            const response = await fetch(`${baseUrl}/communities/`, {
+            const response = await fetch(`${baseUrl}communities/`, {
                 method: 'POST',
                 headers: {
                     'X-CSRFToken': getCookie('csrftoken')
@@ -241,9 +240,38 @@ addCommunityBtn.addEventListener('click', function() {
 
 addDriverBtn.addEventListener('click', async function() {
     gameContainer.style.display = 'none';
+    communitiesListContainer.style.display = 'block';
+    communitiesListContainer.innerHTML = '<h2>Add New Driver</h2>';
+    
+    const form = document.createElement('form');
+    form.id = 'add-driver-form';
+    
+    const nameLabel = document.createElement('label');
+    nameLabel.textContent = 'Driver name:';
+    nameLabel.className = 'form-label';
+    const nameInput = document.createElement('input');
+    nameInput.type = 'text';
+    nameInput.className = 'form-control';
+    nameInput.name = 'name';
+    nameInput.required = true;
+    
+    const communityLabel = document.createElement('label');
+    communityLabel.textContent = 'Community:';
+    communityLabel.className = 'form-label';
+    const communitySelect = document.createElement('select');
+    communitySelect.className = 'form-select';
+    communitySelect.name = 'community';
+    communitySelect.required = true;
+    
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = '-- Select a community --';
+    defaultOption.disabled = true;
+    defaultOption.selected = true;
+    communitySelect.appendChild(defaultOption);
     
     try {
-        const response = await fetch(`${baseUrl}/communities/`, {
+        const response = await fetch(`${baseUrl}communities/`, {
             headers: {
                 'Accept': 'application/json'
             }
@@ -251,17 +279,97 @@ addDriverBtn.addEventListener('click', async function() {
         if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
         const communities = await response.json();
         
-        driverCommunitySelect.innerHTML = '';
         communities.forEach(community => {
             const option = document.createElement('option');
             option.value = community.id;
             option.textContent = community.name;
-            driverCommunitySelect.appendChild(option);
+            communitySelect.appendChild(option);
         });
     } catch (error) {
         console.error('Error loading communities:', error);
         alert('Error loading communities. Please try again.');
     }
+    
+    const avatarLabel = document.createElement('label');
+    avatarLabel.textContent = 'Avatar:';
+    avatarLabel.className = 'form-label';
+    const avatarInput = document.createElement('input');
+    avatarInput.type = 'file';
+    avatarInput.className = 'form-control';
+    avatarInput.name = 'avatar';
+    avatarInput.accept = 'image/*';
+    
+    const submitBtn = document.createElement('button');
+    submitBtn.type = 'submit';
+    submitBtn.className = 'btn btn-primary';
+    submitBtn.textContent = 'Submit';
+    
+    const backButton = document.createElement('button');
+    backButton.type = 'button';
+    backButton.className = 'btn btn-secondary';
+    backButton.textContent = 'Back';
+    backButton.addEventListener('click', () => {
+        communitiesListContainer.style.display = 'none';
+        gameContainer.style.display = 'flex';
+        acOptions.style.display = 'none';
+    });
+    
+    const nameGroup = document.createElement('div');
+    nameGroup.className = 'mb-3';
+    nameGroup.appendChild(nameLabel);
+    nameGroup.appendChild(nameInput);
+    form.appendChild(nameGroup);
+    
+    const communityGroup = document.createElement('div');
+    communityGroup.className = 'mb-3';
+    communityGroup.appendChild(communityLabel);
+    communityGroup.appendChild(communitySelect);
+    form.appendChild(communityGroup);
+    
+    const avatarGroup = document.createElement('div');
+    avatarGroup.className = 'mb-3';
+    avatarGroup.appendChild(avatarLabel);
+    avatarGroup.appendChild(avatarInput);
+    form.appendChild(avatarGroup);
+    
+    const buttonGroup = document.createElement('div');
+    buttonGroup.className = 'd-flex gap-2';
+    buttonGroup.appendChild(submitBtn);
+    buttonGroup.appendChild(backButton);
+    form.appendChild(buttonGroup);
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData();
+        formData.append('nombre', nameInput.value);
+        formData.append('comunidad', communitySelect.value);
+        if(avatarInput.files[0]) {
+            formData.append('avatar', avatarInput.files[0]);
+        }
+        
+        try {
+            const response = await fetch(`${baseUrl}drivers/`, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: formData
+            });
+            
+            if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+            
+            alert('Driver created successfully!');
+            communitiesListContainer.style.display = 'none';
+            gameContainer.style.display = 'flex';
+            acOptions.style.display = 'none';
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error creating driver. Please try again.');
+        }
+    });
+    
+    communitiesListContainer.appendChild(form);
 });
 
 
@@ -273,7 +381,7 @@ viewCommunitiesBtn.addEventListener('click', async function() {
     communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Loading...</p>';
     
     try {
-        const response = await fetch(`${baseUrl}/communities/`, {
+        const response = await fetch(`${baseUrl}communities/`, {
             headers: {
                 'Accept': 'application/json'
             }
@@ -361,7 +469,7 @@ viewCalendarBtn.addEventListener('click', async function() {
     communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Loading events...</p>'; 
 
     try { 
-        const response = await fetch(`${baseUrl}/events/`); 
+        const response = await fetch(`${baseUrl}events/`); 
         if (!response.ok) { 
             throw new Error(`HTTP Error: ${response.status}`); 
         } 

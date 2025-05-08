@@ -10,6 +10,7 @@ class Community(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     discord_url = models.URLField(blank=True)
     website_url = models.URLField(blank=True)
+    patreon_url = models.URLField(blank=True)
     logo = models.ImageField(upload_to='static/community_logos/', blank=True)
     
     def __str__(self):

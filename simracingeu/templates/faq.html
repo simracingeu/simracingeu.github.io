@@ -4,7 +4,300 @@
 
 {% block content %}
 <section class="esrc-banner">
-    <h1>Preguntas Frecuentes</h1>
-    <p>Respuestas a las dudas más comunes sobre nuestra comunidad.</p>
+    <div>
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <p>Solving common queries and providing essential support.</p>
+    
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search questions...">
+            <ul id="search-results" class="search-results"></ul>
+        </div>
+    
+        <div class="faq-section" id="registro">
+            <h3>Registration</h3>
+            <div class="faq-item">
+                <div class="faq-question">How do I register for the championship?</div>
+                <div class="faq-answer">Information about the registration process will be provided on the championship's main page or through a specific registration link. Make sure to follow all the indicated steps.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is there a registration deadline?</div>
+                <div class="faq-answer">Yes, there is usually a registration deadline. This date will be announced in the championship information. Register before the deadline to secure your participation.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What information do I need to register?</div>
+                <div class="faq-answer">Typically, you will be asked to provide your name, contact information, player ID (if applicable), and possibly details about your simulation setup.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I register after the championship has started?</div>
+                <div class="faq-answer">According to regulations, new drivers can join until 50% of the championship has passed. After that point, registrations will close unless otherwise specified.</div>
+            </div>
+        </div>
+    
+        <div class="faq-section" id="reglas-campeonato">
+            <h3>Championship Rules</h3>
+            <div class="faq-item">
+                <div class="faq-question">What are the types of penalties in the championship?</div>
+                <div class="faq-answer">
+                    The types of penalties defined by their impact on the driver are:
+                    <ul>
+                        <li><strong>Minor Penalty:</strong> Verbal warning or up to 5 seconds added to the result.</li>
+                        <li><strong>Automatic RP Penalty:</strong> Penalties issued by the Real Penalty system, such as Drive-Through or Stop-and-Go.</li>
+                        <li><strong>Moderate Penalty:</strong>
+                            <ul>
+                                <li>5-second deduction in the event.</li>
+                                <li>Ballast application in future events.</li>
+                                <li>Deduction of event points.</li>
+                            </ul>
+                            Divided into minor (time only) and major (ballast or points).
+                        </li>
+                        <li><strong>Severe Penalty:</strong>
+                            <ul>
+                                <li>Event disqualification (no points).</li>
+                                <li>Suspension from one or more future events.</li>
+                                <li>In serious cases, permanent expulsion from the championship.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Very Severe Penalty:</strong>
+                            <ul>
+                                <li>Expulsion from the championship.</li>
+                                <li>Removal from all current and future championships.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is considered unsportsmanlike driving?</div>
+                <div class="faq-answer">Any action that violates championship rules, endangers other drivers, or attempts to gain an unfair advantage is considered unsportsmanlike driving. This may include sudden braking, aggressive blocking, or not respecting blue flags.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How are on-track incidents handled?</div>
+                <div class="faq-answer">Any contact with another driver is considered an incident. A <strong>Moderate Penalty</strong> will be applied if the contact causes a spin or track departure. Severity is assessed based on speed difference, intent, recurrence, and consequences. Specific criteria are defined for light and moderate contacts in one-on-one situations.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What rules apply for the start and first laps?</div>
+                <div class="faq-answer">It is recommended to maintain a safe distance during the first two laps. Maximum caution is advised as incidents in the first lap have greater consequences.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are the rules about braking on track?</div>
+                <div class="faq-answer">Sudden braking on straights is considered a moderate penalty. Early braking as a defensive technique is allowed, with the responsibility on the attacking driver to maintain distance.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuándo se permite volver a boxes?</div>
+                <div class="faq-answer">Solo se permite volver a boxes cuando el coche está completamente inutilizable o representa un peligro. Usarlo bloquea el coche en boxes. En sesiones de carrera, intentar reincorporarse después de usarlo conlleva la descalificación automática. En clasificación, el piloto no puede continuar y debe iniciar la carrera con su mejor tiempo previo al uso. Se permite si el coche está dentro del box asignado.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué se considera un contacto ligero en pista?</div>
+                <div class="faq-answer">En un enfrentamiento uno contra uno, se consideran contactos ligeros 1 o 2 contactos que no causen un trompo o salida de pista.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué se considera un contacto moderado en pista?</div>
+                <div class="faq-answer">En un enfrentamiento uno contra uno, se considera contacto moderado aquel que causa un trompo o una salida de pista completa. Tres o más incidentes sin ceder la posición pueden resultar en una penalización severa.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se clasifican las colisiones por alcance en recta?</div>
+                <div class="faq-answer">Las colisiones por alcance en recta, que suelen ocurrir en zonas de frenado, pueden clasificarse como Ligeras o Moderadas dependiendo de las consecuencias, la diferencia de velocidad, la pérdida de control y la cesión de posición.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se clasifican las colisiones laterales?</div>
+                <div class="faq-answer">Las colisiones laterales suelen ocurrir por no utilizar aplicaciones de radar como Helicorsa en una posición visible de la pantalla. Dependiendo de las consecuencias, la diferencia de velocidad, la pérdida de control y la cesión de posición, pueden clasificarse como Ligeras o Moderadas.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué reglas se aplican en las curvas en paralelo?</div>
+                <div class="faq-answer">
+                    <ul>
+                        <li><strong>Coches alineados frontalmente:</strong> En una batalla deportiva, se permiten ligeros ajustes de trayectoria que permitan contramaniobras. Ajustes o posicionamientos que abusen de la posición en pista pueden clasificarse como Moderados.</li>
+                        <li><strong>Coches no alineados (solapamiento de media carrocería contra el frente del oponente):</strong> Se considera una acción abusiva, sin permitir batalla deportiva y clasificada como Moderada.</li>
+                        <li><strong>Parte trasera del coche exterior contra el frente del interior:</strong> Se revisará y podrá clasificarse como Ligera/Moderada.</li>
+                        <li><strong>Cuatro o más coches alineados en una zona de frenado:</strong> Cada piloto debe respetar su carril "virtual". Salir de este carril para hacer contacto abusivo se clasificará como Moderado.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué sucede en caso de una salida de pista parcial?</div>
+                <div class="faq-answer">Si el piloto defensor pierde el control al pisar la grava y el piloto atacante (cercano por detrás) colisiona, esto puede analizarse como un incidente no punible debido a la pérdida de control del defensor.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué sucede en caso de una salida de pista completa?</div>
+                <div class="faq-answer">Se revisará para determinar si el piloto atacante podría haber evitado la colisión. Podrá clasificarse como Ligera/Moderada.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are the rules for overtaking?</div>
+                <div class="faq-answer">Overtaking is allowed on any side of the track, as long as it doesn't interfere with the "racing line" of drivers running parallel. Any driver who hits another during an overtake may be investigated. The severity of the penalty will depend on the speed difference in the collision, consequences for the defending driver, impact on other drivers, and position surrender. Minimal/moderate contact is allowed during position battles if it doesn't cause excessive trajectory changes or spins/track departures. When fighting in a braking zone, drivers must maintain a safe distance to avoid collisions from early braking.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is considered lane invasion during overtaking?</div>
+                <div class="faq-answer">In the case of cars aligned in the braking zone, lane invasion is prohibited.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuándo se considera que un piloto ha ganado la posición durante un adelantamiento?</div>
+                <div class="faq-answer">Se considera que un piloto ha ganado la posición (interior/exterior) solo cuando su coche adelanta completamente al defensor. Se recomienda usar Helicorsa y los espejos para evitar colisiones laterales.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuáles son las condiciones para adelantar al inicio de una curva (zona de frenado)?</div>
+                <div class="faq-answer">
+                    <ul>
+                        <li>Ambos coches llegan a una velocidad/posición similar, con el atacante al menos un 25% al lado del defensor.</li>
+                        <li>La trayectoria del atacante no obstruye el carril natural del defensor.</li>
+                    </ul>
+                    Si estas condiciones no se cumplen, el atacante debe abortar el adelantamiento y permitir que el defensor tome su línea.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué distancia deben mantener los pilotos entre sí?</div>
+                <div class="faq-answer">Al luchar (o doblar), los pilotos deben dejar suficiente espacio. Cerrar el espacio bruscamente se clasifica como Moderado.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuáles son las reglas para los pilotos doblados?</div>
+                <div class="faq-answer">Se aplican las reglas de la bandera azul. Los pilotos doblados deben mantener una línea predecible y facilitar el adelantamiento levantando el pie del acelerador. Deben ceder el paso en un máximo de 4 curvas.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuántos cambios de dirección se permiten al defender en una recta?</div>
+                <div class="faq-answer">Al defender en una recta, un piloto puede realizar un único cambio de dirección. Dos o más cambios de dirección (por ejemplo, zig-zag) están prohibidos y se clasifican como Moderados.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué debe hacer un piloto tras una salida de pista parcial?</div>
+                <div class="faq-answer">Un piloto que abandona parcialmente la pista (3 ruedas fuera) debe ceder el paso a los pilotos que están en pista y evitar colisiones u obstrucciones. No hacerlo se considera Moderado.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se utiliza el lastre en el campeonato?</div>
+                <div class="faq-answer">Se utiliza lastre para equilibrar el rendimiento. Si un coche demuestra una superioridad excesiva, los organizadores podrán aplicar lastre (con previo aviso).</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué sucede si un piloto tiene ausencias en el campeonato?</div>
+                <div class="faq-answer">Se espera que los pilotos cumplan con el calendario. Tres ausencias injustificadas en un campeonato pueden resultar en la exclusión. Los eventos podrán cancelarse si más del 90% de los pilotos están ausentes.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se pueden presentar protestas?</div>
+                <div class="faq-answer">Las protestas deben enviarse por correo electrónico a foroassetto@gmail.com. Se prohíben las quejas públicas contra los organizadores o ForoAssetto.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué debe hacer un piloto si pierde el control del coche?</div>
+                <div class="faq-answer">Un piloto que pierde el control debe detenerse inmediatamente. Los incidentes de salida de pista parcial que causen una pérdida drástica de velocidad o cambios de dirección podrán ser penalizados.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuáles son las reglas para las paradas en boxes?</div>
+                <div class="faq-answer">Los pilotos no deben cruzar la línea blanca de la entrada o salida de boxes. RealPenalty aplica penalizaciones (por ejemplo, drive-through) por infracciones.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué reglas se aplican a los vehículos que van en paralelo?</div>
+                <div class="faq-answer">Se considera que los vehículos van en paralelo si alguna parte de ellos se solapa. Cada piloto debe permanecer en su "carril imaginario", incluso en escenarios con varios coches.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué debe hacer un piloto si su coche sufre daños y queda inmovilizado?</div>
+                <div class="faq-answer">Si un coche queda inmovilizado, se debe utilizar el botón "volver a boxes". Explotar esta función para obtener ventaja se considera una infracción Grave.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué se considera una explotación de las reglas o del juego?</div>
+                <div class="faq-answer">Los atajos deliberados en la pista, el uso de los muros para ganar velocidad o el uso de vueltas inválidas para obtener ventaja se consideran infracciones Graves. Ejemplos incluyen saltarse chicanes, rebotar en los muros para ganar velocidad o modificar la configuración de CSP.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se deben utilizar las áreas de escape?</div>
+                <div class="faq-answer">El uso de las áreas de escape debe evitar la obtención de ventajas. Repetir esta acción podrá considerarse Moderada o Grave.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Pueden cambiar las reglas del campeonato?</div>
+                <div class="faq-answer">Sí, esta normativa está sujeta a actualizaciones. Los números de versión reflejan las revisiones.</div>
+            </div>
+        </div>
+    
+        <div class="faq-section" id="informacion-tecnica">
+            <h3>Technical Information</h3>
+            <div class="faq-item">
+                <div class="faq-question">What software is mandatory to participate?</div>
+                <div class="faq-answer">It is mandatory to use the latest version of Real Penalty.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What software is recommended?</div>
+                <div class="faq-answer">It is highly recommended to use the Helicorsa application, which is included in the Real Penalty package, to improve on-track visibility.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is it mandatory to be in Discord voice channels during events?</div>
+                <div class="faq-answer">Yes, it is mandatory to be present in Discord voice channels during qualifying sessions and races. Absence without valid reason will be considered a moderate penalty (severe in case of recurrence).</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Where can I find information about events?</div>
+                <div class="faq-answer">Event information is available at the following link: <a href="http://simracingeu.club/s1" target="_blank">http://simracingeu.club/s1</a>.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How will I know the number of laps for each race?</div>
+                <div class="faq-answer">Drivers should know the number of laps, which will be available through ACSM from the start of the championship.</div>
+            </div>
+        </div>
+    
+        <div class="faq-section" id="procedimientos-dia-carrera">
+            <h3>Race Day Procedures</h3>
+            <div class="faq-item">
+                <div class="faq-question">What time are events scheduled?</div>
+                <div class="faq-answer">All official ForoAssetto events are scheduled at predefined times. Times will not change unless more than 90% of drivers are absent, in which case the event may be canceled.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuáles son los límites de la pista?</div>
+                <div class="faq-answer">Cada circuito tiene definidos sus límites laterales, generalmente marcados por líneas blancas sólidas. Algunos circuitos incluyen los pianos y las zonas verdes como parte de la pista. El requisito mínimo es que al menos un neumático permanezca dentro de los límites en todo momento. La aplicación de los límites se basa en los límites oficiales de Kunos para los circuitos originales, límites personalizados para los circuitos modificados y el reconocimiento de Real Penalty durante los eventos.</div>
+            </div>
+        </div>
+    
+        <div class="faq-section" id="puntuacion">
+            <h3>Puntuación</h3>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se otorgan los puntos en el campeonato?</div>
+                <div class="faq-answer">La información detallada sobre el sistema de puntuación del campeonato se proporcionará en un documento aparte o en la página de reglas del campeonato. Generalmente, los puntos se otorgan a los pilotos que terminan en las primeras posiciones de cada carrera.</div>
+            </div>
+        </div>
+    
+        <div class="faq-section" id="soporte">
+            <h3>Support Procedures</h3>
+            <div class="faq-item">
+                <div class="faq-question">Who should I contact if I have a question or problem?</div>
+                <div class="faq-answer">If you have any questions or problems, you can contact the championship support team through the method specified in the contact information (e.g., email, forum).</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What should I do if I witness a rules violation during a race?</div>
+                <div class="faq-answer">If you witness a rules violation, you can file a protest following the procedure indicated in the championship rules section. Typically, this involves sending a detailed report with evidence (such as replays) to the administration team.</div>
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const faqQuestions = document.querySelectorAll('.faq-question');
+                faqQuestions.forEach(question => {
+                    question.addEventListener('click', function() {
+                        const answer = this.nextElementSibling;
+                        answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+                    });
+                });
+    
+                const searchInput = document.getElementById('search-input');
+                const searchResults = document.getElementById('search-results');
+                const faqItems = document.querySelectorAll('.faq-item');
+    
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    searchResults.innerHTML = '';
+    
+                    if (searchTerm.length < 3) {
+                        searchResults.style.display = 'none';
+                        return;
+                    }
+    
+                    let resultsFound = false;
+                    faqItems.forEach(item => {
+                        const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                            const listItem = document.createElement('li');
+                            const questionText = item.querySelector('.faq-question').textContent;
+                            const sectionId = item.closest('.faq-section').id;
+                            listItem.innerHTML = `<a href="#${sectionId}">${questionText}</a>`;
+                            searchResults.appendChild(listItem);
+                            resultsFound = true;
+                        }
+                    });
+    
+                    searchResults.style.display = resultsFound ? 'block' : 'none';
+                });
+            });
+        </script>
+    </div>
 </section>
 {% endblock %}

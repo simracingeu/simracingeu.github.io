@@ -44,20 +44,26 @@ addCommunityBtn.addEventListener('click', function() {
     
     const nameLabel = document.createElement('label');
     nameLabel.textContent = 'Community name:';
+    nameLabel.className = 'form-label';
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
+    nameInput.className = 'form-control';
     nameInput.name = 'name';
     nameInput.required = true;
     
     const descLabel = document.createElement('label');
     descLabel.textContent = 'Description:';
+    descLabel.className = 'form-label';
     const descInput = document.createElement('textarea');
+    descInput.className = 'form-control';
     descInput.name = 'description';
     descInput.rows = 3;
     
     const countryLabel = document.createElement('label');
     countryLabel.textContent = 'Country:';
+    countryLabel.className = 'form-label';
     const countryInput = document.createElement('select');
+    countryInput.className = 'form-select';
     countryInput.name = 'country';
     countryInput.required = true;
     
@@ -79,89 +85,120 @@ addCommunityBtn.addEventListener('click', function() {
         const option = document.createElement('option');
         option.value = country;
         
-        // Crear contenedor para bandera y nombre
-        const optionContent = document.createElement('div');
-        optionContent.style.display = 'flex';
-        optionContent.style.alignItems = 'center';
-        optionContent.style.gap = '8px';
-        
-        // Crear imagen de bandera
-        const flagImg = document.createElement('img');
-        flagImg.src = `/static/img/flags/${country.toLowerCase().replace(' ', '-')}.svg`;
-        flagImg.alt = `${country} flag`;
-        flagImg.style.width = '20px';
-        flagImg.style.height = 'auto';
-        
-        // Añadir bandera y nombre al option
-        optionContent.appendChild(flagImg);
-        optionContent.appendChild(document.createTextNode(country));
-        option.appendChild(optionContent);
+        option.textContent = country;
         
         countryInput.appendChild(option);
     });
     
     const logoLabel = document.createElement('label');
     logoLabel.textContent = 'Logo:';
+    logoLabel.className = 'form-label';
     const logoInput = document.createElement('input');
     logoInput.type = 'file';
+    logoInput.className = 'form-control';
     logoInput.name = 'logo';
     logoInput.accept = 'image/*';
     
     const discordLabel = document.createElement('label');
     discordLabel.textContent = 'Discord URL:';
+    discordLabel.className = 'form-label';
     const discordInput = document.createElement('input');
     discordInput.type = 'url';
+    discordInput.className = 'form-control';
     discordInput.name = 'discord_url';
     
     const websiteLabel = document.createElement('label');
     websiteLabel.textContent = 'Website:';
+    websiteLabel.className = 'form-label';
     const websiteInput = document.createElement('input');
     websiteInput.type = 'url';
+    websiteInput.className = 'form-control';
     websiteInput.name = 'website_url';
     
     const patreonLabel = document.createElement('label');
     patreonLabel.textContent = 'Patreon URL:';
+    patreonLabel.className = 'form-label';
     const patreonInput = document.createElement('input');
     patreonInput.type = 'url';
+    patreonInput.className = 'form-control';
     patreonInput.name = 'patreon_url';
 
     const submitBtn = document.createElement('button');
     submitBtn.type = 'submit';
+    submitBtn.className = 'btn btn-primary';
     submitBtn.textContent = 'Submit';
     
     const backButton = document.createElement('button');
     backButton.type = 'button';
+    backButton.className = 'btn btn-secondary';
     backButton.textContent = 'Back';
-    backButton.className = 'form-button';
     backButton.addEventListener('click', () => {
         communitiesListContainer.style.display = 'none';
         gameContainer.style.display = 'flex';
         acOptions.style.display = 'none';
     });
     
-    form.appendChild(nameLabel);
-    form.appendChild(nameInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(descLabel);
-    form.appendChild(descInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(countryLabel);
-    form.appendChild(countryInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(logoLabel);
-    form.appendChild(logoInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(discordLabel);
-    form.appendChild(discordInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(websiteLabel);
-    form.appendChild(websiteInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(patreonLabel);
-    form.appendChild(patreonInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(submitBtn);
-    form.appendChild(backButton);
+    const formGroup = document.createElement('div');
+    formGroup.className = 'mb-3';
+    formGroup.appendChild(nameLabel);
+    formGroup.appendChild(nameInput);
+    form.appendChild(formGroup);
+    
+    const descGroup = document.createElement('div');
+    descGroup.className = 'mb-3';
+    descGroup.appendChild(descLabel);
+    descGroup.appendChild(descInput);
+    form.appendChild(descGroup);
+    
+    const countryGroup = document.createElement('div');
+    countryGroup.className = 'mb-3';
+    countryGroup.appendChild(countryLabel);
+    countryGroup.appendChild(countryInput);
+    form.appendChild(countryGroup);
+    
+    const logoGroup = document.createElement('div');
+    logoGroup.className = 'mb-3';
+    logoGroup.appendChild(logoLabel);
+    logoGroup.appendChild(logoInput);
+    form.appendChild(logoGroup);
+    
+    const discordGroup = document.createElement('div');
+    discordGroup.className = 'mb-3';
+    discordGroup.appendChild(discordLabel);
+    discordGroup.appendChild(discordInput);
+    form.appendChild(discordGroup);
+    
+    const websiteGroup = document.createElement('div');
+    websiteGroup.className = 'mb-3';
+    websiteGroup.appendChild(websiteLabel);
+    websiteGroup.appendChild(websiteInput);
+    form.appendChild(websiteGroup);
+    
+    const patreonGroup = document.createElement('div');
+    patreonGroup.className = 'mb-3';
+    patreonGroup.appendChild(patreonLabel);
+    patreonGroup.appendChild(patreonInput);
+    form.appendChild(patreonGroup);
+    
+    const emailLabel = document.createElement('label');
+    emailLabel.textContent = 'Email de contacto:';
+    emailLabel.className = 'form-label';
+    const emailInput = document.createElement('input');
+    emailInput.type = 'email';
+    emailInput.className = 'form-control';
+    emailInput.name = 'contact_email';
+    
+    const emailGroup = document.createElement('div');
+    emailGroup.className = 'mb-3';
+    emailGroup.appendChild(emailLabel);
+    emailGroup.appendChild(emailInput);
+    form.appendChild(emailGroup);
+    
+    const buttonGroup = document.createElement('div');
+    buttonGroup.className = 'd-flex gap-2';
+    buttonGroup.appendChild(submitBtn);
+    buttonGroup.appendChild(backButton);
+    form.appendChild(buttonGroup);
     
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -173,6 +210,7 @@ addCommunityBtn.addEventListener('click', function() {
         formData.append('discord_url', discordInput.value);
         formData.append('website_url', websiteInput.value);
         formData.append('patreon_url', patreonInput.value);
+        formData.append('contact_email', emailInput.value);
         if(logoInput.files[0]) {
             formData.append('logo', logoInput.files[0]);
         }

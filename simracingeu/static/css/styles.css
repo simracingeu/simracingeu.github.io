@@ -344,26 +344,29 @@ body {
     border: none;
     border-radius: 4px;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 #add-community-form button[type="submit"] {
-    background-color: #5cb85c;
+    background-color: #0d6efd;
     color: white;
 }
 
 #add-community-form button[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #0b5ed7;
 }
 
 #add-community-form button[type="button"] {
-    background-color: #f0ad4e;
+    background-color: #6c757d;
     color: white;
     margin-left: 10px;
 }
 
 #add-community-form button[type="button"]:hover {
-    background-color: #ec971f;
+    background-color: #5c636a;
 }
 
 .form-button {
@@ -593,7 +596,10 @@ header {
     border: none;
     border-radius: 4px;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 #add-community-form button[type="submit"] {
@@ -602,7 +608,7 @@ header {
 }
 
 #add-community-form button[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #0b5ed7;
 }
 
 #add-community-form button[type="button"] {
@@ -612,7 +618,7 @@ header {
 }
 
 #add-community-form button[type="button"]:hover {
-    background-color: #ec971f;
+    background-color: #5c636a;
 }
 
 .form-button {

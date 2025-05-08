@@ -43,23 +43,62 @@ addCommunityBtn.addEventListener('click', function() {
     form.id = 'add-community-form';
     
     const nameLabel = document.createElement('label');
-    nameLabel.textContent = 'Nombre de la comunidad:';
+    nameLabel.textContent = 'Community name:';
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
     nameInput.name = 'name';
     nameInput.required = true;
     
     const descLabel = document.createElement('label');
-    descLabel.textContent = 'Descripción:';
+    descLabel.textContent = 'Description:';
     const descInput = document.createElement('textarea');
     descInput.name = 'description';
     descInput.rows = 3;
     
     const countryLabel = document.createElement('label');
-    countryLabel.textContent = 'País:';
-    const countryInput = document.createElement('input');
-    countryInput.type = 'text';
+    countryLabel.textContent = 'Country:';
+    const countryInput = document.createElement('select');
     countryInput.name = 'country';
+    countryInput.required = true;
+    
+    const euCountries = [
+        'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic',
+        'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary',
+        'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands',
+        'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden'
+    ];
+    
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = '-- Select a country --';
+    defaultOption.disabled = true;
+    defaultOption.selected = true;
+    countryInput.appendChild(defaultOption);
+    
+    euCountries.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        
+        // Crear contenedor para bandera y nombre
+        const optionContent = document.createElement('div');
+        optionContent.style.display = 'flex';
+        optionContent.style.alignItems = 'center';
+        optionContent.style.gap = '8px';
+        
+        // Crear imagen de bandera
+        const flagImg = document.createElement('img');
+        flagImg.src = `/static/img/flags/${country.toLowerCase().replace(' ', '-')}.svg`;
+        flagImg.alt = `${country} flag`;
+        flagImg.style.width = '20px';
+        flagImg.style.height = 'auto';
+        
+        // Añadir bandera y nombre al option
+        optionContent.appendChild(flagImg);
+        optionContent.appendChild(document.createTextNode(country));
+        option.appendChild(optionContent);
+        
+        countryInput.appendChild(option);
+    });
     
     const logoLabel = document.createElement('label');
     logoLabel.textContent = 'Logo:';
@@ -75,7 +114,7 @@ addCommunityBtn.addEventListener('click', function() {
     discordInput.name = 'discord_url';
     
     const websiteLabel = document.createElement('label');
-    websiteLabel.textContent = 'Página Web:';
+    websiteLabel.textContent = 'Website:';
     const websiteInput = document.createElement('input');
     websiteInput.type = 'url';
     websiteInput.name = 'website_url';
@@ -88,11 +127,11 @@ addCommunityBtn.addEventListener('click', function() {
 
     const submitBtn = document.createElement('button');
     submitBtn.type = 'submit';
-    submitBtn.textContent = 'Enviar';
+    submitBtn.textContent = 'Submit';
     
     const backButton = document.createElement('button');
     backButton.type = 'button';
-    backButton.textContent = 'Volver';
+    backButton.textContent = 'Back';
     backButton.className = 'form-button';
     backButton.addEventListener('click', () => {
         communitiesListContainer.style.display = 'none';
@@ -149,13 +188,13 @@ addCommunityBtn.addEventListener('click', function() {
             
             if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
             
-            alert('Comunidad creada exitosamente!');
+            alert('Community created successfully!');
             communitiesListContainer.style.display = 'none';
             gameContainer.style.display = 'flex';
             acOptions.style.display = 'none';
         } catch (error) {
             console.error('Error:', error);
-            alert('Error al crear la comunidad. Por favor intente nuevamente.');
+            alert('Error creating community. Please try again.');
         }
     });
     
@@ -313,7 +352,7 @@ viewCalendarBtn.addEventListener('click', async function() {
             eventElement.style.padding = '10px';
             
             const eventName = document.createElement('h3');
-            eventName.textContent = event.nombre;
+            eventName.textContent = event.name;
             eventName.style.padding = '10px';
             
             const eventDateInfo = document.createElement('p');

@@ -16,8 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('adminForoAssetto/', admin.site.urls),
     path('api/', include('communities.urls')),
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    
+    path('about/', TemplateView.as_view(template_name='about.html'), name='about'),
+    path('rules/', TemplateView.as_view(template_name='rules.html'), name='rules'),
+    path('calendar/', TemplateView.as_view(template_name='calendar.html'), name='calendar'),
+    path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
+    path('communities/', TemplateView.as_view(template_name='communities.html'), name='communities'),
+    path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
+    path('legal/', TemplateView.as_view(template_name='legal.html'), name='legal'),
 ]

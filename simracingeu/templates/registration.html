@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<p>Select a game to register a community or a driver</p>
+<div class="game-container mt-4">
+
+        <div class="game-block">
+            <img src="{% static 'img/ac.png' %}" alt="Assetto Corsa Logo" class="main-logo" id="ac-logo">
+            <div id="ac-options" class="options-container" style="display: none; flex-direction: column; gap: 10px;">
+                <button id="view-calendar-btn" class="btn btn-primary btn-sm">View event calendar</button>
+                <button class="btn btn-success btn-sm">Add community</button>
+                <button class="btn btn-success btn-sm">Add driver</button>
+            </div>
+        </div>
+        <div class="game-block">
+            <img src="{% static 'img/acc.png' %}" alt="Assetto Corsa Competizione Logo" class="main-logo">
+            <p>coming soon</p>
+        </div>
+        <div class="game-block">
+            <img src="{% static 'img/lmu.png' %}" alt="Le Mans Ultimate Logo" class="main-logo">
+            <p>coming soon</p>
+        </div>
+        <div class="game-block">
+            <img src="{% static 'img/evo_bk.png' %}" alt="Assetto Corsa EVO" class="main-logo">
+            <p>coming soon</p>
+        </div>
+        <div class="game-block">
+            <img src="{% static 'img/renn_bk.png' %}" alt="Rennsport" class="main-logo">
+            <p>coming soon</p>
+        </div>
+    </div>
+</div>
+
+<div id="communities-list" style="display: none;">
+    <select id="driver-community"></select>
+</div>
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

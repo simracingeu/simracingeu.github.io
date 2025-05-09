@@ -33,5 +33,5 @@ urlpatterns = [
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
     path('legal/', TemplateView.as_view(template_name='legal.html'), name='legal'),
     path('contact/', contact, name='contact'),
-
+    path('registration/', TemplateView.as_view(template_name='registration.html'), name='registration'),
 ]

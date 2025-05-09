@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}About us | SimRacing EU{% endblock %}
 
@@ -42,6 +43,16 @@
             <p class="lead">This championship is not just another competition—it is a meeting point for communities that share values such as respect, continuous improvement, and a passion for motorsport.</p>
             <p>We want to grow with you, listen to you, and build the future of European simracing together.</p>
         </article>
+        <h1>Our championship history</h1>
+        <img src="{% static 'img/carteles/2023_Mazda_mx5.jpeg' %}" alt="Mazda MX5 championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2023bttc.jpg' %}" alt="BTCC championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2024_automobilista2_octubre.png' %}" alt="AMS2 championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2024_competizione_noviembre.png' %}" alt="Competizione championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2024_f1.png' %}" alt="F1 championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2024_mini.png' %}" alt="Mini championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2024_wttc.jpeg' %}" alt="WTCC championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2024rally.png' %}" alt="Rally championship" class="championship-poster">
+        <img src="{% static 'img/carteles/2025_tcr_iberia.png' %}" alt="TCR championship" class="championship-poster">
     </div>
 </section>
 {% endblock %}

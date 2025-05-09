@@ -4,8 +4,18 @@
 {% block title %}Event Calendar | SimRacing EU{% endblock %}
 
 {% block content %}
+{% if not game_filter %}
 <div class="container mt-4">
     <h1>Event calendar</h1>
+{% else %}
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Assetto Corsa Events</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+{% endif %}
     
     {% for championship in championships %}
         <div class="card mb-4">
@@ -34,5 +44,11 @@
             </div>
         </div>
     {% endfor %}
+{% if not game_filter %}
 </div>
+{% else %}
+        </div>
+    </div>
+</div>
+{% endif %}
 {% endblock %}

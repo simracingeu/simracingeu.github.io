@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.text-dark-red {
+    color: #8B0000 !important;
+}
+
+.text-minor {
+    color: #ffdc42 !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea, select, label {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 .esrc-banner {
     text-align: left;
     max-width: 1200px;
@@ -83,6 +95,14 @@
 #add-community-form input[type="file"],
 #add-driver-form input[type="text"],
 #add-driver-form input[type="file"],
+.championship-poster {
+    width: 600px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 #add-driver-form select {
     width: 100%;
     padding: 10px;
@@ -179,7 +199,6 @@
     font-size: 0.9rem;
 }
 body {
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -191,8 +210,8 @@ body {
 .esrc-banner {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
-    padding: 4rem 3rem;
-    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
     border-radius: 16px;
     max-width: 1200px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
@@ -221,6 +240,7 @@ body {
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     letter-spacing: -0.5px;
     color: #ffffff;
+    font-family: 'Racing Sans One', cursive;
 }
 
 .esrc-banner h2 {
@@ -443,8 +463,8 @@ header {
 .esrc-banner {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
-    padding: 4rem 3rem;
-    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
     border-radius: 16px;
     max-width: 1200px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
@@ -473,6 +493,7 @@ header {
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     letter-spacing: -0.5px;
     color: #ffffff;
+    font-family: 'Racing Sans One', cursive;
 }
 
 .esrc-banner h2 {

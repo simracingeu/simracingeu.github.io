@@ -1,13 +1,14 @@
 const acLogo = document.getElementById('ac-logo');
 const acOptions = document.getElementById('ac-options');
-const addCommunityBtn = acOptions.querySelector('button:nth-child(3)'); 
-const addDriverBtn = acOptions.querySelector('button:nth-child(4)');
+const addCommunityBtn = acOptions.querySelector('button:nth-child(2)'); 
+const addDriverBtn = acOptions.querySelector('button:nth-child(3)');
 const gameContainer = document.querySelector('.game-container'); 
-const viewCommunitiesBtn = document.getElementById('view-communities-btn');
 const viewCalendarBtn = document.getElementById('view-calendar-btn');
 const communitiesListContainer = document.getElementById('communities-list');
 const driverCommunitySelect = document.getElementById('driver-community');
 const baseUrl = window.BASE_API_URL || 'http://localhost:8000/api';
+
+
 
 function getCookie(name) {
     let cookieValue = null;
@@ -374,93 +375,6 @@ addDriverBtn.addEventListener('click', async function() {
 
 
 
-viewCommunitiesBtn.addEventListener('click', async function() {
-    console.log('"View communities" button clicked.');
-    gameContainer.style.display = 'none'; 
-    communitiesListContainer.style.display = 'block';
-    communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Loading...</p>';
-    
-    try {
-        const response = await fetch(`${baseUrl}communities/`, {
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-        
-        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
-        const communities = await response.json();
-        
-        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2>';
-        
-        if (communities.length === 0) {
-            communitiesListContainer.innerHTML += '<p>No communities found.</p>';
-            const backButton = document.createElement('button');
-            backButton.textContent = 'Back';
-            backButton.className = 'form-button';
-            backButton.addEventListener('click', () => {
-                communitiesListContainer.style.display = 'none';
-                gameContainer.style.display = 'flex';
-                acOptions.style.display = 'none';
-            });
-            communitiesListContainer.appendChild(backButton);
-            return;
-        }
-        
-        communities.forEach(community => {
-            const communityElement = document.createElement('div');
-            communityElement.style.border = '1px solid #ccc';
-            communityElement.style.marginBottom = '10px';
-            communityElement.style.padding = '10px';
-            
-            const nameElement = document.createElement('h3');
-            nameElement.textContent = community.name;
-            
-            if (community.logo_url) {
-                const logoElement = document.createElement('img');
-                logoElement.src = community.logo_url.startsWith('http') ? community.logo_url : `${baseUrl}${community.logo_url}`;
-                logoElement.alt = `${community.name} logo`;
-                logoElement.style.maxWidth = '200px';
-                logoElement.style.width = '200px';
-                logoElement.style.height = 'auto';
-                logoElement.style.marginTop = '5px';
-                nameElement.appendChild(document.createElement('br'));
-                nameElement.appendChild(logoElement);
-            }
-            
-            const driversCountElement = document.createElement('p');
-            driversCountElement.textContent = `Drivers: ${community.drivers_count || 0}`;
-            driversCountElement.style.textAlign = 'right';
-            driversCountElement.style.marginLeft = 'auto';
-            
-            communityElement.appendChild(nameElement);
-            communityElement.appendChild(driversCountElement);
-            communitiesListContainer.appendChild(communityElement);
-        });
-        
-        const backButton = document.createElement('button');
-        backButton.textContent = 'Back';
-        backButton.className = 'form-button';
-        backButton.addEventListener('click', () => {
-            communitiesListContainer.style.display = 'none';
-            gameContainer.style.display = 'flex';
-            acOptions.style.display = 'none';
-        });
-        communitiesListContainer.appendChild(backButton);
-        
-    } catch (error) {
-        console.error('Error loading communities:', error);
-        communitiesListContainer.innerHTML = '<h2>Assetto Corsa Communities</h2><p>Error loading communities. Please try again later.</p>';
-        const backButton = document.createElement('button');
-        backButton.textContent = 'Back';
-        backButton.className = 'form-button';
-        backButton.addEventListener('click', () => {
-            communitiesListContainer.style.display = 'none';
-            gameContainer.style.display = 'flex';
-            acOptions.style.display = 'none';
-        });
-        communitiesListContainer.appendChild(backButton);
-    }
-}); 
 
 viewCalendarBtn.addEventListener('click', async function() {
     console.log('"View event calendar" button clicked.'); 

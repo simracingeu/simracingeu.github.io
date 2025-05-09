@@ -7,8 +7,16 @@ from django.conf import settings
 from django.contrib import messages
 
 def calendar_view(request):
+    game_filter = request.GET.get('game', None)
     championships = Championship.objects.all()
-    return render(request, 'calendar.html', {'championships': championships})
+    
+    if game_filter:
+        championships = championships.filter(game=game_filter)
+    
+    return render(request, 'calendar.html', {
+        'championships': championships,
+        'game_filter': game_filter
+    })
 
 
 

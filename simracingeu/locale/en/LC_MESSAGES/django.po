@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-09 17:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\templates\about.html:10
+msgid "About Us"
+msgstr ""
+
+#: .\templates\about.html:11
+msgid ""
+"SimRacingEU was born from a shared passion for virtual motorsport and the "
+"desire to unite the best simracing communities across Europe in a "
+"competitive, professional, and accessible experience."
+msgstr ""
+
+#: .\templates\about.html:12
+msgid ""
+"This project is driven by foroassetto, a well-established Spanish-speaking "
+"simracing community with years of experience organizing events, managing "
+"servers, and fostering an active and engaged community."
+msgstr ""
+
+#: .\templates\about.html:16
+msgid "Our Mission"
+msgstr ""
+
+#: .\templates\about.html:17
+msgid ""
+"Our goal is clear: to create a European championship between communities "
+"that promotes healthy competition and proud representation of each group and "
+"country."
+msgstr ""
+
+#: .\templates\about.html:18
+msgid ""
+"We want every community to feel part of something bigger, respecting their "
+"own identity while collaborating under a common banner: that of quality "
+"simracing."
+msgstr ""
+
+#: .\templates\about.html:22
+msgid "What Makes Us Unique?"
+msgstr ""
+
+#: .\templates\about.html:33
+msgid "Who We Are"
+msgstr ""
+
+#: .\templates\about.html:42
+msgid "Our Commitment"
+msgstr ""
+
+#: .\templates\base.html:66
+msgid "Language"
+msgstr ""
+
+#: .\templates\calendar.html:5
+msgid "Event Calendar"
+msgstr ""
+
+#: .\templates\calendar.html:10
+msgid "Event calendar"
+msgstr ""
+
+#: .\templates\calendar.html:15 .\templates\registration.html:44
+msgid "Assetto Corsa Events"
+msgstr ""
+
+#: .\templates\calendar.html:30
+msgid "Event"
+msgstr ""
+
+#: .\templates\calendar.html:31
+msgid "Date"
+msgstr ""
+
+#: .\templates\calendar.html:32
+msgid "Format"
+msgstr ""
+
+#: .\templates\contact.html:4
+msgid "Contact"
+msgstr ""
+
+#: .\templates\contact.html:12
+msgid "Send us a message"
+msgstr ""
+
+#: .\templates\contact.html:18
+msgid "Name"
+msgstr ""
+
+#: .\templates\contact.html:22
+msgid "Email"
+msgstr ""
+
+#: .\templates\contact.html:26
+msgid "Message"
+msgstr ""
+
+#: .\templates\contact.html:30
+msgid "Send Message"
+msgstr ""
+
+#: .\templates\faq.html:8
+msgid "Frequently Asked Questions (FAQ)"
+msgstr ""
+
+#: .\templates\faq.html:9
+msgid "Solving common queries and providing essential support."
+msgstr ""
+
+#: .\templates\faq.html:17
+msgid "Registration"
+msgstr ""
+
+#: .\templates\faq.html:37
+msgid "Championship Rules"
+msgstr ""
+
+#: .\templates\index.html:9
+msgid "SimRacingEU – The Inter-Community Racing League"
+msgstr ""
+
+#: .\templates\index.html:10
+msgid ""
+"Join Europe's premier simracing competition uniting drivers across borders..."
+msgstr ""
+
+#: .\templates\index.html:16
+msgid "Attention Simracers, Teams, and Communities Across Europe!"
+msgstr ""
+
+#: .\templates\index.html:17
+msgid ""
+"Experience the thrill of international competition and camaraderie in the "
+"European"
+msgstr ""
+
+#: .\templates\index.html:18
+msgid ""
+"SimRacing Collective Championship, an innovative, free-to-enter tournament "
+"designed to unite the continent\\"
+msgstr ""
+
+#: .\templates\index.html:19
+msgid "and celebrate the rich diversity of our European simracing culture."
+msgstr ""
+
+#: .\templates\index.html:22
+msgid "The SREU Advantage: A Pan-European SimRacing Movement"
+msgstr ""
+
+#: .\templates\legal.html:7
+msgid "Aviso Legal"
+msgstr ""
+
+#: .\templates\legal.html:8
+msgid "Información legal sobre nuestra comunidad de simracing."
+msgstr ""
+
+#: .\templates\registration.html:6
+msgid "Select a game to register a community or a driver"
+msgstr ""
+
+#: .\templates\registration.html:19 .\templates\registration.html:23
+#: .\templates\registration.html:27 .\templates\registration.html:31
+msgid "coming soon"
+msgstr ""
+
+#: .\templates\rules.html:8
+msgid "Rules"
+msgstr ""
+
+#: .\templates\rules.html:10
+msgid "Types of Penalties"
+msgstr ""
+
+#: .\templates\rules.html:49
+msgid "Software Requirements"
+msgstr ""

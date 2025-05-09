@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-09 17:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: .\templates\about.html:10
+msgid "About Us"
+msgstr "À propos de nous"
+
+#: .\templates\about.html:11
+msgid ""
+"SimRacingEU was born from a shared passion for virtual motorsport and the "
+"desire to unite the best simracing communities across Europe in a "
+"competitive, professional, and accessible experience."
+msgstr ""
+"SimRacingEU est né d'une passion commune pour le sport automobile virtuel et "
+"du désir d'unir les meilleures communautés de simracing à travers l'Europe "
+"dans une expérience compétitive, professionnelle et accessible."
+
+#: .\templates\about.html:12
+msgid ""
+"This project is driven by foroassetto, a well-established Spanish-speaking "
+"simracing community with years of experience organizing events, managing "
+"servers, and fostering an active and engaged community."
+msgstr ""
+"Ce projet est porté par foroassetto, une communauté hispanophone bien établie "
+"de simracing avec des années d'expérience dans l'organisation d'événements, "
+"la gestion de serveurs et le développement d'une communauté active et engagée."
+
+#: .\templates\about.html:16
+msgid "Our Mission"
+msgstr "Notre Mission"
+
+#: .\templates\about.html:17
+msgid ""
+"Our goal is clear: to create a European championship between communities "
+"that promotes healthy competition and proud representation of each group and "
+"country."
+msgstr ""
+"Notre objectif est clair : créer un championnat européen entre communautés "
+"qui promeut une compétition saine et une représentation fière de chaque groupe "
+"et pays."
+
+#: .\templates\about.html:18
+msgid ""
+"We want every community to feel part of something bigger, respecting their "
+"own identity while collaborating under a common banner: that of quality "
+"simracing."
+msgstr ""
+"Nous voulons que chaque communauté se sente partie prenante de quelque chose "
+"de plus grand, respectant sa propre identité tout en collaborant sous une "
+"bannière commune : celle du simracing de qualité."
+
+#: .\templates\about.html:22
+msgid "What Makes Us Unique?"
+msgstr "Ce qui nous rend uniques ?"
+
+#: .\templates\about.html:33
+msgid "Who We Are"
+msgstr "Qui sommes-nous"
+
+#: .\templates\about.html:42
+msgid "Our Commitment"
+msgstr "Notre engagement"
+
+#: .\templates\base.html:66
+msgid "Language"
+msgstr "Langue"
+
+#: .\templates\calendar.html:5
+msgid "Event Calendar"
+msgstr "Calendrier des événements"
+
+#: .\templates\calendar.html:10
+msgid "Event calendar"
+msgstr "Calendrier des événements"
+
+#: .\templates\calendar.html:15 .\templates\registration.html:44
+msgid "Assetto Corsa Events"
+msgstr "Événements Assetto Corsa"
+
+#: .\templates\calendar.html:30
+msgid "Event"
+msgstr "Événement"
+
+#: .\templates\calendar.html:31
+msgid "Date"
+msgstr "Date"
+
+#: .\templates\calendar.html:32
+msgid "Format"
+msgstr "Format"
+
+#: .\templates\contact.html:4
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\contact.html:12
+msgid "Send us a message"
+msgstr "Envoyez-nous un message"
+
+#: .\templates\contact.html:18
+msgid "Name"
+msgstr "Nom"
+
+#: .\templates\contact.html:22
+msgid "Email"
+msgstr "E-mail"
+
+#: .\templates\contact.html:26
+msgid "Message"
+msgstr "Message"
+
+#: .\templates\contact.html:30
+msgid "Send Message"
+msgstr "Envoyer le message"
+
+#: .\templates\faq.html:8
+msgid "Frequently Asked Questions (FAQ)"
+msgstr "Foire aux questions (FAQ)"
+
+#: .\templates\faq.html:9
+msgid "Solving common queries and providing essential support."
+msgstr "Résolution des questions courantes et fourniture d'un support essentiel."
+
+#: .\templates\faq.html:17
+msgid "Registration"
+msgstr "Inscription"
+
+#: .\templates\faq.html:37
+msgid "Championship Rules"
+msgstr "Règlement du championnat"
+
+#: .\templates\index.html:9
+msgid "SimRacingEU – The Inter-Community Racing League"
+msgstr "SimRacingEU – La ligue de course inter-communautaire"
+
+#: .\templates\index.html:10
+msgid ""
+"Join Europe's premier simracing competition uniting drivers across borders..."
+msgstr ""
+"Rejoignez la première compétition de simracing d'Europe unissant les pilotes par-delà les frontières..."
+
+#: .\templates\index.html:16
+msgid "Attention Simracers, Teams, and Communities Across Europe!"
+msgstr "Attention simracers, équipes et communautés à travers l'Europe !"
+
+#: .\templates\index.html:17
+msgid ""
+"Experience the thrill of international competition and camaraderie in the "
+"European"
+msgstr ""
+"Vivez l'émotion de la compétition internationale et de la camaraderie dans le "
+"championnat européen"
+
+#: .\templates\index.html:18
+msgid ""
+"SimRacing Collective Championship, an innovative, free-to-enter tournament "
+"designed to unite the continent\\"
+msgstr ""
+"SimRacing Collective Championship, un tournoi innovant et gratuit "
+"conçu pour unir le continent"
+
+#: .\templates\index.html:19
+msgid ""
+"and celebrate the rich diversity of our European simracing culture."
+msgstr ""
+"et célébrer la riche diversité de notre culture européenne de simracing."
+
+#: .\templates\index.html:22
+msgid "The SREU Advantage: A Pan-European SimRacing Movement"
+msgstr "L'avantage SREU : Un mouvement de SimRacing paneuropéen"
+
+#: .\templates\legal.html:7
+msgid "Aviso Legal"
+msgstr "Mentions légales"
+
+#: .\templates\legal.html:8
+msgid "Información legal sobre nuestra comunidad de simracing."
+msgstr "Informations légales sur notre communauté de simracing."
+
+#: .\templates\registration.html:6
+msgid "Select a game to register a community or a driver"
+msgstr "Sélectionnez un jeu pour inscrire une communauté ou un pilote"
+
+#: .\templates\registration.html:19 .\templates\registration.html:23
+#: .\templates\registration.html:27 .\templates\registration.html:31
+msgid "coming soon"
+msgstr "bientôt disponible"
+
+#: .\templates\rules.html:8
+msgid "Rules"
+msgstr "Règles"
+
+#: .\templates\rules.html:10
+msgid "Types of Penalties"
+msgstr "Types de pénalités"
+
+#: .\templates\rules.html:49
+msgid "Software Requirements"
+msgstr "Prérequis logiciels"

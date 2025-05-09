@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 {% load static %}
+{% load i18n %}
 <html lang="es">
 <head>
     <script>
         window.BASE_API_URL = "{% url 'api-root' %}";
+        
+        function setLanguage(languageCode) {
+            fetch(`/i18n/setlang/`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: `language=${languageCode}`
+            }).then(() => {
+                window.location.reload();
+            });
+        }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,6 +60,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <select class="form-select" aria-label="Language selector" onchange="setLanguage(this.value)" style="width: auto; margin-left: 10px;">
+                                <option selected disabled>{% trans 'Language' %}</option>
+                                {% get_available_languages as LANGUAGES %}
+                                {% get_language_info_list for LANGUAGES as languages %}
+                                {% for language in languages %}
+                                    <option value="{{ language.code }}">{{ language.name_local }}</option>
+                                {% endfor %}
+                            </select>
                         </li>
                     </ul>
                 </div>

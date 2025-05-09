@@ -44,7 +44,7 @@ addCommunityBtn.addEventListener('click', function() {
     form.id = 'add-community-form';
     
     const nameLabel = document.createElement('label');
-    nameLabel.textContent = 'Community name:';
+    nameLabel.textContent = gettext('Community name:');
     nameLabel.className = 'form-label';
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
@@ -53,7 +53,7 @@ addCommunityBtn.addEventListener('click', function() {
     nameInput.required = true;
     
     const descLabel = document.createElement('label');
-    descLabel.textContent = 'Description:';
+    descLabel.textContent = gettext('Description:');
     descLabel.className = 'form-label';
     const descInput = document.createElement('textarea');
     descInput.className = 'form-control';
@@ -61,7 +61,7 @@ addCommunityBtn.addEventListener('click', function() {
     descInput.rows = 3;
     
     const countryLabel = document.createElement('label');
-    countryLabel.textContent = 'Country:';
+    countryLabel.textContent = gettext('Country:');
     countryLabel.className = 'form-label';
     const countryInput = document.createElement('select');
     countryInput.className = 'form-select';
@@ -77,7 +77,7 @@ addCommunityBtn.addEventListener('click', function() {
     
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
-    defaultOption.textContent = '-- Select a country --';
+    defaultOption.textContent = gettext('-- Select a country --');
     defaultOption.disabled = true;
     defaultOption.selected = true;
     countryInput.appendChild(defaultOption);
@@ -92,7 +92,7 @@ addCommunityBtn.addEventListener('click', function() {
     });
     
     const logoLabel = document.createElement('label');
-    logoLabel.textContent = 'Logo:';
+    logoLabel.textContent = gettext('Logo:');
     logoLabel.className = 'form-label';
     const logoInput = document.createElement('input');
     logoInput.type = 'file';
@@ -101,7 +101,7 @@ addCommunityBtn.addEventListener('click', function() {
     logoInput.accept = 'image/*';
     
     const discordLabel = document.createElement('label');
-    discordLabel.textContent = 'Discord URL:';
+    discordLabel.textContent = gettext('Discord URL:');
     discordLabel.className = 'form-label';
     const discordInput = document.createElement('input');
     discordInput.type = 'url';
@@ -109,7 +109,7 @@ addCommunityBtn.addEventListener('click', function() {
     discordInput.name = 'discord_url';
     
     const websiteLabel = document.createElement('label');
-    websiteLabel.textContent = 'Website:';
+    websiteLabel.textContent = gettext('Website:');
     websiteLabel.className = 'form-label';
     const websiteInput = document.createElement('input');
     websiteInput.type = 'url';
@@ -117,7 +117,7 @@ addCommunityBtn.addEventListener('click', function() {
     websiteInput.name = 'website_url';
     
     const patreonLabel = document.createElement('label');
-    patreonLabel.textContent = 'Patreon URL:';
+    patreonLabel.textContent = gettext('Patreon URL:');
     patreonLabel.className = 'form-label';
     const patreonInput = document.createElement('input');
     patreonInput.type = 'url';
@@ -127,12 +127,12 @@ addCommunityBtn.addEventListener('click', function() {
     const submitBtn = document.createElement('button');
     submitBtn.type = 'submit';
     submitBtn.className = 'btn btn-primary';
-    submitBtn.textContent = 'Submit';
+    submitBtn.textContent = gettext('Submit');
     
     const backButton = document.createElement('button');
     backButton.type = 'button';
     backButton.className = 'btn btn-secondary';
-    backButton.textContent = 'Back';
+    backButton.textContent = gettext('Back');
     backButton.addEventListener('click', () => {
         communitiesListContainer.style.display = 'none';
         gameContainer.style.display = 'flex';
@@ -183,7 +183,7 @@ addCommunityBtn.addEventListener('click', function() {
     form.appendChild(patreonGroup);
     
     const emailLabel = document.createElement('label');
-    emailLabel.textContent = 'Contact Email';
+    emailLabel.textContent = gettext('Contact Email');
     emailLabel.className = 'form-label';
     const emailInput = document.createElement('input');
     emailInput.type = 'email';
@@ -306,12 +306,12 @@ addDriverBtn.addEventListener('click', async function() {
     const submitBtn = document.createElement('button');
     submitBtn.type = 'submit';
     submitBtn.className = 'btn btn-primary';
-    submitBtn.textContent = 'Submit';
+    submitBtn.textContent = gettext('Submit');
     
     const backButton = document.createElement('button');
     backButton.type = 'button';
     backButton.className = 'btn btn-secondary';
-    backButton.textContent = 'Back';
+    backButton.textContent = gettext('Back');
     backButton.addEventListener('click', () => {
         communitiesListContainer.style.display = 'none';
         gameContainer.style.display = 'flex';
@@ -399,7 +399,7 @@ viewCalendarBtn.addEventListener('click', async function() {
         console.error('Error loading events:', error); 
         modalBody.innerHTML = '<h2>Event Calendar</h2><p>Error loading events. Please try again later.</p>'; 
         const backButton = document.createElement('button'); 
-        backButton.textContent = 'Back'; 
+        backButton.textContent = gettext('Back'); 
         backButton.className = 'btn btn-secondary mt-3';
         backButton.addEventListener('click', () => { 
             calendarModal.hide();

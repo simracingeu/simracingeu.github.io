@@ -36,4 +36,17 @@
     <select id="driver-community"></select>
 </div>
 <script src="{% static 'js/script.js' %}"></script>
+<div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="calendarModalLabel">Assetto Corsa Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {% include 'calendar.html' with game_filter=True %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

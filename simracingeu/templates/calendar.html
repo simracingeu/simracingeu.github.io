@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Event Calendar | SimRacing EU{% endblock %}
+{% block title %}{% trans 'Event Calendar' %} | SimRacing EU{% endblock %}
 
 {% block content %}
 {% if not game_filter %}
 <div class="container mt-4">
-    <h1>Event calendar</h1>
+    <h1>{% trans 'Event calendar' %}</h1>
 {% else %}
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title">Assetto Corsa Events</h5>
+            <h5 class="modal-title">{% trans 'Assetto Corsa Events' %}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -26,9 +27,9 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Event</th>
-                            <th>Date</th>
-                            <th>Format</th>
+                            <th>{% trans 'Event' %}</th>
+                            <th>{% trans 'Date' %}</th>
+                            <th>{% trans 'Format' %}</th>
                         </tr>
                     </thead>
                     <tbody>

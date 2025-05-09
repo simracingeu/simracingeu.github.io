@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 <div class="container mt-4">
     <div class="esrc-banner">
         <div class="banner-summary">
-            <h2>SimRacingEU – The Inter-Community Racing League</h2>
-            <p class="short-text">Join Europe's premier simracing competition uniting drivers across borders...</p>
+            <h2>{% trans 'SimRacingEU – The Inter-Community Racing League' %}</h2>
+            <p class="short-text">{% trans "Join Europe's premier simracing competition uniting drivers across borders..." %}</p>
             <button class="read-more-btn">Read More</button>
         </div>
         <div class="banner-full-content" style="display:none;">

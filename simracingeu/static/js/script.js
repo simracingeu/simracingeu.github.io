@@ -36,6 +36,7 @@ acLogo.addEventListener('click', function() {
 
 addCommunityBtn.addEventListener('click', function() {
     gameContainer.style.display = 'none';
+    document.querySelector('p').style.display = 'none';
     communitiesListContainer.style.display = 'block';
     communitiesListContainer.innerHTML = '<h2>Add New Community</h2>';
     
@@ -136,6 +137,7 @@ addCommunityBtn.addEventListener('click', function() {
         communitiesListContainer.style.display = 'none';
         gameContainer.style.display = 'flex';
         acOptions.style.display = 'none';
+        document.querySelector('p').style.display = 'block';
     });
     
     const formGroup = document.createElement('div');
@@ -241,6 +243,7 @@ addCommunityBtn.addEventListener('click', function() {
 
 addDriverBtn.addEventListener('click', async function() {
     gameContainer.style.display = 'none';
+    document.querySelector('p').style.display = 'none';
     communitiesListContainer.style.display = 'block';
     communitiesListContainer.innerHTML = '<h2>Add New Driver</h2>';
     
@@ -313,6 +316,7 @@ addDriverBtn.addEventListener('click', async function() {
         communitiesListContainer.style.display = 'none';
         gameContainer.style.display = 'flex';
         acOptions.style.display = 'none';
+        document.querySelector('p').style.display = 'block';
     });
     
     const nameGroup = document.createElement('div');
@@ -377,72 +381,30 @@ addDriverBtn.addEventListener('click', async function() {
 
 
 viewCalendarBtn.addEventListener('click', async function() {
-    console.log('"View event calendar" button clicked.'); 
-    gameContainer.style.display = 'none'; 
-    communitiesListContainer.style.display = 'block'; 
-    communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Loading events...</p>'; 
+    const calendarModal = new bootstrap.Modal(document.getElementById('calendarModal'));
+    calendarModal.show();
+    
+    const modalBody = document.querySelector('#calendarModal .modal-body');
+    modalBody.innerHTML = '<p>Loading events...</p>'; 
 
-    try { 
-        const response = await fetch(`${baseUrl}events/`); 
-        if (!response.ok) { 
-            throw new Error(`HTTP Error: ${response.status}`); 
-        } 
-        const events = await response.json(); 
-
-        communitiesListContainer.innerHTML = '<h2>Event Calendar</h2>'; 
-
-        if (events.length === 0) { 
-            communitiesListContainer.innerHTML += '<p>No events scheduled yet.</p>'; 
-            const backButton = document.createElement('button'); 
-            backButton.textContent = 'Back'; 
-            backButton.className = 'form-button'; 
-            backButton.addEventListener('click', () => { 
-                communitiesListContainer.style.display = 'none'; 
-                gameContainer.style.display = 'flex'; 
-                acOptions.style.display = 'none'; 
-            }); 
-            communitiesListContainer.appendChild(backButton); 
-            return; 
-        } 
-
-        events.forEach(event => {
-            const eventElement = document.createElement('div');
-            eventElement.style.border = '1px solid #ccc';
-            eventElement.style.marginBottom = '10px';
-            eventElement.style.padding = '10px';
-            
-            const eventName = document.createElement('h3');
-            eventName.textContent = event.name;
-            eventName.style.padding = '10px';
-            
-            const eventDateInfo = document.createElement('p');
-            const [dateStr, timeStr] = event.fecha.replace('Z', '').split('T');
-            const [year, month, day] = dateStr.split('-');
-            const [hours, minutes] = timeStr.split(':');
-            const eventDate = new Date(year, month-1, day, hours, minutes);
-            const formattedDate = eventDate.toLocaleDateString('es-ES');
-            const formattedTime = eventDate.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false });
-            eventDateInfo.textContent = `Date: ${formattedDate} Starts at: ${formattedTime.replace('.', ':')}`;
-            eventDateInfo.style.padding = '10px';
-
-            eventElement.appendChild(eventName);
-            eventElement.appendChild(eventDateInfo);
-            communitiesListContainer.appendChild(eventElement);
-        });
+    try {
+            const response = await fetch(`/calendar/?modal=true&game=1`); 
+            if (!response.ok) { 
+                throw new Error(`HTTP Error: ${response.status}`); 
+            } 
+            const template = await response.text();
+            modalBody.innerHTML = template;
 
     } catch (error) { 
         console.error('Error loading events:', error); 
-        communitiesListContainer.innerHTML = '<h2>Event Calendar</h2><p>Error loading events. Please try again later.</p>'; 
+        modalBody.innerHTML = '<h2>Event Calendar</h2><p>Error loading events. Please try again later.</p>'; 
         const backButton = document.createElement('button'); 
         backButton.textContent = 'Back'; 
-        backButton.className = 'form-button';
-        backButton.style.marginTop = '1rem'; 
+        backButton.className = 'btn btn-secondary mt-3';
         backButton.addEventListener('click', () => { 
-            communitiesListContainer.style.display = 'none'; 
-            gameContainer.style.display = 'flex'; 
-            acOptions.style.display = 'none'; 
+            calendarModal.hide();
         }); 
-        communitiesListContainer.appendChild(backButton); 
+        modalBody.appendChild(backButton); 
     } 
 });
 

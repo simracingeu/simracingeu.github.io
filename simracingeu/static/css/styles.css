@@ -158,6 +158,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea, select, l
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+#add-driver-form .form-control, #add-driver-form .form-select {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #communities-list h2 {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -413,6 +419,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+#add-driver-form .form-control, #add-driver-form .form-select {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #communities-list h2 {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -665,6 +677,12 @@ header {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#add-driver-form .form-control, #add-driver-form .form-select {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #communities-list h2 {

@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
+
 
 {% block title %}Rules | SimRacing EU{% endblock %}
 
@@ -48,97 +50,97 @@
     </p>
     <h2 class="mt-5 mb-3"><strong>{% trans 'Software Requirements' %}</strong></h2>
     <p class="lead">
-        <strong>Mandatory and Recommended Software</strong>
-        - The use of the latest version of Real Penalty is mandatory
-        - The Real Penalty package includes the Helicorsa app (strongly recommended for visibility)
-        - Presence in Discord voice channels during qualifying and races is mandatory
+        <strong>{% trans 'Mandatory and Recommended Software' %}</strong>
+        - {% trans 'The use of the latest version of Real Penalty is mandatory' %}
+        - {% trans 'The Real Penalty package includes the Helicorsa app (strongly recommended for visibility)' %}
+        - {% trans 'Presence in Discord voice channels during qualifying and races is mandatory' %}
 
-        Note: Absence without valid reason will be considered a moderate penalty (severe for repeat offenses)
+        {% trans 'Note: Absence without valid reason will be considered a moderate penalty (severe for repeat offenses)' %}
     </p>
 
-    <h2 class="mt-5 mb-3"><strong>Event Punctuality</strong></h2>
+    <h2 class="mt-5 mb-3"><strong>{% trans 'Event Punctuality' %}</strong></h2>
     <p class="lead">
-        <strong>All official SimRacingEU events are scheduled at predefined times</strong>
-        - Times won't change unless >90% of drivers are absent (event cancellation)
-        - Event info available at: 🔗 <a href="http://simracingeu.club/s1">http://simracingeu.club/s1</a>
-        - Drivers must know number of laps (available via ACSM from championship start)
+        <strong>{% trans 'All official SimRacingEU events are scheduled at predefined times' %}</strong>
+        - {% trans "Times won't change unless >90% of drivers are absent (event cancellation)" %}
+        - {% trans 'Event info available at:' %} 🔗 <a href="http://simracingeu.club/s1">http://simracingeu.club/s1</a>
+        - {% trans 'Drivers must know number of laps (available via ACSM from championship start)' %}
     </p>
 
-    <h2 class="mt-5 mb-3"><strong>Track Limits</strong></h2>
+    <h2 class="mt-5 mb-3"><strong>{% trans 'Track Limits' %}</strong></h2>
     <p class="lead">
-        <strong>Each circuit has defined lateral limits</strong>
-        - Usually marked by solid white lines
-        - Some circuits include curbs and green zones as track
+        <strong>{% trans 'Each circuit has defined lateral limits' %}</strong>
+        - {% trans 'Usually marked by solid white lines' %}
+        - {% trans 'Some circuits include curbs and green zones as track' %}
 
-        <strong>Minimum requirement:</strong> One tire must remain within limits at all times
+        <strong>{% trans 'Minimum requirement:' %}</strong> {% trans 'One tire must remain within limits at all times' %}
 
-        Enforcement based on:
-        - Official Kunos limits for original circuits
-        - Custom limits for modded tracks
-        - Real Penalty recognition during events
+        {% trans 'Enforcement based on:' %}
+        - {% trans 'Official Kunos limits for original circuits' %}
+        - {% trans 'Custom limits for modded tracks' %}
+        - {% trans 'Real Penalty recognition during events' %}
     </p>
-    <h2 class="mt-5 mb-3"><strong>Conduct on Track</strong></h2>
+    <h2 class="mt-5 mb-3"><strong>{% trans 'Conduct on Track' %}</strong></h2>
     <p class="lead">
-        <strong>Race Start and Opening Laps</strong>
-        - Maintain safe distance during first two laps
-        - Maximum caution advised (opening lap incidents have greater consequences)
+        <strong>{% trans 'Race Start and Opening Laps' %}</strong>
+        - {% trans 'Maintain safe distance during first two laps' %}
+        - {% trans 'Maximum caution advised (opening lap incidents have greater consequences)' %}
 
-        <strong>Braking Rules:</strong>
-        - Sudden braking on straights: moderate penalty
-        - Early braking accepted as defensive technique (attacker's responsibility to keep distance)
-    </p>
-
-    <h2 class="mt-5 mb-3"><strong>Back to Pits Rules</strong></h2>
-    <p class="lead">
-        <strong>General Rules:</strong>
-        - Only allowed when car is completely undrivable/poses danger
-        - Using it blocks car in pits
-
-        <strong>Race Sessions:</strong>
-        - Attempting to rejoin after use → automatic disqualification
-
-        <strong>Qualifying Sessions:</strong>
-        - Driver cannot continue after use
-        - Must start race with best pre-use time
-
-        <strong>Pit Box Exception:</strong>
-        ✅ Allowed if car is within assigned pit stall
+        <strong>{% trans 'Braking Rules:' %}</strong>
+        - {% trans 'Sudden braking on straights: moderate penalty' %}
+        - {% trans 'Early braking accepted as defensive technique (attacker\'s responsibility to keep distance)' %}
     </p>
 
-    <h2 class="mt-5 mb-3"><strong>Incident Classification</strong></h2>
+    <h2 class="mt-5 mb-3"><strong>{% trans 'Back to Pits Rules' %}</strong></h2>
     <p class="lead">
-        <strong>Definition:</strong> Any contact with another driver
+        <strong>{% trans 'General Rules:' %}</strong>
+        - {% trans 'Only allowed when car is completely undrivable/poses danger' %}
+        - {% trans 'Using it blocks car in pits' %}
 
-        <strong>Moderate Penalty:</strong> If contact causes spin/off-track
+        <strong>{% trans 'Race Sessions:' %}</strong>
+        - {% trans 'Attempting to rejoin after use → automatic disqualification' %}
 
-        <strong>Severity Factors:</strong>
-        - Speed difference at contact
-        - Intentionality
-        - Repeat offenses
-        - Consequences
-        - Failure to yield position
+        <strong>{% trans 'Qualifying Sessions:' %}</strong>
+        - {% trans 'Driver cannot continue after use' %}
+        - {% trans 'Must start race with best pre-use time' %}
 
-        <strong>Light Contact (1-on-1):</strong>
-        - 1-2 contacts (no spin/off-track) → Minor
-        - 1 contact causing spin/off-track → Moderate
-        - 3+ contacts in same corner → Moderate/Severe
+        <strong>{% trans 'Pit Box Exception:' %}</strong>
+        ✅ {% trans 'Allowed if car is within assigned pit stall' %}
+    </p>
 
-        <strong>Moderate Contact (1-on-1):</strong>
-        - Causes spin/complete off-track
-        - 3+ incidents without yielding → Severe penalty
+    <h2 class="mt-5 mb-3"><strong>{% trans 'Incident Classification' %}</strong></h2>
+    <p class="lead">
+        <strong>{% trans 'Definition:' %}</strong> {% trans 'Any contact with another driver' %}
 
-        ⏱️ Different criteria may apply to endurance events
+        <strong>{% trans 'Moderate Penalty:' %}</strong> {% trans 'If contact causes spin/off-track' %}
+
+        <strong>{% trans 'Severity Factors:' %}</strong>
+        - {% trans 'Speed difference at contact' %}
+        - {% trans 'Intentionality' %}
+        - {% trans 'Repeat offenses' %}
+        - {% trans 'Consequences' %}
+        - {% trans 'Failure to yield position' %}
+
+        <strong>{% trans 'Light Contact (1-on-1):' %}</strong>
+        - {% trans '1-2 contacts (no spin/off-track) → Minor' %}
+        - {% trans '1 contact causing spin/off-track → Moderate' %}
+        - {% trans '3+ contacts in same corner → Moderate/Severe' %}
+
+        <strong>{% trans 'Moderate Contact (1-on-1):' %}</strong>
+        - {% trans 'Causes spin/complete off-track' %}
+        - {% trans '3+ incidents without yielding → Severe penalty' %}
+
+        ⏱️ {% trans 'Different criteria may apply to endurance events' %}
     </p>
     <p>
-        <strong>Possible Collisions</strong>
+        <strong>{% trans 'Possible Collisions' %}</strong>
 
-        The following details the possible collision scenarios that have been differentiated:
+        {% trans 'The following details the possible collision scenarios that have been differentiated:' %}
 
-        <strong>Rear-end collision on a straight:</strong>
+        <strong>{% trans 'Rear-end collision on a straight:' %}</strong>
         This typically occurs in braking zones. Depending on the consequences of the collision, speed differential, loss
         of control, and yielding of position, it may be classified as Light-Moderate.
 
-        <strong>Side collision:</strong>
+        <strong>{% trans 'Side collision:' %}</strong>
         This usually occurs due to not using radar apps (e.g., Helicorsa) in a visible screen position. Depending on the
         consequences, speed differential, loss of control, and yielding of position, it may be classified as
         Light-Moderate.

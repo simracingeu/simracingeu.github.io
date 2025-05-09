@@ -42,25 +42,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'registration' %}">Registration</a>
+                            <a class="nav-link" href="{% url 'registration' %}">{% trans 'Registration' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'calendar' %}">Event Calendar</a>
+                            <a class="nav-link" href="{% url 'calendar' %}">{% trans 'Event Calendar' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'about' %}">About us</a>
+                            <a class="nav-link" href="{% url 'about' %}">{% trans 'About us' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                            <a class="nav-link" href="{% url 'contact' %}">{% trans 'Contact' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'legal' %}">Legal Pages</a>
+                            <a class="nav-link" href="{% url 'legal' %}">{% trans 'Legal Pages' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'rules' %}">Championship Rules</a>
+                            <a class="nav-link" href="{% url 'rules' %}">{% trans 'Championship Rules' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
+                            <a class="nav-link" href="{% url 'faq' %}">{% trans 'FAQ' %}</a>
                         </li>
                         <li class="nav-item">
                             <select class="form-select" aria-label="Language selector" onchange="setLanguage(this.value)" style="width: auto; margin-left: 10px;">
@@ -84,7 +84,7 @@
     </main>
     
     <footer>
-        <p>&copy; {% now "Y" %} SimRacing EU. All rights reserved.</p>
+        <p>&copy; {% now "Y" %} SimRacing EU. {% trans 'All rights reserved.' %}</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

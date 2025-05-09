@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
 
 {% block title %}FAQ | SimRacing EU{% endblock %}
 
@@ -16,27 +18,27 @@
         <div class="faq-section" id="registro">
             <h3>{% trans 'Registration' %}</h3>
             <div class="faq-item">
-                <div class="faq-question">How do I register for the championship?</div>
-                <div class="faq-answer">Information about the registration process will be provided on the championship's main page or through a specific registration link. Make sure to follow all the indicated steps.</div>
+                <div class="faq-question">{% trans 'How do I register for the championship?' %}</div>
+                <div class="faq-answer">{% trans "Information about the registration process will be provided on the championship's main page or through a specific registration link. Make sure to follow all the indicated steps." %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Is there a registration deadline?</div>
-                <div class="faq-answer">Yes, there is usually a registration deadline. This date will be announced in the championship information. Register before the deadline to secure your participation.</div>
+                <div class="faq-question">{% trans 'Is there a registration deadline?' %}</div>
+                <div class="faq-answer">{% trans 'Yes, there is usually a registration deadline. This date will be announced in the championship information. Register before the deadline to secure your participation.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What information do I need to register?</div>
-                <div class="faq-answer">Typically, you will be asked to provide your name, contact information, player ID (if applicable), and possibly details about your simulation setup.</div>
+                <div class="faq-question">{% trans 'What information do I need to register?' %}</div>
+                <div class="faq-answer">{% trans 'Typically, you will be asked to provide your name, contact information, player ID (if applicable), and possibly details about your simulation setup.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Can I register after the championship has started?</div>
-                <div class="faq-answer">According to regulations, new drivers can join until 50% of the championship has passed. After that point, registrations will close unless otherwise specified.</div>
+                <div class="faq-question">{% trans 'Can I register after the championship has started?' %}</div>
+                <div class="faq-answer">{% trans 'According to regulations, new drivers can join until 50% of the championship has passed. After that point, registrations will close unless otherwise specified.' %}</div>
             </div>
         </div>
     
         <div class="faq-section" id="reglas-campeonato">
             <h3>{% trans 'Championship Rules' %}</h3>
             <div class="faq-item">
-                <div class="faq-question">What are the types of penalties in the championship?</div>
+                <div class="faq-question">{% trans 'What are the types of penalties in the championship?' %}</div>
                 <div class="faq-answer">
                     The types of penalties defined by their impact on the driver are:
                     <ul>
@@ -67,59 +69,59 @@
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What is considered unsportsmanlike driving?</div>
-                <div class="faq-answer">Any action that violates championship rules, endangers other drivers, or attempts to gain an unfair advantage is considered unsportsmanlike driving. This may include sudden braking, aggressive blocking, or not respecting blue flags.</div>
+                <div class="faq-question">{% trans 'What is considered unsportsmanlike driving?' %}</div>
+                <div class="faq-answer">{% trans 'Any action that violates championship rules, endangers other drivers, or attempts to gain an unfair advantage is considered unsportsmanlike driving. This may include sudden braking, aggressive blocking, or not respecting blue flags.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">How are on-track incidents handled?</div>
-                <div class="faq-answer">Any contact with another driver is considered an incident. A <strong>Moderate Penalty</strong> will be applied if the contact causes a spin or track departure. Severity is assessed based on speed difference, intent, recurrence, and consequences. Specific criteria are defined for light and moderate contacts in one-on-one situations.</div>
+                <div class="faq-question">{% trans 'How are on-track incidents handled?' %}</div>
+                <div class="faq-answer">{% trans 'Any contact with another driver is considered an incident. A ' %}<strong>{% trans 'Moderate Penalty' %}</strong>{% trans ' will be applied if the contact causes a spin or track departure. Severity is assessed based on speed difference, intent, recurrence, and consequences. Specific criteria are defined for light and moderate contacts in one-on-one situations.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What rules apply for the start and first laps?</div>
-                <div class="faq-answer">It is recommended to maintain a safe distance during the first two laps. Maximum caution is advised as incidents in the first lap have greater consequences.</div>
+                <div class="faq-question">{% trans 'What rules apply for the start and first laps?' %}</div>
+                <div class="faq-answer">{% trans 'It is recommended to maintain a safe distance during the first two laps. Maximum caution is advised as incidents in the first lap have greater consequences.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What are the rules about braking on track?</div>
-                <div class="faq-answer">Sudden braking on straights is considered a moderate penalty. Early braking as a defensive technique is allowed, with the responsibility on the attacking driver to maintain distance.</div>
+                <div class="faq-question">{% trans 'What are the rules about braking on track?' %}</div>
+                <div class="faq-answer">{% trans 'Sudden braking on straights is considered a moderate penalty. Early braking as a defensive technique is allowed, with the responsibility on the attacking driver to maintain distance.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuándo se permite volver a boxes?</div>
-                <div class="faq-answer">Solo se permite volver a boxes cuando el coche está completamente inutilizable o representa un peligro. Usarlo bloquea el coche en boxes. En sesiones de carrera, intentar reincorporarse después de usarlo conlleva la descalificación automática. En clasificación, el piloto no puede continuar y debe iniciar la carrera con su mejor tiempo previo al uso. Se permite si el coche está dentro del box asignado.</div>
+                <div class="faq-question">{% trans '¿Cuándo se permite volver a boxes?' %}</div>
+                <div class="faq-answer">{% trans 'Solo se permite volver a boxes cuando el coche está completamente inutilizable o representa un peligro. Usarlo bloquea el coche en boxes. En sesiones de carrera, intentar reincorporarse después de usarlo conlleva la descalificación automática. En clasificación, el piloto no puede continuar y debe iniciar la carrera con su mejor tiempo previo al uso. Se permite si el coche está dentro del box asignado.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué se considera un contacto ligero en pista?</div>
-                <div class="faq-answer">En un enfrentamiento uno contra uno, se consideran contactos ligeros 1 o 2 contactos que no causen un trompo o salida de pista.</div>
+                <div class="faq-question">{% trans 'What is considered light contact on track?' %}</div>
+                <div class="faq-answer">{% trans 'In a one-on-one battle, 1 or 2 contacts that don\'t cause a spin or track departure are considered light contacts.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué se considera un contacto moderado en pista?</div>
-                <div class="faq-answer">En un enfrentamiento uno contra uno, se considera contacto moderado aquel que causa un trompo o una salida de pista completa. Tres o más incidentes sin ceder la posición pueden resultar en una penalización severa.</div>
+                <div class="faq-question">{% trans 'What is considered moderate contact on track?' %}</div>
+                <div class="faq-answer">{% trans 'In a one-on-one battle, contact that causes a spin or complete track departure is considered moderate. Three or more incidents without yielding position may result in a severe penalty.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cómo se clasifican las colisiones por alcance en recta?</div>
-                <div class="faq-answer">Las colisiones por alcance en recta, que suelen ocurrir en zonas de frenado, pueden clasificarse como Ligeras o Moderadas dependiendo de las consecuencias, la diferencia de velocidad, la pérdida de control y la cesión de posición.</div>
+                <div class="faq-question">{% trans 'How are straight-line rear-end collisions classified?' %}</div>
+                <div class="faq-answer">{% trans 'Straight-line rear-end collisions, which usually occur in braking zones, can be classified as Light or Moderate depending on the consequences, speed difference, loss of control, and position surrender.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cómo se clasifican las colisiones laterales?</div>
-                <div class="faq-answer">Las colisiones laterales suelen ocurrir por no utilizar aplicaciones de radar como Helicorsa en una posición visible de la pantalla. Dependiendo de las consecuencias, la diferencia de velocidad, la pérdida de control y la cesión de posición, pueden clasificarse como Ligeras o Moderadas.</div>
+                <div class="faq-question">{% trans 'How are side collisions classified?' %}</div>
+                <div class="faq-answer">{% trans 'Side collisions usually occur from not using radar apps like Helicorsa in a visible screen position. Depending on consequences, speed difference, loss of control, and position surrender, they can be classified as Light or Moderate.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué reglas se aplican en las curvas en paralelo?</div>
+                <div class="faq-question">{% trans 'What rules apply in parallel curves?' %}</div>
                 <div class="faq-answer">
                     <ul>
-                        <li><strong>Coches alineados frontalmente:</strong> En una batalla deportiva, se permiten ligeros ajustes de trayectoria que permitan contramaniobras. Ajustes o posicionamientos que abusen de la posición en pista pueden clasificarse como Moderados.</li>
-                        <li><strong>Coches no alineados (solapamiento de media carrocería contra el frente del oponente):</strong> Se considera una acción abusiva, sin permitir batalla deportiva y clasificada como Moderada.</li>
-                        <li><strong>Parte trasera del coche exterior contra el frente del interior:</strong> Se revisará y podrá clasificarse como Ligera/Moderada.</li>
-                        <li><strong>Cuatro o más coches alineados en una zona de frenado:</strong> Cada piloto debe respetar su carril "virtual". Salir de este carril para hacer contacto abusivo se clasificará como Moderado.</li>
+                        <li><strong>{% trans 'Front-aligned cars:' %}</strong> {% trans 'In a sporting battle, slight trajectory adjustments that allow counter-maneuvers are permitted. Adjustments or positioning that abuse track position may be classified as Moderate.' %}</li>
+                        <li><strong>{% trans 'Non-aligned cars (half-car overlap against opponent\'s front):' %}</strong> {% trans 'This is considered abusive behavior, not allowing sporting battle, and classified as Moderate.' %}</li>
+                        <li><strong>{% trans 'Rear of outside car against front of inside car:' %}</strong> {% trans 'Will be reviewed and may be classified as Light/Moderate.' %}</li>
+                        <li><strong>{% trans 'Four or more cars aligned in a braking zone:' %}</strong> {% trans 'Each driver must respect their "virtual" lane. Leaving this lane to make abusive contact will be classified as Moderate.' %}</li>
                     </ul>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué sucede en caso de una salida de pista parcial?</div>
-                <div class="faq-answer">Si el piloto defensor pierde el control al pisar la grava y el piloto atacante (cercano por detrás) colisiona, esto puede analizarse como un incidente no punible debido a la pérdida de control del defensor.</div>
+                <div class="faq-question">{% trans 'What happens in case of a partial track departure?' %}</div>
+                <div class="faq-answer">{% trans 'If the defending driver loses control by hitting the gravel and the attacking driver (close behind) collides, this may be analyzed as a non-punishable incident due to the defender\'s loss of control.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué sucede en caso de una salida de pista completa?</div>
-                <div class="faq-answer">Se revisará para determinar si el piloto atacante podría haber evitado la colisión. Podrá clasificarse como Ligera/Moderada.</div>
+                <div class="faq-question">{% trans 'What happens in case of a complete track departure?' %}</div>
+                <div class="faq-answer">{% trans 'It will be reviewed to determine if the attacking driver could have avoided the collision. It may be classified as Light/Moderate.' %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">What are the rules for overtaking?</div>
@@ -130,42 +132,42 @@
                 <div class="faq-answer">In the case of cars aligned in the braking zone, lane invasion is prohibited.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuándo se considera que un piloto ha ganado la posición durante un adelantamiento?</div>
-                <div class="faq-answer">Se considera que un piloto ha ganado la posición (interior/exterior) solo cuando su coche adelanta completamente al defensor. Se recomienda usar Helicorsa y los espejos para evitar colisiones laterales.</div>
+                <div class="faq-question">{% trans 'When is a driver considered to have gained position during an overtake?' %}</div>
+                <div class="faq-answer">{% trans 'A driver is considered to have gained position (inside/outside) only when their car completely passes the defender. Using Helicorsa and mirrors is recommended to avoid side collisions.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuáles son las condiciones para adelantar al inicio de una curva (zona de frenado)?</div>
+                <div class="faq-question">{% trans 'What are the conditions for overtaking at the start of a curve (braking zone)?' %}</div>
                 <div class="faq-answer">
                     <ul>
-                        <li>Ambos coches llegan a una velocidad/posición similar, con el atacante al menos un 25% al lado del defensor.</li>
-                        <li>La trayectoria del atacante no obstruye el carril natural del defensor.</li>
+                        <li>{% trans 'Both cars arrive at similar speed/position, with the attacker at least 25% alongside the defender.' %}</li>
+                        <li>{% trans 'The attacker\'s trajectory does not obstruct the defender\'s natural lane.' %}</li>
                     </ul>
-                    Si estas condiciones no se cumplen, el atacante debe abortar el adelantamiento y permitir que el defensor tome su línea.
+                    {% trans 'If these conditions are not met, the attacker must abort the overtake and allow the defender to take their line.' %}
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué distancia deben mantener los pilotos entre sí?</div>
-                <div class="faq-answer">Al luchar (o doblar), los pilotos deben dejar suficiente espacio. Cerrar el espacio bruscamente se clasifica como Moderado.</div>
+                <div class="faq-question">{% trans 'What distance should drivers maintain between each other?' %}</div>
+                <div class="faq-answer">{% trans 'When battling (or lapping), drivers must leave enough space. Abruptly closing the gap is classified as Moderate.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuáles son las reglas para los pilotos doblados?</div>
-                <div class="faq-answer">Se aplican las reglas de la bandera azul. Los pilotos doblados deben mantener una línea predecible y facilitar el adelantamiento levantando el pie del acelerador. Deben ceder el paso en un máximo de 4 curvas.</div>
+                <div class="faq-question">{% trans 'What are the rules for lapped drivers?' %}</div>
+                <div class="faq-answer">{% trans 'Blue flag rules apply. Lapped drivers must maintain a predictable line and facilitate overtaking by lifting off the throttle. They must yield within a maximum of 4 corners.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuántos cambios de dirección se permiten al defender en una recta?</div>
-                <div class="faq-answer">Al defender en una recta, un piloto puede realizar un único cambio de dirección. Dos o más cambios de dirección (por ejemplo, zig-zag) están prohibidos y se clasifican como Moderados.</div>
+                <div class="faq-question">{% trans 'How many direction changes are allowed when defending on a straight?' %}</div>
+                <div class="faq-answer">{% trans 'When defending on a straight, a driver may make one direction change. Two or more direction changes (e.g., zig-zag) are prohibited and classified as Moderate.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué debe hacer un piloto tras una salida de pista parcial?</div>
-                <div class="faq-answer">Un piloto que abandona parcialmente la pista (3 ruedas fuera) debe ceder el paso a los pilotos que están en pista y evitar colisiones u obstrucciones. No hacerlo se considera Moderado.</div>
+                <div class="faq-question">{% trans 'What should a driver do after a partial track departure?' %}</div>
+                <div class="faq-answer">{% trans 'A driver who partially leaves the track (3 wheels off) must yield to drivers on track and avoid collisions or obstructions. Not doing so is considered Moderate.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cómo se utiliza el lastre en el campeonato?</div>
-                <div class="faq-answer">Se utiliza lastre para equilibrar el rendimiento. Si un coche demuestra una superioridad excesiva, los organizadores podrán aplicar lastre (con previo aviso).</div>
+                <div class="faq-question">{% trans 'How is ballast used in the championship?' %}</div>
+                <div class="faq-answer">{% trans 'Ballast is used to balance performance. If a car demonstrates excessive superiority, organizers may apply ballast (with prior notice).' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué sucede si un piloto tiene ausencias en el campeonato?</div>
-                <div class="faq-answer">Se espera que los pilotos cumplan con el calendario. Tres ausencias injustificadas en un campeonato pueden resultar en la exclusión. Los eventos podrán cancelarse si más del 90% de los pilotos están ausentes.</div>
+                <div class="faq-question">{% trans 'What happens if a driver has absences in the championship?' %}</div>
+                <div class="faq-answer">{% trans 'Drivers are expected to comply with the schedule. Three unjustified absences in a championship may result in exclusion. Events may be canceled if more than 90% of drivers are absent.' %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">¿Cómo se pueden presentar protestas?</div>
@@ -204,12 +206,12 @@
         <div class="faq-section" id="informacion-tecnica">
             <h3>Technical Information</h3>
             <div class="faq-item">
-                <div class="faq-question">What software is mandatory to participate?</div>
-                <div class="faq-answer">It is mandatory to use the latest version of Real Penalty.</div>
+                <div class="faq-question">{% trans 'What software is mandatory to participate?' %}</div>
+                <div class="faq-answer">{% trans 'It is mandatory to use the latest version of Real Penalty.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What software is recommended?</div>
-                <div class="faq-answer">It is highly recommended to use the Helicorsa application, which is included in the Real Penalty package, to improve on-track visibility.</div>
+                <div class="faq-question">{% trans 'What software is recommended?' %}</div>
+                <div class="faq-answer">{% trans 'It is highly recommended to use the Helicorsa application, which is included in the Real Penalty package, to improve on-track visibility.' %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">Is it mandatory to be in Discord voice channels during events?</div>

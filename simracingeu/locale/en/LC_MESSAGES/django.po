@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-11 01:00+0200\n"
+"POT-Creation-Date: 2025-05-11 01:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -372,17 +372,17 @@ msgid ""
 msgstr ""
 
 #: .\templates\faq.html:88
-msgid "¿Cuándo se permite volver a boxes?"
+msgid "When is returning to the pits allowed?"
 msgstr ""
 
 #: .\templates\faq.html:89
 msgid ""
-"Solo se permite volver a boxes cuando el coche está completamente "
-"inutilizable o representa un peligro. Usarlo bloquea el coche en boxes. En "
-"sesiones de carrera, intentar reincorporarse después de usarlo conlleva la "
-"descalificación automática. En clasificación, el piloto no puede continuar y "
-"debe iniciar la carrera con su mejor tiempo previo al uso. Se permite si el "
-"coche está dentro del box asignado."
+"Returning to the pits is only allowed when the car is completely unusable or "
+"represents a danger. Using it locks the car in the pits. In race sessions, "
+"attempting to rejoin after using it results in automatic disqualification. "
+"In qualifying, the driver cannot continue and must start the race with their "
+"best time before using it. It is allowed if the car is within its assigned "
+"pit box."
 msgstr ""
 
 #: .\templates\faq.html:92
@@ -598,22 +598,88 @@ msgid ""
 "than 90%% of drivers are absent."
 msgstr ""
 
+#: .\templates\faq.html:173
+msgid "How can protests be submitted?"
+msgstr ""
+
+#: .\templates\faq.html:174
+msgid ""
+"Protests must be sent by email to foroassetto@gmail.com. Public complaints "
+"against the organizers or ForoAssetto are prohibited."
+msgstr ""
+
+#: .\templates\faq.html:177
+msgid "What should a driver do if they lose control of the car?"
+msgstr ""
+
+#: .\templates\faq.html:178
+msgid ""
+"A driver who loses control must stop immediately. Partial track departure "
+"incidents that cause a drastic loss of speed or direction changes may be "
+"penalized."
+msgstr ""
+
+#: .\templates\faq.html:181
+msgid "What are the rules for pit stops?"
+msgstr ""
+
+#: .\templates\faq.html:182
+msgid ""
+"Drivers must not cross the white line at pit entry or exit. RealPenalty "
+"applies penalties (e.g., drive-through) for infractions."
+msgstr ""
+
+#: .\templates\faq.html:185
+msgid "What rules apply to parallel vehicles?"
+msgstr ""
+
+#: .\templates\faq.html:186
+msgid ""
+"Vehicles are considered parallel if any part of them overlaps. Each driver "
+"must stay in their \"imaginary lane\", even in scenarios with multiple cars."
+msgstr ""
+
 #: .\templates\faq.html:189
-msgid "¿Qué debe hacer un piloto si su coche sufre daños y queda inmovilizado?"
+msgid "What should a driver do if their car is damaged and immobilized?"
+msgstr ""
+
+#: .\templates\faq.html:190
+msgid ""
+"If a car becomes immobilized, the \"return to pits\" button should be used. "
+"Exploiting this function to gain an advantage is considered a Severe "
+"infraction."
 msgstr ""
 
 #: .\templates\faq.html:193
-msgid "¿Qué se considera una explotación de las reglas o del juego?"
+msgid "What is considered exploitation of rules or the game?"
+msgstr ""
+
+#: .\templates\faq.html:194
+msgid ""
+"Deliberate shortcuts on track, using walls to gain speed, or using invalid "
+"laps to gain advantage are considered Severe infractions. Examples include "
+"skipping chicanes, bouncing off walls to gain speed, or modifying CSP "
+"settings."
+msgstr ""
+
+#: .\templates\faq.html:197
+msgid "How should escape areas be used?"
+msgstr ""
+
+#: .\templates\faq.html:198
+msgid ""
+"The use of escape areas must avoid gaining advantages. Repeating this action "
+"may be considered Moderate or Severe."
 msgstr ""
 
 #: .\templates\faq.html:201
-msgid "¿Pueden cambiar las reglas del campeonato?"
+msgid "Can championship rules be changed?"
 msgstr ""
 
 #: .\templates\faq.html:202
 msgid ""
-"Sí, esta normativa está sujeta a actualizaciones. Los números de versión "
-"reflejan las revisiones."
+"Yes, these regulations are subject to updates. Version numbers reflect "
+"revisions."
 msgstr ""
 
 #: .\templates\faq.html:209
@@ -664,30 +730,28 @@ msgid ""
 msgstr ""
 
 #: .\templates\faq.html:237
-msgid "¿Cuáles son los límites de la pista?"
+msgid "What are the track limits?"
 msgstr ""
 
 #: .\templates\faq.html:238
 msgid ""
-"Cada circuito tiene definidos sus límites laterales, generalmente marcados "
-"por líneas blancas sólidas. Algunos circuitos incluyen los pianos y las "
-"zonas verdes como parte de la pista. El requisito mínimo es que al menos un "
-"neumático permanezca dentro de los límites en todo momento. La aplicación de "
-"los límites se basa en los límites oficiales de Kunos para los circuitos "
-"originales, límites personalizados para los circuitos modificados y el "
-"reconocimiento de Real Penalty durante los eventos."
+"Each circuit has defined its lateral limits, generally marked by solid white "
+"lines. Some circuits include curbs and green zones as part of the track. The "
+"minimum requirement is that at least one tire remains within the limits at "
+"all times. The application of limits is based on Kunos official limits for "
+"original circuits, custom limits for modified circuits, and Real Penalty "
+"recognition during events."
 msgstr ""
 
 #: .\templates\faq.html:245
-msgid "¿Cómo se otorgan los puntos en el campeonato?"
+msgid "How are championship points awarded?"
 msgstr ""
 
 #: .\templates\faq.html:246
 msgid ""
-"La información detallada sobre el sistema de puntuación del campeonato se "
-"proporcionará en un documento aparte o en la página de reglas del "
-"campeonato. Generalmente, los puntos se otorgan a los pilotos que terminan "
-"en las primeras posiciones de cada carrera."
+"Detailed information about the championship scoring system will be provided "
+"in a separate document or on the championship rules page. Typically, points "
+"are awarded to drivers who finish in the top positions of each race."
 msgstr ""
 
 #: .\templates\index.html:9

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 17:25+0200\n"
+"POT-Creation-Date: 2025-05-11 01:00+0200\n"
 "PO-Revision-Date: 2025-05-10 12:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -16,13 +16,26 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
 
-#: .\templates\about.html:10
+#: .\templates\_calendar_content.html:10 .\templates\calendar.html:30
+msgid "Event"
+msgstr "Evento"
+
+#: .\templates\_calendar_content.html:11 .\templates\calendar.html:31
+msgid "Date"
+msgstr "Fecha"
+
+#: .\templates\_calendar_content.html:12 .\templates\calendar.html:32
+msgid "Format"
+msgstr "Formato"
+
+#: .\templates\about.html:11
 msgid "About Us"
 msgstr "Sobre Nosotros"
 
-#: .\templates\about.html:11
+#: .\templates\about.html:12
 msgid ""
 "SimRacingEU was born from a shared passion for virtual motorsport and the "
 "desire to unite the best simracing communities across Europe in a "
@@ -32,58 +45,148 @@ msgstr ""
 "deseo de unir a las mejores comunidades de simracing de Europa en una "
 "experiencia competitiva, profesional y accesible."
 
-#: .\templates\about.html:12
+#: .\templates\about.html:13
 msgid ""
 "This project is driven by foroassetto, a well-established Spanish-speaking "
 "simracing community with years of experience organizing events, managing "
 "servers, and fostering an active and engaged community."
 msgstr ""
-"Este proyecto está impulsado por foroassetto, una consolidada comunidad hispanohablante "
-"de simracing con años de experiencia organizando eventos, gestionando "
-"servidores y fomentando una comunidad activa y comprometida."
+"Este proyecto está impulsado por foroassetto, una consolidada comunidad "
+"hispanohablante de simracing con años de experiencia organizando eventos, "
+"gestionando servidores y fomentando una comunidad activa y comprometida."
 
-#: .\templates\about.html:16
+#: .\templates\about.html:17
 msgid "Our Mission"
 msgstr "Nuestra Misión"
 
-#: .\templates\about.html:17
+#: .\templates\about.html:18
 msgid ""
 "Our goal is clear: to create a European championship between communities "
 "that promotes healthy competition and proud representation of each group and "
 "country."
 msgstr ""
-"Nuestro objetivo es claro: crear un campeonato europeo entre comunidades "
-"que promueva una competencia sana y la representación orgullosa de cada grupo "
-"y país."
+"Nuestro objetivo es claro: crear un campeonato europeo entre comunidades que "
+"promueva una competencia sana y la representación orgullosa de cada grupo y "
+"país."
 
-#: .\templates\about.html:18
+#: .\templates\about.html:19
 msgid ""
 "We want every community to feel part of something bigger, respecting their "
 "own identity while collaborating under a common banner: that of quality "
 "simracing."
 msgstr ""
-"Queremos que cada comunidad se sienta parte de algo más grande, respetando su "
-"propia identidad mientras colabora bajo una bandera común: la del simracing de calidad."
+"Queremos que cada comunidad se sienta parte de algo más grande, respetando "
+"su propia identidad mientras colabora bajo una bandera común: la del "
+"simracing de calidad."
 
-#: .\templates\about.html:22
+#: .\templates\about.html:23
 msgid "What Makes Us Unique?"
 msgstr "¿Qué nos hace únicos?"
 
-#: .\templates\about.html:33
+#: .\templates\about.html:25
+msgid ""
+"Free and well-organized championships, focused on delivering a great "
+"experience for drivers."
+msgstr "Campeonatos gratuitos y bien organizados, centrados en ofrecer una gran experiencia para los pilotos."
+
+#: .\templates\about.html:26
+msgid ""
+"Community and country-based representation, encouraging healthy rivalry and "
+"mutual respect."
+msgstr "Representación basada en comunidades y países, fomentando una rivalidad sana y respeto mutuo."
+
+#: .\templates\about.html:27
+msgid "Fair play and professionalism as the foundations of every race."
+msgstr "Juego limpio y profesionalismo como bases de cada carrera."
+
+#: .\templates\about.html:28
+msgid ""
+"Collaboration between simracing communities, centered on organized teams."
+msgstr "Colaboración entre comunidades de simracing, centrada en equipos organizados."
+
+#: .\templates\about.html:29
+msgid ""
+"Innovative competition formats, always aiming to maintain interest and "
+"technical challenge."
+msgstr "Formatos de competición innovadores, siempre buscando mantener el interés y el desafío técnico."
+
+#: .\templates\about.html:34
 msgid "Who We Are"
 msgstr "Quiénes Somos"
 
-#: .\templates\about.html:42
+#: .\templates\about.html:36
+msgid ""
+"An active community with 500+ members, regular championships, and expertise "
+"in technical management."
+msgstr "Una comunidad activa con más de 500 miembros, campeonatos regulares y experiencia en gestión técnica."
+
+#: .\templates\about.html:37
+msgid ""
+"Experienced with simulators like Assetto Corsa, ACC, and Le Mans Ultimate."
+msgstr "Experiencia con simuladores como Assetto Corsa, ACC y Le Mans Ultimate."
+
+#: .\templates\about.html:38
+msgid ""
+"Ongoing with other European communities, aiming to represent each country "
+"fairly."
+msgstr "Colaboración continua con otras comunidades europeas, buscando representar a cada país de manera justa."
+
+#: .\templates\about.html:43
 msgid "Our Commitment"
 msgstr "Nuestro Compromiso"
 
-#: .\templates\base.html:66
+#: .\templates\about.html:44
+msgid ""
+"This championship is not just another competition—it is a meeting point for "
+"communities that share values such as respect, continuous improvement, and a "
+"passion for motorsport."
+msgstr "Este campeonato no es solo otra competición: es un punto de encuentro para comunidades que comparten valores como el respeto, la mejora continua y la pasión por el motorsport."
+
+#: .\templates\about.html:45
+msgid ""
+"We want to grow with you, listen to you, and build the future of European "
+"simracing together."
+msgstr "Queremos crecer con ustedes, escucharles y construir juntos el futuro del simracing europeo."
+
+#: .\templates\about.html:47
+msgid "Our championship history"
+msgstr "Nuestra historia del campeonato"
+
+#: .\templates\base.html:61 .\templates\faq.html:19
+msgid "Registration"
+msgstr "Registro"
+
+#: .\templates\base.html:64 .\templates\calendar.html:5
+msgid "Event Calendar"
+msgstr "Calendario de Eventos"
+
+#: .\templates\base.html:67
+msgid "About us"
+msgstr "Sobre nosotros"
+
+#: .\templates\base.html:70 .\templates\contact.html:4
+msgid "Contact"
+msgstr "Contacto"
+
+#: .\templates\base.html:73
+msgid "Legal Pages"
+msgstr "Páginas Legales"
+
+#: .\templates\base.html:76 .\templates\faq.html:39
+msgid "Championship Rules"
+msgstr "Reglas del Campeonato"
+
+#: .\templates\base.html:79
+msgid "FAQ"
+msgstr "Preguntas Frecuentes"
+
+#: .\templates\base.html:83
 msgid "Language"
 msgstr "Idioma"
 
-#: .\templates\calendar.html:5
-msgid "Event Calendar"
-msgstr "Calendario de Eventos"
+#: .\templates\base.html:103
+msgid "All rights reserved."
+msgstr "Todos los derechos reservados."
 
 #: .\templates\calendar.html:10
 msgid "Event calendar"
@@ -92,22 +195,6 @@ msgstr "Calendario de eventos"
 #: .\templates\calendar.html:15 .\templates\registration.html:44
 msgid "Assetto Corsa Events"
 msgstr "Eventos de Assetto Corsa"
-
-#: .\templates\calendar.html:30
-msgid "Event"
-msgstr "Evento"
-
-#: .\templates\calendar.html:31
-msgid "Date"
-msgstr "Fecha"
-
-#: .\templates\calendar.html:32
-msgid "Format"
-msgstr "Formato"
-
-#: .\templates\contact.html:4
-msgid "Contact"
-msgstr "Contacto"
 
 #: .\templates\contact.html:12
 msgid "Send us a message"
@@ -129,83 +216,190 @@ msgstr "Mensaje"
 msgid "Send Message"
 msgstr "Enviar Mensaje"
 
-#: .\templates\faq.html:8
+#: .\templates\faq.html:10
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Preguntas Frecuentes (FAQ)"
 
-#: .\templates\faq.html:9
+#: .\templates\faq.html:11
 msgid "Solving common queries and providing essential support."
 msgstr "Resolviendo dudas comunes y brindando soporte esencial."
 
-#: .\templates\faq.html:17
-msgid "Registration"
-msgstr "Registro"
+#: .\templates\faq.html:14
+msgid "Search questions..."
+msgstr "Buscar preguntas..."
 
-#: .\templates\faq.html:37
-msgid "Championship Rules"
-msgstr "Reglas del Campeonato"
+#: .\templates\faq.html:21
+msgid "How do I register for the championship?"
+msgstr "¿Cómo me registro para el campeonato?"
 
-#: .\templates\index.html:9
-msgid "SimRacingEU – The Inter-Community Racing League"
-msgstr "SimRacingEU – La Liga de Carreras Intercomunidades"
-
-#: .\templates\index.html:10
+#: .\templates\faq.html:22
 msgid ""
-"Join Europe's premier simracing competition uniting drivers across borders..."
+"Information about the registration process will be provided on the "
+"championship's main page or through a specific registration link. Make sure "
+"to follow all the indicated steps."
 msgstr ""
-"Únete al principal campeonato de simracing de Europa que une a pilotos de todas partes..."
+"La información sobre el proceso de registro estará disponible en la página principal del campeonato o a través de un enlace específico. Asegúrate de seguir todos los pasos indicados."
 
-#: .\templates\index.html:16
-msgid "Attention Simracers, Teams, and Communities Across Europe!"
-msgstr "¡Atención Simracers, Equipos y Comunidades de toda Europa!"
+#: .\templates\faq.html:25
+msgid "Is there a registration deadline?"
+msgstr "¿Hay una fecha límite de registro?"
 
-#: .\templates\index.html:17
+#: .\templates\faq.html:26
 msgid ""
-"Experience the thrill of international competition and camaraderie in the "
-"European"
+"Yes, there is usually a registration deadline. This date will be announced "
+"in the championship information. Register before the deadline to secure your "
+"participation."
 msgstr ""
-"Experimenta la emoción de la competición internacional y la camaradería en el"
+"Sí, normalmente hay una fecha límite de registro. Esta fecha se anunciará en la información del campeonato. Regístrate antes de la fecha límite para asegurar tu participación."
 
-#: .\templates\index.html:18
+#: .\templates\faq.html:29
+msgid "What information do I need to register?"
+msgstr "¿Qué información necesito para registrarme?"
+
+#: .\templates\faq.html:30
 msgid ""
-"SimRacing Collective Championship, an innovative, free-to-enter tournament "
-"designed to unite the continent\\"
+"Typically, you will be asked to provide your name, contact information, "
+"player ID (if applicable), and possibly details about your simulation setup."
 msgstr ""
-"Campeonato Colectivo de SimRacing, un torneo innovador y gratuito diseñado para unir al continente\\"
+"Normalmente se te pedirá que proporciones tu nombre, información de contacto, ID de jugador (si aplica) y posiblemente detalles sobre tu configuración de simulación."
 
-#: .\templates\index.html:19
-msgid "and celebrate the rich diversity of our European simracing culture."
-msgstr "y celebrar la riqueza y diversidad de nuestra cultura europea de simracing."
+#: .\templates\faq.html:33
+msgid "Can I register after the championship has started?"
+msgstr "¿Puedo registrarme después de que haya comenzado el campeonato?"
 
-#: .\templates\index.html:22
-msgid "The SREU Advantage: A Pan-European SimRacing Movement"
-msgstr "La ventaja de SREU: Un movimiento pan-europeo de simracing"
+#: .\templates\faq.html:34
+#, python-format
+msgid ""
+"According to regulations, new drivers can join until 50%% of the "
+"championship has passed. After that point, registrations will close unless "
+"otherwise specified."
+msgstr ""
+"Según el reglamento, nuevos pilotos pueden unirse hasta que se haya completado el 50%% del campeonato. Después de ese punto, los registros se cerrarán a menos que se especifique lo contrario."
 
-#: .\templates\legal.html:7
-msgid "Aviso Legal"
-msgstr "Aviso Legal"
+#: .\templates\faq.html:41
+msgid "What are the types of penalties in the championship?"
+msgstr "¿Qué tipos de penalizaciones existen en el campeonato?"
 
-#: .\templates\legal.html:8
-msgid "Información legal sobre nuestra comunidad de simracing."
-msgstr "Información legal sobre nuestra comunidad de simracing."
+#: .\templates\faq.html:45
+msgid "Minor Penalty:"
+msgstr "Penalización Menor:"
 
-#: .\templates\registration.html:6
-msgid "Select a game to register a community or a driver"
-msgstr "Selecciona un juego para registrarte como comunidad o piloto"
+#: .\templates\faq.html:45
+msgid "Verbal warning or up to 5 seconds added to the result."
+msgstr "Advertencia verbal o hasta 5 segundos añadidos al resultado."
 
-#: .\templates\registration.html:19 .\templates\registration.html:23
-#: .\templates\registration.html:27 .\templates\registration.html:31
-msgid "coming soon"
-msgstr "próximamente"
+#: .\templates\faq.html:46
+msgid "Automatic RP Penalty:"
+msgstr "Penalización Automática RP:"
 
-#: .\templates\rules.html:8
-msgid "Rules"
-msgstr "Reglas"
+#: .\templates\faq.html:46
+msgid ""
+"Penalties issued by the Real Penalty system, such as Drive-Through or Stop-"
+"and-Go."
+msgstr ""
+"Penalizaciones emitidas por el sistema Real Penalty, como Drive-Through o Stop-and-Go."
 
-#: .\templates\rules.html:10
-msgid "Types of Penalties"
-msgstr "Tipos de Penalizaciones"
+#: .\templates\faq.html:47 .\templates\rules.html:120
+msgid "Moderate Penalty:"
+msgstr "Penalización Moderada:"
 
-#: .\templates\rules.html:49
-msgid "Software Requirements"
-msgstr "Requisitos de Software"
+#: .\templates\faq.html:49
+msgid "5-second deduction in the event."
+msgstr "Deducción de 5 segundos en el evento."
+
+#: .\templates\faq.html:50
+msgid "Ballast application in future events."
+msgstr "Aplicación de lastre en eventos futuros."
+
+#: .\templates\faq.html:51
+msgid "Deduction of event points."
+msgstr "Deducción de puntos del evento."
+
+#: .\templates\faq.html:53
+msgid "Divided into minor (time only) and major (ballast or points)."
+msgstr "Divididas en menores (solo tiempo) y mayores (lastre o puntos)."
+
+#: .\templates\faq.html:55
+msgid "Severe Penalty:"
+msgstr "Penalización Grave:"
+
+#: .\templates\faq.html:57
+msgid "Event disqualification (no points)."
+msgstr "Descalificación del evento (sin puntos)."
+
+#: .\templates\faq.html:58
+msgid "Suspension from one or more future events."
+msgstr "Suspensión de uno o más eventos futuros."
+
+#: .\templates\faq.html:59
+msgid "In serious cases, permanent expulsion from the championship."
+msgstr "En casos graves, expulsión permanente del campeonato."
+
+#: .\templates\faq.html:72
+msgid "What is considered unsportsmanlike driving?"
+msgstr "¿Qué se considera conducción antideportiva?"
+
+#: .\templates\faq.html:73
+msgid ""
+"Any action that violates championship rules, endangers other drivers, or "
+"attempts to gain an unfair advantage is considered unsportsmanlike driving. "
+"This may include sudden braking, aggressive blocking, or not respecting blue "
+"flags."
+msgstr ""
+"Cualquier acción que viole las reglas del campeonato, ponga en peligro a otros pilotos o busque una ventaja injusta se considera antideportiva. Esto incluye frenazos bruscos, bloqueos agresivos o no respetar banderas azules."
+
+#: .\templates\faq.html:76
+msgid "How are on-track incidents handled?"
+msgstr "¿Cómo se manejan los incidentes en pista?"
+
+#: .\templates\faq.html:77
+msgid "Any contact with another driver is considered an incident. A "
+msgstr "Cualquier contacto con otro pilota se considera incidente. Una "
+
+#: .\templates\faq.html:77 .\templates\rules.html:24
+msgid "Moderate Penalty"
+msgstr "Penalización Moderada"
+
+#: .\templates\faq.html:77
+msgid ""
+" will be applied if the contact causes a spin or track departure. Severity "
+"is assessed based on speed difference, intent, recurrence, and consequences. "
+"Specific criteria are defined for light and moderate contacts in one-on-one "
+"situations."
+msgstr ""
+"será aplicada si el contacto causa un giro o salida de pista. La gravedad se evalúa según diferencia de velocidad, intencionalidad, recurrencia y consecuencias. Se definen criterios específicos para contactos leves y moderados en situaciones uno contra uno."
+
+#: .\templates\faq.html:80
+msgid "What rules apply for the start and first laps?"
+msgstr "¿Qué reglas aplican para el inicio y primeras vueltas?"
+
+#: .\templates\faq.html:81
+msgid ""
+"It is recommended to maintain a safe distance during the first two laps. "
+"Maximum caution is advised as incidents in the first lap have greater "
+"consequences."
+msgstr ""
+"Se recomienda mantener distancia segura durante las dos primeras vueltas. Se aconseja máxima precaución ya que los incidentes en la primera vuelta tienen mayores consecuencias."
+
+#: .\templates\faq.html:84
+msgid "What are the rules about braking on track?"
+msgstr "¿Qué reglas existen sobre frenar en pista?"
+
+#: .\templates\faq.html:85
+msgid ""
+"Sudden braking on straights is considered a moderate penalty. Early braking "
+"as a defensive technique is allowed, with the responsibility on the "
+"attacking driver to maintain distance."
+msgstr ""
+"Frenazos bruscos en rectas se consideran penalización moderada. Frenar temprano como técnica defensiva está permitido, siendo responsabilidad del piloto atacante mantener distancia."
+
+#: .\templates\faq.html:88
+msgid "¿Cuándo se permite volver a boxes?"
+msgstr "¿Cuándo está permitido volver a boxes?"
+
+#: .\templates\faq.html:89
+msgid ""
+"Solo se permite volver a boxes cuando el coche está completamente "
+"inutilizable o representa un peligro. Usarlo bloquea el coche en boxes. En "
+"sesiones de carrera, intentar reincorporarse después de usarlo conlleva la "
+"descal

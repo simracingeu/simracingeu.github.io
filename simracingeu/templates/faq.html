@@ -11,7 +11,7 @@
         <p>{% trans 'Solving common queries and providing essential support.' %}</p>
     
         <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search questions...">
+            <input type="text" id="search-input" placeholder="{% trans 'Search questions...' %}">
             <ul id="search-results" class="search-results"></ul>
         </div>
     
@@ -42,21 +42,21 @@
                 <div class="faq-answer">
                     The types of penalties defined by their impact on the driver are:
                     <ul>
-                        <li><strong>Minor Penalty:</strong> Verbal warning or up to 5 seconds added to the result.</li>
-                        <li><strong>Automatic RP Penalty:</strong> Penalties issued by the Real Penalty system, such as Drive-Through or Stop-and-Go.</li>
-                        <li><strong>Moderate Penalty:</strong>
+                        <li><strong>{% trans "Minor Penalty:" %}</strong> {% trans "Verbal warning or up to 5 seconds added to the result." %}</li>
+                        <li><strong>{% trans "Automatic RP Penalty:" %}</strong> {% trans "Penalties issued by the Real Penalty system, such as Drive-Through or Stop-and-Go." %}</li>
+                        <li><strong>{% trans "Moderate Penalty:" %}</strong>
                             <ul>
-                                <li>5-second deduction in the event.</li>
-                                <li>Ballast application in future events.</li>
-                                <li>Deduction of event points.</li>
+                                <li>{% trans "5-second deduction in the event." %}</li>
+                                <li>{% trans "Ballast application in future events." %}</li>
+                                <li>{% trans "Deduction of event points." %}</li>
                             </ul>
-                            Divided into minor (time only) and major (ballast or points).
+                            {% trans "Divided into minor (time only) and major (ballast or points)." %}
                         </li>
-                        <li><strong>Severe Penalty:</strong>
+                        <li><strong>{% trans "Severe Penalty:" %}</strong>
                             <ul>
-                                <li>Event disqualification (no points).</li>
-                                <li>Suspension from one or more future events.</li>
-                                <li>In serious cases, permanent expulsion from the championship.</li>
+                                <li>{% trans "Event disqualification (no points)." %}</li>
+                                <li>{% trans "Suspension from one or more future events." %}</li>
+                                <li>{% trans "In serious cases, permanent expulsion from the championship." %}</li>
                             </ul>
                         </li>
                         <li><strong>Very Severe Penalty:</strong>
@@ -86,7 +86,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">{% trans '¿Cuándo se permite volver a boxes?' %}</div>
-                <div class="faq-answer">{% trans 'Solo se permite volver a boxes cuando el coche está completamente inutilizable o representa un peligro. Usarlo bloquea el coche en boxes. En sesiones de carrera, intentar reincorporarse después de usarlo conlleva la descalificación automática. En clasificación, el piloto no puede continuar y debe iniciar la carrera con su mejor tiempo previo al uso. Se permite si el coche está dentro del box asignado.' %}</div>
+                <div class="faq-answer">{% trans 'Returning to the pits is only allowed when the car is completely unusable or represents a danger. Using it locks the car in the pits. In race sessions, attempting to rejoin after using it results in automatic disqualification. In qualifying, the driver cannot continue and must start the race with their best time before using it. It is allowed if the car is within its assigned pit box.' %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">{% trans 'What is considered light contact on track?' %}</div>
@@ -124,8 +124,8 @@
                 <div class="faq-answer">{% trans 'It will be reviewed to determine if the attacking driver could have avoided the collision. It may be classified as Light/Moderate.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What are the rules for overtaking?</div>
-                <div class="faq-answer">Overtaking is allowed on any side of the track, as long as it doesn't interfere with the "racing line" of drivers running parallel. Any driver who hits another during an overtake may be investigated. The severity of the penalty will depend on the speed difference in the collision, consequences for the defending driver, impact on other drivers, and position surrender. Minimal/moderate contact is allowed during position battles if it doesn't cause excessive trajectory changes or spins/track departures. When fighting in a braking zone, drivers must maintain a safe distance to avoid collisions from early braking.</div>
+                <div class="faq-question">{% trans 'What are the rules for overtaking?' %}</div>
+                <div class="faq-answer">{% trans 'Overtaking is allowed on any side of the track, as long as it doesn\'t interfere with the "racing line" of drivers running parallel. Any driver who hits another during an overtake may be investigated. The severity of the penalty will depend on the speed difference in the collision, consequences for the defending driver, impact on other drivers, and position surrender. Minimal/moderate contact is allowed during position battles if it doesn\'t cause excessive trajectory changes or spins/track departures. When fighting in a braking zone, drivers must maintain a safe distance to avoid collisions from early braking.' %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">What is considered lane invasion during overtaking?</div>
@@ -170,36 +170,36 @@
                 <div class="faq-answer">{% trans 'Drivers are expected to comply with the schedule. Three unjustified absences in a championship may result in exclusion. Events may be canceled if more than 90% of drivers are absent.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cómo se pueden presentar protestas?</div>
-                <div class="faq-answer">Las protestas deben enviarse por correo electrónico a foroassetto@gmail.com. Se prohíben las quejas públicas contra los organizadores o ForoAssetto.</div>
+                <div class="faq-question">{% trans 'How can protests be submitted?' %}</div>
+                <div class="faq-answer">{% trans 'Protests must be sent by email to foroassetto@gmail.com. Public complaints against the organizers or ForoAssetto are prohibited.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué debe hacer un piloto si pierde el control del coche?</div>
-                <div class="faq-answer">Un piloto que pierde el control debe detenerse inmediatamente. Los incidentes de salida de pista parcial que causen una pérdida drástica de velocidad o cambios de dirección podrán ser penalizados.</div>
+                <div class="faq-question">{% trans 'What should a driver do if they lose control of the car?' %}</div>
+                <div class="faq-answer">{% trans 'A driver who loses control must stop immediately. Partial track departure incidents that cause a drastic loss of speed or direction changes may be penalized.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuáles son las reglas para las paradas en boxes?</div>
-                <div class="faq-answer">Los pilotos no deben cruzar la línea blanca de la entrada o salida de boxes. RealPenalty aplica penalizaciones (por ejemplo, drive-through) por infracciones.</div>
+                <div class="faq-question">{% trans 'What are the rules for pit stops?' %}</div>
+                <div class="faq-answer">{% trans 'Drivers must not cross the white line at pit entry or exit. RealPenalty applies penalties (e.g., drive-through) for infractions.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué reglas se aplican a los vehículos que van en paralelo?</div>
-                <div class="faq-answer">Se considera que los vehículos van en paralelo si alguna parte de ellos se solapa. Cada piloto debe permanecer en su "carril imaginario", incluso en escenarios con varios coches.</div>
+                <div class="faq-question">{% trans 'What rules apply to parallel vehicles?' %}</div>
+                <div class="faq-answer">{% trans 'Vehicles are considered parallel if any part of them overlaps. Each driver must stay in their "imaginary lane", even in scenarios with multiple cars.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué debe hacer un piloto si su coche sufre daños y queda inmovilizado?</div>
+                <div class="faq-question">{% trans '¿Qué debe hacer un piloto si su coche sufre daños y queda inmovilizado?' %}</div>
                 <div class="faq-answer">Si un coche queda inmovilizado, se debe utilizar el botón "volver a boxes". Explotar esta función para obtener ventaja se considera una infracción Grave.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Qué se considera una explotación de las reglas o del juego?</div>
+                <div class="faq-question">{% trans '¿Qué se considera una explotación de las reglas o del juego?' %}</div>
                 <div class="faq-answer">Los atajos deliberados en la pista, el uso de los muros para ganar velocidad o el uso de vueltas inválidas para obtener ventaja se consideran infracciones Graves. Ejemplos incluyen saltarse chicanes, rebotar en los muros para ganar velocidad o modificar la configuración de CSP.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cómo se deben utilizar las áreas de escape?</div>
-                <div class="faq-answer">El uso de las áreas de escape debe evitar la obtención de ventajas. Repetir esta acción podrá considerarse Moderada o Grave.</div>
+                <div class="faq-question">{% trans 'How should escape areas be used?' %}</div>
+                <div class="faq-answer">{% trans 'The use of escape areas must avoid gaining advantages. Repeating this action may be considered Moderate or Severe.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Pueden cambiar las reglas del campeonato?</div>
-                <div class="faq-answer">Sí, esta normativa está sujeta a actualizaciones. Los números de versión reflejan las revisiones.</div>
+                <div class="faq-question">{% trans '¿Pueden cambiar las reglas del campeonato?' %}</div>
+                <div class="faq-answer">{% trans 'Sí, esta normativa está sujeta a actualizaciones. Los números de versión reflejan las revisiones.' %}</div>
             </div>
         </div>
     
@@ -214,16 +214,16 @@
                 <div class="faq-answer">{% trans 'It is highly recommended to use the Helicorsa application, which is included in the Real Penalty package, to improve on-track visibility.' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Is it mandatory to be in Discord voice channels during events?</div>
-                <div class="faq-answer">Yes, it is mandatory to be present in Discord voice channels during qualifying sessions and races. Absence without valid reason will be considered a moderate penalty (severe in case of recurrence).</div>
+                <div class="faq-question">{% trans 'Is it mandatory to be in Discord voice channels during events?' %}</div>
+                <div class="faq-answer">{% trans 'Yes, it is mandatory to be present in Discord voice channels during qualifying sessions and races. Absence without valid reason will be considered a moderate penalty (severe in case of recurrence).' %}</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Where can I find information about events?</div>
-                <div class="faq-answer">Event information is available at the following link: <a href="http://simracingeu.club/s1" target="_blank">http://simracingeu.club/s1</a>.</div>
+                <div class="faq-question">{% trans 'Where can I find information about events?' %}</div>
+                <div class="faq-answer">{% trans 'Event information is available at the following link:' %} <a href="http://simracingeu.club/s1" target="_blank">http://simracingeu.club/s1</a>.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">How will I know the number of laps for each race?</div>
-                <div class="faq-answer">Drivers should know the number of laps, which will be available through ACSM from the start of the championship.</div>
+                <div class="faq-question">{% trans 'How will I know the number of laps for each race?' %}</div>
+                <div class="faq-answer">{% trans 'Drivers should know the number of laps, which will be available through ACSM from the start of the championship.' %}</div>
             </div>
         </div>
     
@@ -234,16 +234,16 @@
                 <div class="faq-answer">All official ForoAssetto events are scheduled at predefined times. Times will not change unless more than 90% of drivers are absent, in which case the event may be canceled.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">¿Cuáles son los límites de la pista?</div>
-                <div class="faq-answer">Cada circuito tiene definidos sus límites laterales, generalmente marcados por líneas blancas sólidas. Algunos circuitos incluyen los pianos y las zonas verdes como parte de la pista. El requisito mínimo es que al menos un neumático permanezca dentro de los límites en todo momento. La aplicación de los límites se basa en los límites oficiales de Kunos para los circuitos originales, límites personalizados para los circuitos modificados y el reconocimiento de Real Penalty durante los eventos.</div>
+                <div class="faq-question">{% trans 'What are the track limits?' %}</div>
+                <div class="faq-answer">{% trans 'Each circuit has defined its lateral limits, generally marked by solid white lines. Some circuits include curbs and green zones as part of the track. The minimum requirement is that at least one tire remains within the limits at all times. The application of limits is based on Kunos official limits for original circuits, custom limits for modified circuits, and Real Penalty recognition during events.' %}</div>
             </div>
         </div>
     
         <div class="faq-section" id="puntuacion">
             <h3>Puntuación</h3>
             <div class="faq-item">
-                <div class="faq-question">¿Cómo se otorgan los puntos en el campeonato?</div>
-                <div class="faq-answer">La información detallada sobre el sistema de puntuación del campeonato se proporcionará en un documento aparte o en la página de reglas del campeonato. Generalmente, los puntos se otorgan a los pilotos que terminan en las primeras posiciones de cada carrera.</div>
+                <div class="faq-question">{% trans 'How are championship points awarded?' %}</div>
+                <div class="faq-answer">{% trans 'Detailed information about the championship scoring system will be provided in a separate document or on the championship rules page. Typically, points are awarded to drivers who finish in the top positions of each race.' %}</div>
             </div>
         </div>
     

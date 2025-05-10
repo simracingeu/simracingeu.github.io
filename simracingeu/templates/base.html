@@ -13,9 +13,16 @@
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'X-CSRFToken': '{{ csrf_token }}'
                 },
-                body: `language=${languageCode}`
-            }).then(() => {
-                window.location.reload();
+                body: `language=${languageCode}&next=${window.location.pathname}`
+            }).then(response => {
+                if (response.ok) {
+                    window.location.reload();
+                } else {
+                    console.error('Failed to set language. Status:', response.status);
+                    response.text().then(text => console.error('Response body for error:', text));
+                }
+            }).catch(error => {
+                console.error('Error setting language:', error);
             });
         }
     </script>

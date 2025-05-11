@@ -40,8 +40,8 @@ msgid ""
 "desire to unite the best simracing communities across Europe in a "
 "competitive, professional, and accessible experience."
 msgstr ""
-"SimRacingEU nasceu de uma paixão compartilhada pelo automobilismo virtual e "
-"do desejo de unir as melhores comunidades de simracing da Europa em uma "
+"O SimRacingEU nasceu de uma paixão partilhada pelo desporto motorizado virtual e "
+"do desejo de unir as melhores comunidades de simulação de corridas da Europa numa "
 "experiência competitiva, profissional e acessível."
 
 #: .\templates\about.html:13
@@ -50,14 +50,14 @@ msgid ""
 "simracing community with years of experience organizing events, managing "
 "servers, and fostering an active and engaged community."
 msgstr ""
-"Este projeto é impulsionado pelo foroassetto, uma comunidade de simracing "
-"bem estabelecida de língua espanhola com anos de experiência na organização "
+"Este projeto é impulsionado pelo foroassetto, uma comunidade de simulação de corridas "
+"de língua espanhola bem estabelecida com anos de experiência na organização "
 "de eventos, gestão de servidores e promoção de uma comunidade ativa e "
-"engajada."
+"empenhada."
 
 #: .\templates\about.html:17
 msgid "Our Mission"
-msgstr "Nossa Missão"
+msgstr "A Nossa Missão"
 
 #: .\templates\about.html:18
 msgid ""
@@ -65,7 +65,7 @@ msgid ""
 "that promotes healthy competition and proud representation of each group and "
 "country."
 msgstr ""
-"Nosso objetivo é claro: criar um campeonato europeu entre comunidades que "
+"O nosso objetivo é claro: criar um campeonato europeu entre comunidades que "
 "promova uma competição saudável e uma representação orgulhosa de cada grupo "
 "e país."
 
@@ -75,9 +75,9 @@ msgid ""
 "own identity while collaborating under a common banner: that of quality "
 "simracing."
 msgstr ""
-"Queremos que cada comunidade se sinta parte de algo maior, respeitando sua "
-"própria identidade enquanto colabora sob uma bandeira comum: a do simracing "
-"de qualidade."
+"Queremos que cada comunidade se sinta parte de algo maior, respeitando a sua "
+"própria identidade enquanto colabora sob uma bandeira comum: a da simulação "
+"de corridas de qualidade."
 
 #: .\templates\about.html:23
 msgid "What Makes Us Unique?"
@@ -88,27 +88,34 @@ msgid ""
 "Free and well-organized championships, focused on delivering a great "
 "experience for drivers."
 msgstr ""
+"Campeonatos gratuitos e bem organizados, focados em proporcionar uma excelente "
+"experiência para os pilotos."
 
 #: .\templates\about.html:26
 msgid ""
 "Community and country-based representation, encouraging healthy rivalry and "
 "mutual respect."
 msgstr ""
+"Representação baseada na comunidade e no país, incentivando a rivalidade "
+"saudável e o respeito mútuo."
 
 #: .\templates\about.html:27
 msgid "Fair play and professionalism as the foundations of every race."
-msgstr ""
+msgstr "Fair play e profissionalismo como alicerces de cada corrida."
 
 #: .\templates\about.html:28
 msgid ""
 "Collaboration between simracing communities, centered on organized teams."
 msgstr ""
+"Colaboração entre comunidades de simulação de corridas, centrada em equipas organizadas."
 
 #: .\templates\about.html:29
 msgid ""
 "Innovative competition formats, always aiming to maintain interest and "
 "technical challenge."
 msgstr ""
+"Formatos de competição inovadores, sempre com o objetivo de manter o interesse "
+"e o desafio técnico."
 
 #: .\templates\about.html:34
 msgid "Who We Are"
@@ -119,21 +126,26 @@ msgid ""
 "An active community with 500+ members, regular championships, and expertise "
 "in technical management."
 msgstr ""
+"Uma comunidade ativa com mais de 500 membros, campeonatos regulares e experiência "
+"em gestão técnica."
 
 #: .\templates\about.html:37
 msgid ""
 "Experienced with simulators like Assetto Corsa, ACC, and Le Mans Ultimate."
 msgstr ""
+"Experientes com simuladores como Assetto Corsa, ACC e Le Mans Ultimate."
 
 #: .\templates\about.html:38
 msgid ""
 "Ongoing with other European communities, aiming to represent each country "
 "fairly."
 msgstr ""
+"Em colaboração com outras comunidades europeias, visando representar cada país "
+"de forma justa."
 
 #: .\templates\about.html:43
 msgid "Our Commitment"
-msgstr "Nosso Compromisso"
+msgstr "O Nosso Compromisso"
 
 #: .\templates\about.html:44
 msgid ""
@@ -141,12 +153,17 @@ msgid ""
 "communities that share values such as respect, continuous improvement, and a "
 "passion for motorsport."
 msgstr ""
+"Este campeonato não é apenas mais uma competição—é um ponto de encontro para "
+"comunidades que partilham valores como o respeito, a melhoria contínua e a "
+"paixão pelo desporto motorizado."
 
 #: .\templates\about.html:45
 msgid ""
 "We want to grow with you, listen to you, and build the future of European "
 "simracing together."
 msgstr ""
+"Queremos crescer consigo, ouvi-lo e construir juntos o futuro da simulação "
+"de corridas europeia."
 
 #: .\templates\about.html:47
 #, fuzzy
@@ -156,7 +173,7 @@ msgstr "Regras do Campeonato"
 
 #: .\templates\base.html:61 .\templates\faq.html:19
 msgid "Registration"
-msgstr "Inscrição"
+msgstr "Registo"
 
 #: .\templates\base.html:64 .\templates\calendar.html:5
 msgid "Event Calendar"
@@ -170,11 +187,11 @@ msgstr "Sobre Nós"
 
 #: .\templates\base.html:70 .\templates\contact.html:4
 msgid "Contact"
-msgstr "Contato"
+msgstr "Contacto"
 
 #: .\templates\base.html:73
 msgid "Legal Pages"
-msgstr ""
+msgstr "Páginas Legais"
 
 #: .\templates\base.html:76 .\templates\faq.html:39
 msgid "Championship Rules"
@@ -182,7 +199,7 @@ msgstr "Regras do Campeonato"
 
 #: .\templates\base.html:79
 msgid "FAQ"
-msgstr ""
+msgstr "Perguntas Frequentes"
 
 #: .\templates\base.html:83
 msgid "Language"
@@ -190,7 +207,7 @@ msgstr "Idioma"
 
 #: .\templates\base.html:103
 msgid "All rights reserved."
-msgstr ""
+msgstr "Todos os direitos reservados."
 
 #: .\templates\calendar.html:10
 msgid "Event calendar"
@@ -226,15 +243,15 @@ msgstr "Perguntas Frequentes (FAQ)"
 
 #: .\templates\faq.html:11
 msgid "Solving common queries and providing essential support."
-msgstr "Resolvendo dúvidas comuns e fornecendo suporte essencial."
+msgstr "Resolvendo questões comuns e fornecendo suporte essencial."
 
 #: .\templates\faq.html:14
 msgid "Search questions..."
-msgstr ""
+msgstr "Pesquisar perguntas..."
 
 #: .\templates\faq.html:21
 msgid "How do I register for the championship?"
-msgstr ""
+msgstr "Como me inscrevo no campeonato?"
 
 #: .\templates\faq.html:22
 msgid ""
@@ -242,10 +259,13 @@ msgid ""
 "championship's main page or through a specific registration link. Make sure "
 "to follow all the indicated steps."
 msgstr ""
+"As informações sobre o processo de inscrição serão fornecidas na "
+"página principal do campeonato ou através de um link específico de registo. Certifique-se "
+"de seguir todos os passos indicados."
 
 #: .\templates\faq.html:25
 msgid "Is there a registration deadline?"
-msgstr ""
+msgstr "Existe um prazo de inscrição?"
 
 #: .\templates\faq.html:26
 msgid ""
@@ -253,20 +273,25 @@ msgid ""
 "in the championship information. Register before the deadline to secure your "
 "participation."
 msgstr ""
+"Sim, geralmente existe um prazo de inscrição. Esta data será anunciada "
+"nas informações do campeonato. Registe-se antes do prazo para garantir a sua "
+"participação."
 
 #: .\templates\faq.html:29
 msgid "What information do I need to register?"
-msgstr ""
+msgstr "Que informações preciso para me registar?"
 
 #: .\templates\faq.html:30
 msgid ""
 "Typically, you will be asked to provide your name, contact information, "
 "player ID (if applicable), and possibly details about your simulation setup."
 msgstr ""
+"Normalmente, será solicitado que forneça o seu nome, informações de contacto, "
+"ID de jogador (se aplicável) e possivelmente detalhes sobre a sua configuração de simulação."
 
 #: .\templates\faq.html:33
 msgid "Can I register after the championship has started?"
-msgstr ""
+msgstr "Posso registar-me depois do campeonato ter começado?"
 
 #: .\templates\faq.html:34
 #, python-format
@@ -275,68 +300,73 @@ msgid ""
 "championship has passed. After that point, registrations will close unless "
 "otherwise specified."
 msgstr ""
+"De acordo com os regulamentos, novos pilotos podem juntar-se até 50%% do "
+"campeonato ter decorrido. Após esse ponto, as inscrições serão encerradas, salvo "
+"indicação em contrário."
 
 #: .\templates\faq.html:41
 msgid "What are the types of penalties in the championship?"
-msgstr ""
+msgstr "Quais são os tipos de penalizações no campeonato?"
 
 #: .\templates\faq.html:45
 msgid "Minor Penalty:"
-msgstr ""
+msgstr "Penalização Leve:"
 
 #: .\templates\faq.html:45
 msgid "Verbal warning or up to 5 seconds added to the result."
-msgstr ""
+msgstr "Advertência verbal ou até 5 segundos adicionados ao resultado."
 
 #: .\templates\faq.html:46
 msgid "Automatic RP Penalty:"
-msgstr ""
+msgstr "Penalização RP Automática:"
 
 #: .\templates\faq.html:46
 msgid ""
 "Penalties issued by the Real Penalty system, such as Drive-Through or Stop-"
 "and-Go."
 msgstr ""
+"Penalizações emitidas pelo sistema Real Penalty, como Drive-Through ou Stop-"
+"and-Go."
 
 #: .\templates\faq.html:47 .\templates\rules.html:120
 msgid "Moderate Penalty:"
-msgstr ""
+msgstr "Penalização Moderada:"
 
 #: .\templates\faq.html:49
 msgid "5-second deduction in the event."
-msgstr ""
+msgstr "Dedução de 5 segundos no evento."
 
 #: .\templates\faq.html:50
 msgid "Ballast application in future events."
-msgstr ""
+msgstr "Aplicação de lastro em eventos futuros."
 
 #: .\templates\faq.html:51
 msgid "Deduction of event points."
-msgstr ""
+msgstr "Dedução de pontos do evento."
 
 #: .\templates\faq.html:53
 msgid "Divided into minor (time only) and major (ballast or points)."
-msgstr ""
+msgstr "Dividida em leve (apenas tempo) e grave (lastro ou pontos)."
 
 #: .\templates\faq.html:55
 msgid "Severe Penalty:"
-msgstr ""
+msgstr "Penalização Grave:"
 
 #: .\templates\faq.html:57
 msgid "Event disqualification (no points)."
-msgstr ""
+msgstr "Desqualificação do evento (sem pontos)."
 
 #: .\templates\faq.html:58
 msgid "Suspension from one or more future events."
-msgstr ""
+msgstr "Suspensão de um ou mais eventos futuros."
 
 #: .\templates\faq.html:59
 msgid "In serious cases, permanent expulsion from the championship."
-msgstr ""
+msgstr "Em casos graves, expulsão permanente do campeonato."
 
 #: .\templates\faq.html:72
 msgid "What is considered unsportsmanlike driving?"
-msgstr ""
+msgstr "O que é considerado condução antidesportiva?"
 
 #: .\templates\faq.html:73
 msgid ""
@@ -345,18 +375,22 @@ msgid ""
 "This may include sudden braking, aggressive blocking, or not respecting blue "
 "flags."
 msgstr ""
+"Qualquer ação que viole as regras do campeonato, coloque em perigo outros pilotos "
+"ou tente obter uma vantagem injusta é considerada condução antidesportiva. "
+"Isto pode incluir travagens bruscas, bloqueios agressivos ou não respeitar bandeiras "
+"azuis."
 
 #: .\templates\faq.html:76
 msgid "How are on-track incidents handled?"
-msgstr ""
+msgstr "Como são tratados os incidentes em pista?"
 
 #: .\templates\faq.html:77
 msgid "Any contact with another driver is considered an incident. A "
-msgstr ""
+msgstr "Qualquer contacto com outro piloto é considerado um incidente. Uma "
 
 #: .\templates\faq.html:77 .\templates\rules.html:24
 msgid "Moderate Penalty"
-msgstr ""
+msgstr "Penalização Moderada"
 
 #: .\templates\faq.html:77
 msgid ""
@@ -365,10 +399,14 @@ msgid ""
 "Specific criteria are defined for light and moderate contacts in one-on-one "
 "situations."
 msgstr ""
+" será aplicada se o contacto causar um pião ou saída de pista. A gravidade "
+"é avaliada com base na diferença de velocidade, intenção, recorrência e consequências. "
+"Critérios específicos são definidos para contactos leves e moderados em situações "
+"um contra um."
 
 #: .\templates\faq.html:80
 msgid "What rules apply for the start and first laps?"
-msgstr ""
+msgstr "Que regras se aplicam para a partida e primeiras voltas?"
 
 #: .\templates\faq.html:81
 msgid ""
@@ -376,10 +414,13 @@ msgid ""
 "Maximum caution is advised as incidents in the first lap have greater "
 "consequences."
 msgstr ""
+"Recomenda-se manter uma distância segura durante as duas primeiras voltas. "
+"Aconselha-se máxima cautela, pois os incidentes na primeira volta têm "
+"consequências mais graves."
 
 #: .\templates\faq.html:84
 msgid "What are the rules about braking on track?"
-msgstr ""
+msgstr "Quais são as regras sobre travagem em pista?"
 
 #: .\templates\faq.html:85
 msgid ""
@@ -387,10 +428,13 @@ msgid ""
 "as a defensive technique is allowed, with the responsibility on the "
 "attacking driver to maintain distance."
 msgstr ""
+"Travagens bruscas nas retas são consideradas uma penalização moderada. Travagem "
+"antecipada como técnica defensiva é permitida, sendo responsabilidade do "
+"piloto atacante manter a distância."
 
 #: .\templates\faq.html:88
 msgid "When is returning to the pits allowed?"
-msgstr ""
+msgstr "Quando é permitido regressar às boxes?"
 
 #: .\templates\faq.html:89
 msgid ""
@@ -401,18 +445,24 @@ msgid ""
 "best time before using it. It is allowed if the car is within its assigned "
 "pit box."
 msgstr ""
+"O regresso às boxes só é permitido quando o carro está completamente inutilizável ou "
+"representa um perigo. Utilizá-lo bloqueia o carro nas boxes. Em sessões de corrida, "
+"tentar regressar após utilizá-lo resulta em desqualificação automática. "
+"Na qualificação, o piloto não pode continuar e deve começar a corrida com o seu "
+"melhor tempo antes de utilizá-lo. É permitido se o carro estiver dentro do seu "
+"lugar nas boxes atribuído."
 
 #: .\templates\faq.html:92
 msgid "What is considered light contact on track?"
-msgstr ""
+msgstr "O que é considerado contacto leve em pista?"
 
 #: .\templates\faq.html:93
 msgid "In a one-on-one battle, 1 or 2 contacts that don\\"
-msgstr ""
+msgstr "Numa batalha um contra um, 1 ou 2 contactos que não\\"
 
 #: .\templates\faq.html:96
 msgid "What is considered moderate contact on track?"
-msgstr ""
+msgstr "O que é considerado contacto moderado em pista?"
 
 #: .\templates\faq.html:97
 msgid ""
@@ -420,10 +470,13 @@ msgid ""
 "departure is considered moderate. Three or more incidents without yielding "
 "position may result in a severe penalty."
 msgstr ""
+"Numa batalha um contra um, contacto que cause um pião ou saída completa de "
+"pista é considerado moderado. Três ou mais incidentes sem ceder a "
+"posição podem resultar numa penalização grave."
 
 #: .\templates\faq.html:100
 msgid "How are straight-line rear-end collisions classified?"
-msgstr ""
+msgstr "Como são classificadas as colisões traseiras em linha reta?"
 
 #: .\templates\faq.html:101
 msgid ""
@@ -431,10 +484,13 @@ msgid ""
 "be classified as Light or Moderate depending on the consequences, speed "
 "difference, loss of control, and position surrender."
 msgstr ""
+"Colisões traseiras em linha reta, que geralmente ocorrem em zonas de travagem, podem "
+"ser classificadas como Leves ou Moderadas dependendo das consequências, diferença "
+"de velocidade, perda de controlo e cedência de posição."
 
 #: .\templates\faq.html:104
 msgid "How are side collisions classified?"
-msgstr ""
+msgstr "Como são classificadas as colisões laterais?"
 
 #: .\templates\faq.html:105
 msgid ""
@@ -443,14 +499,18 @@ msgid ""
 "of control, and position surrender, they can be classified as Light or "
 "Moderate."
 msgstr ""
+"Colisões laterais geralmente ocorrem por não usar aplicações de radar como o Helicorsa numa "
+"posição visível do ecrã. Dependendo das consequências, diferença de velocidade, perda "
+"de controlo e cedência de posição, podem ser classificadas como Leves ou "
+"Moderadas."
 
 #: .\templates\faq.html:108
 msgid "What rules apply in parallel curves?"
-msgstr ""
+msgstr "Que regras se aplicam em curvas paralelas?"
 
 #: .\templates\faq.html:111
 msgid "Front-aligned cars:"
-msgstr ""
+msgstr "Carros alinhados à frente:"
 
 #: .\templates\faq.html:111
 msgid ""
@@ -458,38 +518,45 @@ msgid ""
 "maneuvers are permitted. Adjustments or positioning that abuse track "
 "position may be classified as Moderate."
 msgstr ""
+"Numa batalha desportiva, são permitidos pequenos ajustes de trajetória que permitam "
+"contra-manobras. Ajustes ou posicionamentos que abusem da posição na "
+"pista podem ser classificados como Moderados."
 
 #: .\templates\faq.html:112
 msgid "Non-aligned cars (half-car overlap against opponent\\"
-msgstr ""
+msgstr "Carros não alinhados (sobreposição de meio carro contra o adversário\\"
 
 #: .\templates\faq.html:112
 msgid ""
 "This is considered abusive behavior, not allowing sporting battle, and "
 "classified as Moderate."
 msgstr ""
+"Isto é considerado comportamento abusivo, não permitindo batalha desportiva, e "
+"classificado como Moderado."
 
 #: .\templates\faq.html:113
 msgid "Rear of outside car against front of inside car:"
-msgstr ""
+msgstr "Traseira do carro exterior contra frente do carro interior:"
 
 #: .\templates\faq.html:113
 msgid "Will be reviewed and may be classified as Light/Moderate."
-msgstr ""
+msgstr "Será revisto e pode ser classificado como Leve/Moderado."
 
 #: .\templates\faq.html:114
 msgid "Four or more cars aligned in a braking zone:"
-msgstr ""
+msgstr "Quatro ou mais carros alinhados numa zona de travagem:"
 
 #: .\templates\faq.html:114
 msgid ""
 "Each driver must respect their \"virtual\" lane. Leaving this lane to make "
 "abusive contact will be classified as Moderate."
 msgstr ""
+"Cada piloto deve respeitar a sua faixa \"virtual\". Sair desta faixa para fazer "
+"contacto abusivo será classificado como Moderado."
 
 #: .\templates\faq.html:119
 msgid "What happens in case of a partial track departure?"
-msgstr ""
+msgstr "O que acontece em caso de saída parcial de pista?"
 
 #: .\templates\faq.html:120
 msgid ""
@@ -497,28 +564,33 @@ msgid ""
 "attacking driver (close behind) collides, this may be analyzed as a non-"
 "punishable incident due to the defender\\"
 msgstr ""
+"Se o piloto defensor perder o controlo ao atingir a gravilha e o "
+"piloto atacante (logo atrás) colidir, isto pode ser analisado como um "
+"incidente não punível devido ao defensor\\"
 
 #: .\templates\faq.html:123
 msgid "What happens in case of a complete track departure?"
-msgstr ""
+msgstr "O que acontece em caso de saída completa de pista?"
 
 #: .\templates\faq.html:124
 msgid ""
 "It will be reviewed to determine if the attacking driver could have avoided "
 "the collision. It may be classified as Light/Moderate."
 msgstr ""
+"Será revisto para determinar se o piloto atacante poderia ter evitado "
+"a colisão. Pode ser classificado como Leve/Moderado."
 
 #: .\templates\faq.html:127
 msgid "What are the rules for overtaking?"
-msgstr ""
+msgstr "Quais são as regras para ultrapassagem?"
 
 #: .\templates\faq.html:128
 msgid "Overtaking is allowed on any side of the track, as long as it doesn\\"
-msgstr ""
+msgstr "A ultrapassagem é permitida em qualquer lado da pista, desde que não\\"
 
 #: .\templates\faq.html:135
 msgid "When is a driver considered to have gained position during an overtake?"
-msgstr ""
+msgstr "Quando é que se considera que um piloto ganhou posição durante uma ultrapassagem?"
 
 #: .\templates\faq.html:136
 msgid ""
@@ -526,12 +598,17 @@ msgid ""
 "their car completely passes the defender. Using Helicorsa and mirrors is "
 "recommended to avoid side collisions."
 msgstr ""
+"Considera-se que um piloto ganhou posição (interior/exterior) apenas quando "
+"o seu carro ultrapassa completamente o defensor. Recomenda-se o uso do Helicorsa e "
+"espelhos para evitar colisões laterais."
 
 #: .\templates\faq.html:139
 msgid ""
 "What are the conditions for overtaking at the start of a curve (braking "
 "zone)?"
 msgstr ""
+"Quais são as condições para ultrapassar no início de uma curva (zona de "
+"travagem)?"
 
 #: .\templates\faq.html:142
 #, python-format
@@ -539,30 +616,36 @@ msgid ""
 "Both cars arrive at similar speed/position, with the attacker at least 25%% "
 "alongside the defender."
 msgstr ""
+"Ambos os carros chegam a velocidade/posição semelhante, com o atacante pelo menos "
+"25%% ao lado do defensor."
 
 #: .\templates\faq.html:143
 msgid "The attacker\\"
-msgstr ""
+msgstr "O atacante\\"
 
 #: .\templates\faq.html:145
 msgid ""
 "If these conditions are not met, the attacker must abort the overtake and "
 "allow the defender to take their line."
 msgstr ""
+"Se estas condições não forem cumpridas, o atacante deve abortar a ultrapassagem e "
+"permitir que o defensor tome a sua linha."
 
 #: .\templates\faq.html:149
 msgid "What distance should drivers maintain between each other?"
-msgstr ""
+msgstr "Que distância devem os pilotos manter entre si?"
 
 #: .\templates\faq.html:150
 msgid ""
 "When battling (or lapping), drivers must leave enough space. Abruptly "
 "closing the gap is classified as Moderate."
 msgstr ""
+"Durante batalhas (ou dobragens), os pilotos devem deixar espaço suficiente. Fechar "
+"abruptamente o espaço é classificado como Moderado."
 
 #: .\templates\faq.html:153
 msgid "What are the rules for lapped drivers?"
-msgstr ""
+msgstr "Quais são as regras para pilotos dobrados?"
 
 #: .\templates\faq.html:154
 msgid ""
@@ -570,10 +653,13 @@ msgid ""
 "facilitate overtaking by lifting off the throttle. They must yield within a "
 "maximum of 4 corners."
 msgstr ""
+"Aplicam-se as regras de bandeira azul. Pilotos dobrados devem manter uma linha "
+"previsível e facilitar a ultrapassagem levantando o pé do acelerador. Devem ceder "
+"dentro de um máximo de 4 curvas."
 
 #: .\templates\faq.html:157
 msgid "How many direction changes are allowed when defending on a straight?"
-msgstr ""
+msgstr "Quantas mudanças de direção são permitidas ao defender numa reta?"
 
 #: .\templates\faq.html:158
 msgid ""
@@ -581,10 +667,13 @@ msgid ""
 "more direction changes (e.g., zig-zag) are prohibited and classified as "
 "Moderate."
 msgstr ""
+"Ao defender numa reta, um piloto pode fazer uma mudança de direção. Duas ou "
+"mais mudanças de direção (por exemplo, zigue-zague) são proibidas e classificadas como "
+"Moderadas."
 
 #: .\templates\faq.html:161
 msgid "What should a driver do after a partial track departure?"
-msgstr ""
+msgstr "O que deve fazer um piloto após uma saída parcial de pista?"
 
 #: .\templates\faq.html:162
 msgid ""
@@ -592,20 +681,16 @@ msgid ""
 "on track and avoid collisions or obstructions. Not doing so is considered "
 "Moderate."
 msgstr ""
+"Um piloto que saia parcialmente da pista (3 rodas fora) deve ceder aos pilotos "
+"em pista e evitar colisões ou obstruções. Não o fazer é considerado "
+"Moderado."
 
 #: .\templates\faq.html:165
 msgid "How is ballast used in the championship?"
-msgstr ""
-
-#: .\templates\faq.html:166
-msgid ""
-"Ballast is used to balance performance. If a car demonstrates excessive "
-"superiority, organizers may apply ballast (with prior notice)."
-msgstr ""
-
+msgstr "Como é usado o lastro no campeonato?"
 #: .\templates\faq.html:169
 msgid "What happens if a driver has absences in the championship?"
-msgstr ""
+msgstr "O que acontece se um piloto tiver ausências no campeonato?"
 
 #: .\templates\faq.html:170
 #, python-format
@@ -614,20 +699,25 @@ msgid ""
 "in a championship may result in exclusion. Events may be canceled if more "
 "than 90%% of drivers are absent."
 msgstr ""
+"Espera-se que os pilotos cumpram o horário. Três ausências injustificadas "
+"num campeonato podem resultar em exclusão. Os eventos podem ser cancelados se "
+"mais de 90%% dos pilotos estiverem ausentes."
 
 #: .\templates\faq.html:173
 msgid "How can protests be submitted?"
-msgstr ""
+msgstr "Como podem ser apresentados os protestos?"
 
 #: .\templates\faq.html:174
 msgid ""
 "Protests must be sent by email to foroassetto@gmail.com. Public complaints "
 "against the organizers or ForoAssetto are prohibited."
 msgstr ""
+"Os protestos devem ser enviados por email para foroassetto@gmail.com. São proibidas "
+"reclamações públicas contra os organizadores ou ForoAssetto."
 
 #: .\templates\faq.html:177
 msgid "What should a driver do if they lose control of the car?"
-msgstr ""
+msgstr "O que deve fazer um piloto se perder o controlo do carro?"
 
 #: .\templates\faq.html:178
 msgid ""
@@ -635,30 +725,38 @@ msgid ""
 "incidents that cause a drastic loss of speed or direction changes may be "
 "penalized."
 msgstr ""
+"Um piloto que perde o controlo deve parar imediatamente. Incidentes de saída "
+"parcial de pista que causem uma perda drástica de velocidade ou mudanças de "
+"direção podem ser penalizados."
 
 #: .\templates\faq.html:181
 msgid "What are the rules for pit stops?"
-msgstr ""
+msgstr "Quais são as regras para as paragens nas boxes?"
 
 #: .\templates\faq.html:182
 msgid ""
 "Drivers must not cross the white line at pit entry or exit. RealPenalty "
 "applies penalties (e.g., drive-through) for infractions."
 msgstr ""
+"Os pilotos não devem cruzar a linha branca na entrada ou saída das boxes. O "
+"RealPenalty aplica penalizações (por exemplo, drive-through) para infrações."
 
 #: .\templates\faq.html:185
 msgid "What rules apply to parallel vehicles?"
-msgstr ""
+msgstr "Que regras se aplicam a veículos em paralelo?"
 
 #: .\templates\faq.html:186
 msgid ""
 "Vehicles are considered parallel if any part of them overlaps. Each driver "
 "must stay in their \"imaginary lane\", even in scenarios with multiple cars."
 msgstr ""
+"Os veículos são considerados em paralelo se qualquer parte deles se sobrepuser. "
+"Cada piloto deve permanecer na sua \"faixa imaginária\", mesmo em cenários com "
+"múltiplos carros."
 
 #: .\templates\faq.html:189
 msgid "What should a driver do if their car is damaged and immobilized?"
-msgstr ""
+msgstr "O que deve fazer um piloto se o seu carro estiver danificado e imobilizado?"
 
 #: .\templates\faq.html:190
 msgid ""
@@ -666,10 +764,12 @@ msgid ""
 "Exploiting this function to gain an advantage is considered a Severe "
 "infraction."
 msgstr ""
+"Se um carro ficar imobilizado, deve ser usado o botão \"voltar às boxes\". "
+"Explorar esta função para obter vantagem é considerado uma infração Grave."
 
 #: .\templates\faq.html:193
 msgid "What is considered exploitation of rules or the game?"
-msgstr ""
+msgstr "O que é considerado exploração das regras ou do jogo?"
 
 #: .\templates\faq.html:194
 msgid ""
@@ -678,50 +778,58 @@ msgid ""
 "skipping chicanes, bouncing off walls to gain speed, or modifying CSP "
 "settings."
 msgstr ""
+"Atalhos deliberados na pista, usar paredes para ganhar velocidade ou usar voltas "
+"inválidas para obter vantagem são consideradas infrações Graves. Os exemplos incluem "
+"saltar chicanes, bater em paredes para ganhar velocidade ou modificar as "
+"configurações CSP."
 
 #: .\templates\faq.html:197
 msgid "How should escape areas be used?"
-msgstr ""
+msgstr "Como devem ser usadas as áreas de escape?"
 
 #: .\templates\faq.html:198
 msgid ""
 "The use of escape areas must avoid gaining advantages. Repeating this action "
 "may be considered Moderate or Severe."
 msgstr ""
+"O uso de áreas de escape deve evitar ganhar vantagens. Repetir esta ação "
+"pode ser considerado Moderado ou Grave."
 
 #: .\templates\faq.html:201
-#, fuzzy
-#| msgid "Championship Rules"
 msgid "Can championship rules be changed?"
-msgstr "Regras do Campeonato"
+msgstr "As regras do campeonato podem ser alteradas?"
 
 #: .\templates\faq.html:202
 msgid ""
 "Yes, these regulations are subject to updates. Version numbers reflect "
 "revisions."
 msgstr ""
+"Sim, estes regulamentos estão sujeitos a atualizações. Os números de versão "
+"refletem as revisões."
 
 #: .\templates\faq.html:209
 msgid "What software is mandatory to participate?"
-msgstr ""
+msgstr "Que software é obrigatório para participar?"
 
 #: .\templates\faq.html:210
 msgid "It is mandatory to use the latest version of Real Penalty."
-msgstr ""
+msgstr "É obrigatório usar a versão mais recente do Real Penalty."
 
 #: .\templates\faq.html:213
 msgid "What software is recommended?"
-msgstr ""
+msgstr "Que software é recomendado?"
 
 #: .\templates\faq.html:214
 msgid ""
 "It is highly recommended to use the Helicorsa application, which is included "
 "in the Real Penalty package, to improve on-track visibility."
 msgstr ""
+"É altamente recomendado usar a aplicação Helicorsa, que está incluída "
+"no pacote Real Penalty, para melhorar a visibilidade em pista."
 
 #: .\templates\faq.html:217
 msgid "Is it mandatory to be in Discord voice channels during events?"
-msgstr ""
+msgstr "É obrigatório estar nos canais de voz do Discord durante os eventos?"
 
 #: .\templates\faq.html:218
 msgid ""
@@ -729,28 +837,33 @@ msgid ""
 "qualifying sessions and races. Absence without valid reason will be "
 "considered a moderate penalty (severe in case of recurrence)."
 msgstr ""
+"Sim, é obrigatório estar presente nos canais de voz do Discord durante "
+"as sessões de qualificação e corridas. A ausência sem motivo válido será "
+"considerada uma penalização moderada (grave em caso de reincidência)."
 
 #: .\templates\faq.html:221
 msgid "Where can I find information about events?"
-msgstr ""
+msgstr "Onde posso encontrar informações sobre os eventos?"
 
 #: .\templates\faq.html:222
 msgid "Event information is available at the following link:"
-msgstr ""
+msgstr "As informações sobre os eventos estão disponíveis no seguinte link:"
 
 #: .\templates\faq.html:225
 msgid "How will I know the number of laps for each race?"
-msgstr ""
+msgstr "Como saberei o número de voltas para cada corrida?"
 
 #: .\templates\faq.html:226
 msgid ""
 "Drivers should know the number of laps, which will be available through ACSM "
 "from the start of the championship."
 msgstr ""
+"Os pilotos devem saber o número de voltas, que estará disponível através do ACSM "
+"desde o início do campeonato."
 
 #: .\templates\faq.html:237
 msgid "What are the track limits?"
-msgstr ""
+msgstr "Quais são os limites da pista?"
 
 #: .\templates\faq.html:238
 msgid ""
@@ -761,12 +874,16 @@ msgid ""
 "original circuits, custom limits for modified circuits, and Real Penalty "
 "recognition during events."
 msgstr ""
+"Cada circuito tem definidos os seus limites laterais, geralmente marcados por "
+"linhas brancas sólidas. Alguns circuitos incluem bermas e zonas verdes como parte "
+"da pista. O requisito mínimo é que pelo menos um pneu permaneça dentro dos limites "
+"em todos os momentos. A aplicação dos limites baseia-se nos limites oficiais da "
+"Kunos para circuitos originais, limites personalizados para circuitos modificados "
+"e reconhecimento do Real Penalty durante os eventos."
 
 #: .\templates\faq.html:245
-#, fuzzy
-#| msgid "Championship Rules"
 msgid "How are championship points awarded?"
-msgstr "Regras do Campeonato"
+msgstr "Como são atribuídos os pontos do campeonato?"
 
 #: .\templates\faq.html:246
 msgid ""
@@ -774,164 +891,77 @@ msgid ""
 "in a separate document or on the championship rules page. Typically, points "
 "are awarded to drivers who finish in the top positions of each race."
 msgstr ""
-
-#: .\templates\index.html:9
-msgid "SimRacingEU – The Inter-Community Racing League"
-msgstr "SimRacingEU – A Liga de Corridas Inter-Comunitária"
-
-#: .\templates\index.html:10
-msgid ""
-"Join Europe's premier simracing competition uniting drivers across borders..."
-msgstr ""
-"Junte-se à principal competição de simracing da Europa unindo pilotos além "
-"das fronteiras..."
-
-#: .\templates\index.html:11
-msgid "Read More"
-msgstr ""
-
-#: .\templates\index.html:16
-msgid "Attention Simracers, Teams, and Communities Across Europe!"
-msgstr "Atenção Simracers, Equipes e Comunidades por Toda a Europa!"
-
-#: .\templates\index.html:17
-msgid ""
-"Experience the thrill of international competition and camaraderie in the "
-"European"
-msgstr ""
-"Experimente a emoção da competição internacional e da camaradagem no "
-"campeonato europeu"
-
-#: .\templates\index.html:18
-msgid ""
-"SimRacing Collective Championship, an innovative, free-to-enter tournament "
-"designed to unite the continent\\"
-msgstr ""
-"SimRacing Collective Championship, um torneio inovador e gratuito projetado "
-"para unir o continente"
-
-#: .\templates\index.html:19
-msgid "and celebrate the rich diversity of our European simracing culture."
-msgstr "e celebrar a rica diversidade da nossa cultura europeia de simracing."
-
-#: .\templates\index.html:22
-msgid "The SREU Advantage: A Pan-European SimRacing Movement"
-msgstr "A Vantagem SREU: Um Movimento de SimRacing Pan-Europeu"
+"Informações detalhadas sobre o sistema de pontuação do campeonato serão fornecidas "
+"num documento separado ou na página de regras do campeonato. Tipicamente, os "
+"pontos são atribuídos aos pilotos que terminam nas posições superiores de cada corrida."
 
 #: .\templates\index.html:26
 msgid "High-Level Cross-Platform European Competition"
-msgstr ""
+msgstr "Competição Europeia Cross-Platform de Alto Nível"
 
 #: .\templates\index.html:27
 msgid ""
 "Race on your preferred platforms with comprehensive support across the "
 "continent:"
 msgstr ""
-
-#: .\templates\index.html:29
-#, fuzzy
-#| msgid "Assetto Corsa Events"
-msgid "Assetto Corsa (AC)"
-msgstr "Eventos Assetto Corsa"
-
-#: .\templates\index.html:30
-#, fuzzy
-#| msgid "Assetto Corsa Events"
-msgid "Assetto Corsa Competizione (ACC)"
-msgstr "Eventos Assetto Corsa"
-
-#: .\templates\index.html:31
-msgid "Le Mans Ultimate (LMU)"
-msgstr ""
-
-#: .\templates\index.html:32
-#, fuzzy
-#| msgid "Assetto Corsa Events"
-msgid "Assetto Corsa EVO"
-msgstr "Eventos Assetto Corsa"
-
-#: .\templates\index.html:33
-msgid "Rennsport"
-msgstr ""
+"Compita nas suas plataformas preferidas com suporte abrangente em todo o "
+"continente:"
 
 #: .\templates\index.html:36
 msgid ""
 "No geographical barriers. No platform limitations. Pure European racing "
 "excellence."
 msgstr ""
+"Sem barreiras geográficas. Sem limitações de plataforma. Pura excelência "
+"do automobilismo europeu."
 
 #: .\templates\index.html:39
 msgid "Inclusive and Progressive Competition Structure"
-msgstr ""
+msgstr "Estrutura de Competição Inclusiva e Progressiva"
 
 #: .\templates\index.html:40
 msgid "Embracing Europe\\"
-msgstr ""
+msgstr "Abraçando a Europa\\"
 
 #: .\templates\index.html:46
 msgid ""
 "This structure ensures exciting rivalries and clear progression paths for "
 "drivers from every European nation and background."
 msgstr ""
-
-#: .\templates\legal.html:9
-msgid "Aviso Legal"
-msgstr "Aviso Legal"
-
-#: .\templates\legal.html:10
-msgid "Información legal sobre nuestra comunidad de simracing."
-msgstr "Informações legais sobre nossa comunidade de simracing."
-
-#: .\templates\registration.html:6
-msgid "Select a game to register a community or a driver"
-msgstr "Selecione um jogo para registrar uma comunidade ou um piloto"
-
-#: .\templates\registration.html:12
-#, fuzzy
-#| msgid "Event calendar"
-msgid "View event calendar"
-msgstr "Calendário de eventos"
+"Esta estrutura garante rivalidades emocionantes e caminhos claros de progressão "
+"para pilotos de todas as nações e origens europeias."
 
 #: .\templates\registration.html:13
 msgid "Add community"
-msgstr ""
+msgstr "Adicionar comunidade"
 
 #: .\templates\registration.html:14
 msgid "Add driver"
-msgstr ""
-
-#: .\templates\registration.html:19 .\templates\registration.html:23
-#: .\templates\registration.html:27 .\templates\registration.html:31
-msgid "coming soon"
-msgstr "em breve"
-
-#: .\templates\rules.html:10
-msgid "Rules"
-msgstr "Regras"
-
-#: .\templates\rules.html:12
-msgid "Types of Penalties"
-msgstr "Tipos de Penalidades"
+msgstr "Adicionar piloto"
 
 #: .\templates\rules.html:14
 msgid ""
 "The following outlines the four types of penalties defined based on their "
 "impact on the driver:"
 msgstr ""
+"Seguem-se os quatro tipos de penalizações definidas com base no seu "
+"impacto no piloto:"
 
 #: .\templates\rules.html:16
 msgid "Minor Penalty"
-msgstr ""
+msgstr "Penalização Leve"
 
 #: .\templates\rules.html:18
 msgid ""
 "A minor penalty may range from a verbal warning to a time penalty of up to 5 "
 "seconds added to the race results."
 msgstr ""
+"Uma penalização leve pode variar de uma advertência verbal a uma penalização "
+"de tempo de até 5 segundos adicionados aos resultados da corrida."
 
 #: .\templates\rules.html:20
 msgid "Automatic RP Penalty"
-msgstr ""
+msgstr "Penalização RP Automática"
 
 #: .\templates\rules.html:22
 msgid ""
@@ -939,362 +969,387 @@ msgid ""
 "including drive-through (passing through the pit lane without stopping) and "
 "stop-and-go penalties (passing through the pit lane with a mandatory stop)."
 msgstr ""
+"Isto refere-se a penalizações automáticas emitidas pelo sistema Real Penalty, "
+"incluindo drive-through (passar pela via das boxes sem parar) e "
+"penalizações stop-and-go (passar pela via das boxes com uma paragem obrigatória)."
 
 #: .\templates\rules.html:26
 msgid "A moderate penalty may include:"
-msgstr ""
+msgstr "Uma penalização moderada pode incluir:"
 
 #: .\templates\rules.html:28
 msgid "A 5-second time penalty in the event"
-msgstr ""
+msgstr "Uma penalização de tempo de 5 segundos no evento"
 
 #: .\templates\rules.html:29
 msgid "Ballast applied in the following event(s)"
-msgstr ""
+msgstr "Lastro aplicado no(s) evento(s) seguinte(s)"
 
 #: .\templates\rules.html:30
 msgid "Deduction of event points"
-msgstr ""
+msgstr "Dedução de pontos do evento"
 
 #: .\templates\rules.html:33
 msgid "Moderate penalties are further divided into minor and major:"
-msgstr ""
+msgstr "As penalizações moderadas são ainda divididas em leves e graves:"
 
 #: .\templates\rules.html:36
 msgid "Minor moderate penalties only result in time deductions"
-msgstr ""
+msgstr "Penalizações moderadas leves resultam apenas em deduções de tempo"
 
 #: .\templates\rules.html:37
 msgid "Major moderate penalties may involve ballast or points deductions"
-msgstr ""
+msgstr "Penalizações moderadas graves podem envolver lastro ou deduções de pontos"
 
 #: .\templates\rules.html:40
 msgid "Severe Penalty"
-msgstr ""
+msgstr "Penalização Grave"
 
 #: .\templates\rules.html:42
 msgid "Severe penalties may involve:"
-msgstr ""
+msgstr "As penalizações graves podem envolver:"
 
 #: .\templates\rules.html:44
 msgid "Disqualification from the event (the driver scores no points)"
-msgstr ""
+msgstr "Desqualificação do evento (o piloto não pontua)"
 
 #: .\templates\rules.html:45
 msgid "Suspension from one or more future events"
-msgstr ""
+msgstr "Suspensão de um ou mais eventos futuros"
 
 #: .\templates\rules.html:46
 msgid "In serious cases, permanent expulsion from the championship"
-msgstr ""
+msgstr "Em casos graves, expulsão permanente do campeonato"
 
 #: .\templates\rules.html:49
 msgid "Very Severe Penalty"
-msgstr ""
+msgstr "Penalização Muito Grave"
 
 #: .\templates\rules.html:51
 msgid "A very severe penalty results in:"
-msgstr ""
+msgstr "Uma penalização muito grave resulta em:"
 
 #: .\templates\rules.html:53
 msgid "Expulsion from the championship"
-msgstr ""
+msgstr "Expulsão do campeonato"
 
 #: .\templates\rules.html:54
 msgid "Removal from all current and future championships"
-msgstr ""
-
-#: .\templates\rules.html:57
-msgid "Software Requirements"
-msgstr "Requisitos de Software"
+msgstr "Remoção de todos os campeonatos atuais e futuros"
 
 #: .\templates\rules.html:59
 msgid "Mandatory and Recommended Software"
-msgstr ""
+msgstr "Software Obrigatório e Recomendado"
 
 #: .\templates\rules.html:60
 msgid "The use of the latest version of Real Penalty is mandatory"
-msgstr ""
+msgstr "É obrigatório o uso da versão mais recente do Real Penalty"
 
 #: .\templates\rules.html:61
 msgid ""
 "The Real Penalty package includes the Helicorsa app (strongly recommended "
 "for visibility)"
 msgstr ""
+"O pacote Real Penalty inclui a aplicação Helicorsa (fortemente recomendada "
+"para visibilidade)"
 
 #: .\templates\rules.html:62
 msgid ""
 "Presence in Discord voice channels during qualifying and races is mandatory"
 msgstr ""
+"A presença nos canais de voz do Discord durante as qualificações e corridas "
+"é obrigatória"
 
 #: .\templates\rules.html:64
 msgid ""
 "Note: Absence without valid reason will be considered a moderate penalty "
 "(severe for repeat offenses)"
 msgstr ""
+"Nota: A ausência sem motivo válido será considerada uma penalização moderada "
+"(grave para reincidências)"
 
 #: .\templates\rules.html:67
 msgid "Event Punctuality"
-msgstr ""
+msgstr "Pontualidade nos Eventos"
 
 #: .\templates\rules.html:69
 msgid "All official SimRacingEU events are scheduled at predefined times"
-msgstr ""
+msgstr "Todos os eventos oficiais SimRacingEU são agendados em horários predefinidos"
 
 #: .\templates\rules.html:70
 #, python-format
 msgid ""
 "Times won't change unless >90%% of drivers are absent (event cancellation)"
 msgstr ""
+"Os horários não mudarão a menos que >90%% dos pilotos estejam ausentes "
+"(cancelamento do evento)"
 
 #: .\templates\rules.html:71
 msgid "Event info available at:"
-msgstr ""
+msgstr "Informações do evento disponíveis em:"
 
 #: .\templates\rules.html:72
 msgid ""
 "Drivers must know number of laps (available via ACSM from championship start)"
 msgstr ""
+"Os pilotos devem saber o número de voltas (disponível via ACSM desde o início "
+"do campeonato)"
 
 #: .\templates\rules.html:75
 msgid "Track Limits"
-msgstr ""
+msgstr "Limites da Pista"
 
 #: .\templates\rules.html:77
 msgid "Each circuit has defined lateral limits"
-msgstr ""
+msgstr "Cada circuito tem limites laterais definidos"
 
 #: .\templates\rules.html:78
 msgid "Usually marked by solid white lines"
-msgstr ""
+msgstr "Geralmente marcados por linhas brancas sólidas"
 
 #: .\templates\rules.html:79
 msgid "Some circuits include curbs and green zones as track"
-msgstr ""
+msgstr "Alguns circuitos incluem bermas e zonas verdes como pista"
 
 #: .\templates\rules.html:81
 msgid "Minimum requirement:"
-msgstr ""
+msgstr "Requisito mínimo:"
 
 #: .\templates\rules.html:81
 msgid "One tire must remain within limits at all times"
-msgstr ""
+msgstr "Um pneu deve permanecer dentro dos limites em todos os momentos"
 
 #: .\templates\rules.html:83
 msgid "Enforcement based on:"
-msgstr ""
+msgstr "Aplicação baseada em:"
 
 #: .\templates\rules.html:84
 msgid "Official Kunos limits for original circuits"
-msgstr ""
+msgstr "Limites oficiais da Kunos para circuitos originais"
 
 #: .\templates\rules.html:85
 msgid "Custom limits for modded tracks"
-msgstr ""
+msgstr "Limites personalizados para pistas modificadas"
 
 #: .\templates\rules.html:86
 msgid "Real Penalty recognition during events"
-msgstr ""
+msgstr "Reconhecimento do Real Penalty durante os eventos"
 
 #: .\templates\rules.html:88
 msgid "Conduct on Track"
-msgstr ""
+msgstr "Conduta em Pista"
 
 #: .\templates\rules.html:90
 msgid "Race Start and Opening Laps"
-msgstr ""
+msgstr "Início de Corrida e Primeiras Voltas"
 
 #: .\templates\rules.html:91
 msgid "Maintain safe distance during first two laps"
-msgstr ""
+msgstr "Manter distância segura durante as duas primeiras voltas"
 
 #: .\templates\rules.html:92
 msgid ""
 "Maximum caution advised (opening lap incidents have greater consequences)"
 msgstr ""
+"Máxima cautela aconselhada (incidentes na primeira volta têm consequências "
+"maiores)"
 
 #: .\templates\rules.html:94
 msgid "Braking Rules:"
-msgstr ""
+msgstr "Regras de Travagem:"
 
 #: .\templates\rules.html:95
 msgid "Sudden braking on straights: moderate penalty"
-msgstr ""
+msgstr "Travagem brusca nas retas: penalização moderada"
 
 #: .\templates\rules.html:96
 msgid "Early braking accepted as defensive technique (attacker\\"
-msgstr ""
+msgstr "Travagem antecipada aceite como técnica defensiva (atacante\\"
 
 #: .\templates\rules.html:99
 msgid "Back to Pits Rules"
-msgstr ""
+msgstr "Regras de Regresso às Boxes"
 
 #: .\templates\rules.html:101
 msgid "General Rules:"
-msgstr ""
+msgstr "Regras Gerais:"
 
 #: .\templates\rules.html:102
 msgid "Only allowed when car is completely undrivable/poses danger"
-msgstr ""
+msgstr "Apenas permitido quando o carro está completamente incontrolável/representa perigo"
 
 #: .\templates\rules.html:103
 msgid "Using it blocks car in pits"
-msgstr ""
+msgstr "Usá-lo bloqueia o carro nas boxes"
 
 #: .\templates\rules.html:105
 msgid "Race Sessions:"
-msgstr ""
+msgstr "Sessões de Corrida:"
 
 #: .\templates\rules.html:106
 msgid "Attempting to rejoin after use → automatic disqualification"
-msgstr ""
+msgstr "Tentar regressar após uso → desqualificação automática"
 
 #: .\templates\rules.html:108
 msgid "Qualifying Sessions:"
-msgstr ""
+msgstr "Sessões de Qualificação:"
 
 #: .\templates\rules.html:109
 msgid "Driver cannot continue after use"
-msgstr ""
+msgstr "O piloto não pode continuar após o uso"
 
 #: .\templates\rules.html:110
 msgid "Must start race with best pre-use time"
-msgstr ""
+msgstr "Deve começar a corrida com o melhor tempo pré-uso"
 
 #: .\templates\rules.html:112
 msgid "Pit Box Exception:"
-msgstr ""
+msgstr "Exceção da Box:"
 
 #: .\templates\rules.html:113
 msgid "Allowed if car is within assigned pit stall"
-msgstr ""
+msgstr "Permitido se o carro estiver dentro do lugar atribuído nas boxes"
 
 #: .\templates\rules.html:116
 msgid "Incident Classification"
-msgstr ""
+msgstr "Classificação de Incidentes"
 
 #: .\templates\rules.html:118
 msgid "Definition:"
-msgstr ""
+msgstr "Definição:"
 
 #: .\templates\rules.html:118
 msgid "Any contact with another driver"
-msgstr ""
+msgstr "Qualquer contacto com outro piloto"
 
 #: .\templates\rules.html:120
 msgid "If contact causes spin/off-track"
-msgstr ""
+msgstr "Se o contacto causar pião/saída de pista"
 
 #: .\templates\rules.html:122
 msgid "Severity Factors:"
-msgstr ""
+msgstr "Fatores de Gravidade:"
 
 #: .\templates\rules.html:123
 msgid "Speed difference at contact"
-msgstr ""
+msgstr "Diferença de velocidade no contacto"
 
 #: .\templates\rules.html:124
 msgid "Intentionality"
-msgstr ""
+msgstr "Intencionalidade"
 
 #: .\templates\rules.html:125
 msgid "Repeat offenses"
-msgstr ""
+msgstr "Reincidências"
 
 #: .\templates\rules.html:126
 msgid "Consequences"
-msgstr ""
+msgstr "Consequências"
 
 #: .\templates\rules.html:127
 msgid "Failure to yield position"
-msgstr ""
+msgstr "Falha em ceder posição"
 
 #: .\templates\rules.html:129
 msgid "Light Contact (1-on-1):"
-msgstr ""
+msgstr "Contacto Leve (1 contra 1):"
 
 #: .\templates\rules.html:130
 msgid "1-2 contacts (no spin/off-track) → Minor"
-msgstr ""
+msgstr "1-2 contactos (sem pião/saída de pista) → Leve"
 
 #: .\templates\rules.html:131
 msgid "1 contact causing spin/off-track → Moderate"
-msgstr ""
+msgstr "1 contacto causando pião/saída de pista → Moderado"
 
 #: .\templates\rules.html:132
 msgid "3+ contacts in same corner → Moderate/Severe"
-msgstr ""
+msgstr "3+ contactos na mesma curva → Moderado/Grave"
 
 #: .\templates\rules.html:134
 msgid "Moderate Contact (1-on-1):"
-msgstr ""
+msgstr "Contacto Moderado (1 contra 1):"
 
 #: .\templates\rules.html:135
 msgid "Causes spin/complete off-track"
-msgstr ""
+msgstr "Causa pião/saída completa de pista"
 
 #: .\templates\rules.html:136
 msgid "3+ incidents without yielding → Severe penalty"
-msgstr ""
+msgstr "3+ incidentes sem ceder → Penalização Grave"
 
 #: .\templates\rules.html:138
 msgid "Different criteria may apply to endurance events"
-msgstr ""
+msgstr "Critérios diferentes podem aplicar-se a eventos de endurance"
 
 #: .\templates\rules.html:141
 msgid "Possible Collisions"
-msgstr ""
+msgstr "Colisões Possíveis"
 
 #: .\templates\rules.html:143
 msgid ""
 "The following details the possible collision scenarios that have been "
 "differentiated:"
 msgstr ""
+"Seguem-se os detalhes dos possíveis cenários de colisão que foram "
+"diferenciados:"
 
 #: .\templates\rules.html:145
 msgid "Rear-end collision on a straight:"
-msgstr ""
+msgstr "Colisão traseira numa reta:"
 
 #: .\templates\rules.html:149
 msgid "Side collision:"
-msgstr ""
+msgstr "Colisão lateral:"
 
 #: .\templates\rules.html:160
 msgid ""
 "Sporting battle: Slight adjustments to trajectory are permitted, allowing "
 "counter-maneuvers."
 msgstr ""
+"Batalha desportiva: São permitidos pequenos ajustes à trajetória, permitindo "
+"contra-manobras."
 
 #: .\templates\rules.html:168
-msgid "Half-car overlap against opponent’s front"
-msgstr ""
+msgid "Half-car overlap against opponent's front"
+msgstr "Sobreposição de meio carro contra a frente do adversário"
 
 #: .\templates\rules.html:169
 msgid ""
 "This is directly considered an abusive action, disallowing any sporting "
 "battle and classified as Moderate."
 msgstr ""
+"Isto é diretamente considerado uma ação abusiva, não permitindo qualquer "
+"batalha desportiva e classificado como Moderado."
 
 #: .\templates\rules.html:256
 msgid ""
 "Both cases show aligned cars in the braking zone. Lane invasion is "
 "prohibited."
 msgstr ""
+"Ambos os casos mostram carros alinhados na zona de travagem. A invasão de "
+"faixa é proibida."
 
 #: .\templates\rules.html:326
 msgid ""
 "Drivers must not cross the pit lane white line. RealPenalty enforces "
 "penalties (e.g., drive-through)."
 msgstr ""
+"Os pilotos não devem cruzar a linha branca da via das boxes. O RealPenalty "
+"aplica penalizações (por exemplo, drive-through)."
 
 #: .\templates\rules.html:335
 msgid ""
 "If a car is immobilized, use the 'back to pits' button. Exploiting this for "
 "advantage is Severe."
 msgstr ""
+"Se um carro estiver imobilizado, use o botão 'voltar às boxes'. Explorar isto "
+"para obter vantagem é Grave."
 
 #: .\templates\rules.html:349
 msgid ""
 "Runoff use must avoid gaining advantage. Repeating this may be Moderate/"
 "Severe."
 msgstr ""
+"O uso de áreas de escape deve evitar ganhar vantagem. Repetir isto pode ser "
+"Moderado/Grave."

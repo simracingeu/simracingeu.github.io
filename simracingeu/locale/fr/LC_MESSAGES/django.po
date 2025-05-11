@@ -301,8 +301,8 @@ msgid ""
 "championship has passed. After that point, registrations will close unless "
 "otherwise specified."
 msgstr ""
-"Selon le règlement, les nouveaux pilotes peuvent rejoindre jusqu'à ce que 50%% "
-"du championnat soit passé. Passé ce point, les inscriptions seront closes sauf "
+"Selon les règlements, les nouveaux pilotes peuvent rejoindre jusqu'à ce que 50%% du "
+"championnat soit passé. Après ce point, les inscriptions seront closes sauf "
 "indication contraire."
 
 #: .\templates\faq.html:41
@@ -598,8 +598,7 @@ msgstr ""
 msgid ""
 "Both cars arrive at similar speed/position, with the attacker at least 25%% "
 "alongside the defender."
-msgstr ""
-"Les deux voitures arrivent à une vitesse/position similaire, avec l'attaquant "
+msgstr "Les deux voitures arrivent à une vitesse/position similaire, avec l'attaquant "
 "au moins 25%% à côté du défenseur."
 
 #: .\templates\faq.html:143
@@ -685,8 +684,7 @@ msgid ""
 "Drivers are expected to comply with the schedule. Three unjustified absences "
 "in a championship may result in exclusion. Events may be canceled if more "
 "than 90%% of drivers are absent."
-msgstr ""
-"Les pilotes sont censés respecter le calendrier. Trois absences non justifiées lors d'un championnat peuvent entraîner une exclusion. Les événements peuvent être annulés si plus de 90 % des pilotes sont absents."
+msgstr "Les pilotes sont censés respecter le calendrier. Trois absences non justifiées lors d'un championnat peuvent entraîner une exclusion. Les événements peuvent être annulés si plus de 90%% des pilotes sont absents."
 
 #: .\templates\faq.html:173
 msgid "How can protests be submitted?"
@@ -1136,8 +1134,7 @@ msgstr "Tous les événements officiels SimRacingEU sont programmés à des heur
 #, python-format
 msgid ""
 "Times won't change unless >90%% of drivers are absent (event cancellation)"
-msgstr ""
-"Les horaires ne changeront pas sauf si plus de 90 % des pilotes sont absents (annulation de l'événement)"
+msgstr "Les horaires ne changeront pas sauf si plus de 90%% des pilotes sont absents (annulation de l'événement)"
 
 #: .\templates\rules.html:71
 msgid "Event info available at:"

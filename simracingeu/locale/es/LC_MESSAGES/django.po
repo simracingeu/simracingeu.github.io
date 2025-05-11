@@ -430,7 +430,7 @@ msgstr ""
 
 #: .\templates\faq.html:88
 msgid "When is returning to the pits allowed?"
-msgstr ""
+msgstr "¿Cuándo está permitido volver a boxes?"
 
 #: .\templates\faq.html:89
 msgid ""
@@ -467,7 +467,7 @@ msgstr ""
 
 #: .\templates\faq.html:100
 msgid "How are straight-line rear-end collisions classified?"
-msgstr ""
+msgstr "¿Cómo se clasifican las colisiones por alcance en recta?"
 
 #: .\templates\faq.html:101
 msgid ""
@@ -496,7 +496,7 @@ msgstr "¿Qué reglas aplican para el inicio y primeras vueltas?"
 
 #: .\templates\faq.html:111
 msgid "Front-aligned cars:"
-msgstr ""
+msgstr "Coches alineados frontalmente:"
 
 #: .\templates\faq.html:111
 msgid ""
@@ -517,7 +517,7 @@ msgstr ""
 
 #: .\templates\faq.html:113
 msgid "Rear of outside car against front of inside car:"
-msgstr ""
+msgstr "Parte trasera del coche exterior contra parte delantera del interior:"
 
 #: .\templates\faq.html:113
 msgid "Will be reviewed and may be classified as Light/Moderate."
@@ -525,7 +525,7 @@ msgstr ""
 
 #: .\templates\faq.html:114
 msgid "Four or more cars aligned in a braking zone:"
-msgstr ""
+msgstr "Cuatro o más coches alineados en zona de frenada:"
 
 #: .\templates\faq.html:114
 msgid ""
@@ -535,7 +535,7 @@ msgstr ""
 
 #: .\templates\faq.html:119
 msgid "What happens in case of a partial track departure?"
-msgstr ""
+msgstr "¿Qué ocurre en caso de salida parcial de pista?"
 
 #: .\templates\faq.html:120
 msgid ""
@@ -546,7 +546,7 @@ msgstr ""
 
 #: .\templates\faq.html:123
 msgid "What happens in case of a complete track departure?"
-msgstr ""
+msgstr "¿Qué ocurre en caso de salida completa de pista?"
 
 #: .\templates\faq.html:124
 msgid ""
@@ -566,7 +566,7 @@ msgstr ""
 
 #: .\templates\faq.html:135
 msgid "When is a driver considered to have gained position during an overtake?"
-msgstr ""
+msgstr "¿Cuándo se considera que un piloto ha ganado posición durante un adelantamiento?"
 
 #: .\templates\faq.html:136
 msgid ""
@@ -600,7 +600,7 @@ msgstr ""
 
 #: .\templates\faq.html:149
 msgid "What distance should drivers maintain between each other?"
-msgstr ""
+msgstr "¿Qué distancia deben mantener los pilotos entre sí?"
 
 #: .\templates\faq.html:150
 msgid ""
@@ -623,7 +623,7 @@ msgstr ""
 
 #: .\templates\faq.html:157
 msgid "How many direction changes are allowed when defending on a straight?"
-msgstr ""
+msgstr "¿Cuántos cambios de dirección están permitidos al defender en recta?"
 
 #: .\templates\faq.html:158
 msgid ""
@@ -634,7 +634,7 @@ msgstr ""
 
 #: .\templates\faq.html:161
 msgid "What should a driver do after a partial track departure?"
-msgstr ""
+msgstr "¿Qué debe hacer un piloto tras una salida parcial de pista?"
 
 #: .\templates\faq.html:162
 msgid ""

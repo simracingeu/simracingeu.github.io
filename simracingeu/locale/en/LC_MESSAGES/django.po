@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-12 09:47+0200\n"
+"POT-Creation-Date: 2025-05-12 10:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1420,6 +1420,10 @@ msgid ""
 "Each driver must allow sporting battles."
 msgstr ""
 
+#: .\templates\rules.html:214
+msgid "Gaining position:"
+msgstr ""
+
 #: .\templates\rules.html:215
 msgid ""
 "A driver is considered to have gained position (inside/outside) only when "
@@ -1567,10 +1571,18 @@ msgid ""
 "against organizers or SimRacingEU are prohibited."
 msgstr ""
 
+#: .\templates\rules.html:292
+msgid "Loss of car control"
+msgstr ""
+
 #: .\templates\rules.html:294
 msgid ""
 "A driver who loses control must stop immediately. Partial off-track "
 "incidents causing drastic speed loss/direction changes may be penalized."
+msgstr ""
+
+#: .\templates\rules.html:297
+msgid "Pit stops"
 msgstr ""
 
 #: .\templates\rules.html:299

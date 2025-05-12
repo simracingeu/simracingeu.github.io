@@ -20,7 +20,7 @@
                 </section>
                 <section>
                     <h3>{% trans 'The SREU Advantage: A Pan-European SimRacing Movement' %}</h3>
-                    <p>The SREU transcends traditional championships – it's a pan-European racing movement. Conceived to highlight the strength and potential of Europe's simracing scene, this platform brings together communities of all sizes under a shared, competitive structure — built on mutual respect, performance, and visibility.</p>
+                    <p>{% trans "The SREU transcends traditional championships – it's a pan-European racing movement. Conceived to highlight the strength and potential of Europe's simracing scene, this platform brings together communities of all sizes under a shared, competitive structure — built on mutual respect, performance, and visibility." %}</p>
                 </section>
                 <section>
                     <h3>{% trans 'High-Level Cross-Platform European Competition' %}</h3>
@@ -39,9 +39,9 @@
                     <h3>{% trans 'Inclusive and Progressive Competition Structure' %}</h3>
                     <p>{% trans 'Embracing Europe\'s diverse talent pool, each participating country and community hosts three distinct competitive divisions:' %}</p>
                     <ul>
-                        <li><b>ELITE Tier:</b> Europe's top virtual drivers compete for continental victory.</li>
-                        <li><b>CHALLENGER Tier:</b> Talented competitors from across Europe develop their racing craft.</li>
-                        <li><b>CLUB Tier:</b> An inclusive European community where newcomers experience the thrill of international competition.</li>
+                        <li><b>{% trans 'ELITE Tier:' %}</b> {% trans 'Europe\'s top virtual drivers compete for continental victory.' %}</li>
+                        <li><b>{% trans 'CHALLENGER Tier:' %}</b> {% trans 'Talented competitors from across Europe develop their racing craft.' %}</li>
+                        <li><b>{% trans 'CLUB Tier:' %}</b> {% trans 'An inclusive European community where newcomers experience the thrill of international competition.' %}</li>
                     </ul>
                     <p>{% trans 'This structure ensures exciting rivalries and clear progression paths for drivers from every European nation and background.' %}</p>
                 </section>
@@ -55,10 +55,10 @@
        
         if (fullContent.style.display === 'none') {
             fullContent.style.display = 'block';
-            this.textContent = 'Show Less';
+            this.textContent = '{% trans "Show Less" %}';
         } else {
             fullContent.style.display = 'none';
-            this.textContent = 'Read More';
+            this.textContent = '{% trans "Read More" %}';
         }
     });
 </script>

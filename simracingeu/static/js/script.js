@@ -8,8 +8,6 @@ const communitiesListContainer = document.getElementById('communities-list');
 const driverCommunitySelect = document.getElementById('driver-community');
 const baseUrl = window.BASE_API_URL || 'http://localhost:8000/api';
 
-
-
 function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {
@@ -38,7 +36,7 @@ addCommunityBtn.addEventListener('click', function() {
     gameContainer.style.display = 'none';
     document.querySelector('p').style.display = 'none';
     communitiesListContainer.style.display = 'block';
-    communitiesListContainer.innerHTML = '<h2>Add New Community</h2>';
+    communitiesListContainer.innerHTML = `<h2>${gettext('Add New Community')}</h2>`;
     
     const form = document.createElement('form');
     form.id = 'add-community-form';
@@ -85,9 +83,7 @@ addCommunityBtn.addEventListener('click', function() {
     euCountries.forEach(country => {
         const option = document.createElement('option');
         option.value = country;
-        
-        option.textContent = country;
-        
+        option.textContent = gettext(country);
         countryInput.appendChild(option);
     });
     
@@ -140,47 +136,22 @@ addCommunityBtn.addEventListener('click', function() {
         document.querySelector('p').style.display = 'block';
     });
     
-    const formGroup = document.createElement('div');
-    formGroup.className = 'mb-3';
-    formGroup.appendChild(nameLabel);
-    formGroup.appendChild(nameInput);
-    form.appendChild(formGroup);
-    
-    const descGroup = document.createElement('div');
-    descGroup.className = 'mb-3';
-    descGroup.appendChild(descLabel);
-    descGroup.appendChild(descInput);
-    form.appendChild(descGroup);
-    
-    const countryGroup = document.createElement('div');
-    countryGroup.className = 'mb-3';
-    countryGroup.appendChild(countryLabel);
-    countryGroup.appendChild(countryInput);
-    form.appendChild(countryGroup);
-    
-    const logoGroup = document.createElement('div');
-    logoGroup.className = 'mb-3';
-    logoGroup.appendChild(logoLabel);
-    logoGroup.appendChild(logoInput);
-    form.appendChild(logoGroup);
-    
-    const discordGroup = document.createElement('div');
-    discordGroup.className = 'mb-3';
-    discordGroup.appendChild(discordLabel);
-    discordGroup.appendChild(discordInput);
-    form.appendChild(discordGroup);
-    
-    const websiteGroup = document.createElement('div');
-    websiteGroup.className = 'mb-3';
-    websiteGroup.appendChild(websiteLabel);
-    websiteGroup.appendChild(websiteInput);
-    form.appendChild(websiteGroup);
-    
-    const patreonGroup = document.createElement('div');
-    patreonGroup.className = 'mb-3';
-    patreonGroup.appendChild(patreonLabel);
-    patreonGroup.appendChild(patreonInput);
-    form.appendChild(patreonGroup);
+    // Form groups creation and assembly...
+    [
+        {label: nameLabel, input: nameInput},
+        {label: descLabel, input: descInput},
+        {label: countryLabel, input: countryInput},
+        {label: logoLabel, input: logoInput},
+        {label: discordLabel, input: discordInput},
+        {label: websiteLabel, input: websiteInput},
+        {label: patreonLabel, input: patreonInput}
+    ].forEach(({label, input}) => {
+        const group = document.createElement('div');
+        group.className = 'mb-3';
+        group.appendChild(label);
+        group.appendChild(input);
+        form.appendChild(group);
+    });
     
     const emailLabel = document.createElement('label');
     emailLabel.textContent = gettext('Contact Email');
@@ -228,13 +199,13 @@ addCommunityBtn.addEventListener('click', function() {
             
             if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
             
-            alert('Community created successfully!');
+            alert(gettext('Community created successfully!'));
             communitiesListContainer.style.display = 'none';
             gameContainer.style.display = 'flex';
             acOptions.style.display = 'none';
         } catch (error) {
             console.error('Error:', error);
-            alert('Error creating community. Please try again.');
+            alert(gettext('Error creating community. Please try again.'));
         }
     });
     
@@ -245,13 +216,13 @@ addDriverBtn.addEventListener('click', async function() {
     gameContainer.style.display = 'none';
     document.querySelector('p').style.display = 'none';
     communitiesListContainer.style.display = 'block';
-    communitiesListContainer.innerHTML = '<h2>Add New Driver</h2>';
+    communitiesListContainer.innerHTML = `<h2>${gettext('Add New Driver')}</h2>`;
     
     const form = document.createElement('form');
     form.id = 'add-driver-form';
     
     const nameLabel = document.createElement('label');
-    nameLabel.textContent = 'Driver name:';
+    nameLabel.textContent = gettext('Driver name:');
     nameLabel.className = 'form-label';
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
@@ -260,7 +231,7 @@ addDriverBtn.addEventListener('click', async function() {
     nameInput.required = true;
     
     const communityLabel = document.createElement('label');
-    communityLabel.textContent = 'Community:';
+    communityLabel.textContent = gettext('Community:');
     communityLabel.className = 'form-label';
     const communitySelect = document.createElement('select');
     communitySelect.className = 'form-select';
@@ -269,7 +240,7 @@ addDriverBtn.addEventListener('click', async function() {
     
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
-    defaultOption.textContent = '-- Select a community --';
+    defaultOption.textContent = gettext('-- Select a community --');
     defaultOption.disabled = true;
     defaultOption.selected = true;
     communitySelect.appendChild(defaultOption);
@@ -291,11 +262,11 @@ addDriverBtn.addEventListener('click', async function() {
         });
     } catch (error) {
         console.error('Error loading communities:', error);
-        alert('Error loading communities. Please try again.');
+        alert(gettext('Error loading communities. Please try again.'));
     }
     
     const avatarLabel = document.createElement('label');
-    avatarLabel.textContent = 'Avatar:';
+    avatarLabel.textContent = gettext('Avatar:');
     avatarLabel.className = 'form-label';
     const avatarInput = document.createElement('input');
     avatarInput.type = 'file';
@@ -364,40 +335,37 @@ addDriverBtn.addEventListener('click', async function() {
             
             if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
             
-            alert('Driver created successfully!');
+            alert(gettext('Driver created successfully!'));
             communitiesListContainer.style.display = 'none';
             gameContainer.style.display = 'flex';
             acOptions.style.display = 'none';
         } catch (error) {
             console.error('Error:', error);
-            alert('Error creating driver. Please try again.');
+            alert(gettext('Error creating driver. Please try again.'));
         }
     });
     
     communitiesListContainer.appendChild(form);
 });
 
-
-
-
 viewCalendarBtn.addEventListener('click', async function() {
     const calendarModal = new bootstrap.Modal(document.getElementById('calendarModal'));
     calendarModal.show();
     
     const modalBody = document.querySelector('#calendarModal .modal-body');
-    modalBody.innerHTML = '<p>Loading events...</p>'; 
+    modalBody.innerHTML = `<p>${gettext('Loading events...')}</p>`; 
 
     try {
-            const response = await fetch(`/calendar/?modal=true&game=1`); 
-            if (!response.ok) { 
-                throw new Error(`HTTP Error: ${response.status}`); 
-            } 
-            const template = await response.text();
-            modalBody.innerHTML = template;
+        const response = await fetch(`/calendar/?modal=true&game=1`); 
+        if (!response.ok) { 
+            throw new Error(`HTTP Error: ${response.status}`); 
+        } 
+        const template = await response.text();
+        modalBody.innerHTML = template;
 
     } catch (error) { 
         console.error('Error loading events:', error); 
-        modalBody.innerHTML = '<h2>Event Calendar</h2><p>Error loading events. Please try again later.</p>'; 
+        modalBody.innerHTML = `<h2>${gettext('Event Calendar')}</h2><p>${gettext('Error loading events. Please try again later.')}</p>`; 
         const backButton = document.createElement('button'); 
         backButton.textContent = gettext('Back'); 
         backButton.className = 'btn btn-secondary mt-3';
@@ -407,5 +375,3 @@ viewCalendarBtn.addEventListener('click', async function() {
         modalBody.appendChild(backButton); 
     } 
 });
-
-

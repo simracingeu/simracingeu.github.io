@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-11 18:27+0200\n"
+"POT-Creation-Date: 2025-05-12 09:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Italian <LL@li.org>\n"
@@ -609,7 +609,7 @@ msgstr ""
 "Quali sono le condizioni per il sorpasso all'inizio di una curva (zona di "
 "frenata)?"
 
-#: .\templates\faq.html:142
+#: .\templates\faq.html:142 .\templates\rules.html:219
 #, python-format
 msgid ""
 "Both cars arrive at similar speed/position, with the attacker at least 25%% "
@@ -688,7 +688,7 @@ msgstr ""
 msgid "How is ballast used in the championship?"
 msgstr "Come viene utilizzata la zavorra nel campionato?"
 
-#: .\templates\faq.html:166
+#: .\templates\faq.html:166 .\templates\rules.html:274
 msgid ""
 "Ballast is used to balance performance. If a car demonstrates excessive "
 "superiority, organizers may apply ballast (with prior notice)."
@@ -915,7 +915,7 @@ msgid ""
 "Join Europe's premier simracing competition uniting drivers across borders..."
 msgstr ""
 
-#: .\templates\index.html:11
+#: .\templates\index.html:11 .\templates\index.html:61
 msgid "Read More"
 msgstr ""
 
@@ -941,6 +941,15 @@ msgstr ""
 
 #: .\templates\index.html:22
 msgid "The SREU Advantage: A Pan-European SimRacing Movement"
+msgstr ""
+
+#: .\templates\index.html:23
+msgid ""
+"The SREU transcends traditional championships – it's a pan-European racing "
+"movement. Conceived to highlight the strength and potential of Europe's "
+"simracing scene, this platform brings together communities of all sizes "
+"under a shared, competitive structure — built on mutual respect, "
+"performance, and visibility."
 msgstr ""
 
 #: .\templates\index.html:26
@@ -993,10 +1002,40 @@ msgstr ""
 msgid "Embracing Europe\\"
 msgstr ""
 
+#: .\templates\index.html:42
+msgid "ELITE Tier:"
+msgstr ""
+
+#: .\templates\index.html:42
+msgid "Europe\\"
+msgstr ""
+
+#: .\templates\index.html:43
+msgid "CHALLENGER Tier:"
+msgstr ""
+
+#: .\templates\index.html:43
+msgid "Talented competitors from across Europe develop their racing craft."
+msgstr ""
+
+#: .\templates\index.html:44
+msgid "CLUB Tier:"
+msgstr ""
+
+#: .\templates\index.html:44
+msgid ""
+"An inclusive European community where newcomers experience the thrill of "
+"international competition."
+msgstr ""
+
 #: .\templates\index.html:46
 msgid ""
 "This structure ensures exciting rivalries and clear progression paths for "
 "drivers from every European nation and background."
+msgstr ""
+
+#: .\templates\index.html:58
+msgid "Show Less"
 msgstr ""
 
 #: .\templates\legal.html:9
@@ -1045,8 +1084,6 @@ msgid ""
 msgstr ""
 
 #: .\templates\rules.html:16
-#, fuzzy
-#| msgid "Minor Penalty:"
 msgid "Minor Penalty"
 msgstr "Penalità Minore:"
 
@@ -1422,24 +1459,87 @@ msgstr ""
 msgid "Rear-end collision on a straight:"
 msgstr ""
 
-#: .\templates\rules.html:149
+#: .\templates\rules.html:146
+#, fuzzy
+#| msgid ""
+#| "Side collisions usually occur from not using radar apps like Helicorsa in "
+#| "a visible screen position. Depending on consequences, speed difference, "
+#| "loss of control, and position surrender, they can be classified as Light "
+#| "or Moderate."
+msgid ""
+"This typically occurs in braking zones. Depending on the consequences of the "
+"collision, speed differential, loss of control, and yielding of position, it "
+"may be classified as Light-Moderate."
+msgstr ""
+"Le collisioni laterali solitamente avvengono per il mancato utilizzo di app "
+"radar come Helicorsa in una posizione visibile dello schermo. In base alle "
+"conseguenze, differenza di velocità, perdita di controllo e cessione della "
+"posizione, possono essere classificate come Leggere o Moderate."
+
+#: .\templates\rules.html:148
 msgid "Side collision:"
 msgstr ""
 
-#: .\templates\rules.html:160
+#: .\templates\rules.html:149
+#, fuzzy
+#| msgid ""
+#| "Side collisions usually occur from not using radar apps like Helicorsa in "
+#| "a visible screen position. Depending on consequences, speed difference, "
+#| "loss of control, and position surrender, they can be classified as Light "
+#| "or Moderate."
+msgid ""
+"This usually occurs due to not using radar apps (e.g., Helicorsa) in a "
+"visible screen position. Depending on the consequences, speed differential, "
+"loss of control, and yielding of position, it may be classified as Light-"
+"Moderate."
+msgstr ""
+"Le collisioni laterali solitamente avvengono per il mancato utilizzo di app "
+"radar come Helicorsa in una posizione visibile dello schermo. In base alle "
+"conseguenze, differenza di velocità, perdita di controllo e cessione della "
+"posizione, possono essere classificate come Leggere o Moderate."
+
+#: .\templates\rules.html:151
+msgid "Toward the outside of the curve (side-by-side):"
+msgstr ""
+
+#: .\templates\rules.html:153
+msgid "Cars aligned front-to-front"
+msgstr ""
+
+#: .\templates\rules.html:157
 msgid ""
 "Sporting battle: Slight adjustments to trajectory are permitted, allowing "
 "counter-maneuvers."
 msgstr ""
 
-#: .\templates\rules.html:168
+#: .\templates\rules.html:158
+#, fuzzy
+#| msgid ""
+#| "In a sporting battle, slight trajectory adjustments that allow counter-"
+#| "maneuvers are permitted. Adjustments or positioning that abuse track "
+#| "position may be classified as Moderate."
+msgid ""
+"Abusive battle: Adjustments to trajectory or positioning that abuse track "
+"position may be classified as Moderate."
+msgstr ""
+"In una battaglia sportiva, sono permessi leggeri aggiustamenti di "
+"traiettoria che consentono contromanovre. Aggiustamenti o posizionamenti che "
+"abusano della posizione in pista possono essere classificati come Moderati."
+
+#: .\templates\rules.html:160
+#, fuzzy
+#| msgid "Front-aligned cars:"
+msgid "Non-aligned cars:"
+msgstr "Auto allineate frontalmente:"
+
+#: .\templates\rules.html:164
 #, fuzzy
 #| msgid "Non-aligned cars (half-car overlap against opponent\\"
 msgid "Half-car overlap against opponent’s front"
 msgstr ""
 "Auto non allineate (sovrapposizione di mezza auto contro l'avversario\\"
 
-#: .\templates\rules.html:169
+#: .\templates\rules.html:165
 #, fuzzy
 #| msgid ""
 #| "This is considered abusive behavior, not allowing sporting battle, and "
@@ -1451,13 +1551,388 @@ msgstr ""
 "Questo è considerato comportamento abusivo, non permettendo una battaglia "
 "sportiva, e classificato come Moderato."
 
-#: .\templates\rules.html:256
+#: .\templates\rules.html:167
+msgid "Toward the outside with rear of the external car vs. front:"
+msgstr ""
+
+#: .\templates\rules.html:170
+#, fuzzy
+#| msgid "Will be reviewed and may be classified as Light/Moderate."
+msgid ""
+"Here, the inside driver pushes the outside driver with their rear. This will "
+"be reviewed and may be classified as Light/Moderate."
+msgstr "Sarà rivisto e potrebbe essere classificato come Leggero/Moderato."
+
+#: .\templates\rules.html:172
+#, fuzzy
+#| msgid "Four or more cars aligned in a braking zone:"
+msgid "Extreme case: Four cars aligned in a braking zone"
+msgstr "Quattro o più auto allineate in zona di frenata:"
+
+#: .\templates\rules.html:176
+#, fuzzy
+#| msgid ""
+#| "Each driver must respect their \"virtual\" lane. Leaving this lane to "
+#| "make abusive contact will be classified as Moderate."
+msgid ""
+"If four or more cars enter a braking zone side-by-side, each driver must "
+"respect their 'virtual' lane. Leaving this lane to make abusive contact (as "
+"defined earlier) will be classified as Moderate."
+msgstr ""
+"Ogni pilota deve rispettare la propria corsia \"virtuale\". Lasciare questa "
+"corsia per fare contatto abusivo sarà classificato come Moderato."
+
+#: .\templates\rules.html:179
+msgid "Partial off-track:"
+msgstr ""
+
+#: .\templates\rules.html:183
+#, fuzzy
+#| msgid ""
+#| "If the defending driver loses control by hitting the gravel and the "
+#| "attacking driver (close behind) collides, this may be analyzed as a non-"
+#| "punishable incident due to the defender\\"
+msgid ""
+"If the defending driver loses control by hitting gravel, and the attacking "
+"driver (close behind) collides, this may be analyzed as a non-punishable "
+"incident due to the defender’s loss of control."
+msgstr ""
+"Se il pilota in difesa perde il controllo colpendo la ghiaia e il pilota "
+"all'attacco (vicino dietro) collide, questo potrebbe essere analizzato come "
+"un incidente non punibile a causa del difensore\\"
+
+#: .\templates\rules.html:185
+msgid "Full off-track:"
+msgstr ""
+
+#: .\templates\rules.html:189
+#, fuzzy
+#| msgid ""
+#| "It will be reviewed to determine if the attacking driver could have "
+#| "avoided the collision. It may be classified as Light/Moderate."
+msgid ""
+"This will be reviewed to determine if the attacking driver could have "
+"avoided the collision. It may be classified as Light/Moderate."
+msgstr ""
+"Sarà rivisto per determinare se il pilota all'attacco avrebbe potuto evitare "
+"la collisione. Potrebbe essere classificato come Leggero/Moderato."
+
+#: .\templates\rules.html:191
+msgid "Overtaking"
+msgstr ""
+
+#: .\templates\rules.html:193
+msgid "Non-lapped drivers"
+msgstr ""
+
+#: .\templates\rules.html:196
+msgid ""
+"Overtaking is permitted on either side of the track, provided it does not "
+"interfere with the \\\"racing line\\\" of side-by-side drivers."
+msgstr ""
+
+#: .\templates\rules.html:198
+msgid ""
+"Any driver who hits another during an overtake may be investigated. The "
+"severity of the penalty will depend on"
+msgstr ""
+
+#: .\templates\rules.html:199
+msgid ""
+"the collision’s speed differential, consequences for the defending driver, "
+"impact on other drivers, and position yielding."
+msgstr ""
+
+#: .\templates\rules.html:201
+msgid ""
+"Minimal/moderate contact is allowed during position battles if it does not "
+"cause excessive trajectory changes or spins/offs."
+msgstr ""
+
+#: .\templates\rules.html:203
+msgid ""
+"When battling into a braking zone, drivers must maintain a safe distance to "
+"avoid collisions from early braking."
+msgstr ""
+
+#: .\templates\rules.html:205
+#, fuzzy
+#| msgid "Four or more cars aligned in a braking zone:"
+msgid "Multiple cars in a braking zone:"
+msgstr "Quattro o più auto allineate in zona di frenata:"
+
+#: .\templates\rules.html:206
+msgid ""
+"If multiple cars enter a braking zone side-by-side, each driver must respect "
+"their \\"
+msgstr ""
+
+#: .\templates\rules.html:208
+msgid ""
+"If two defending drivers begin braking ahead, an attacking driver behind "
+"cannot brake later, switch lanes, and claim a preferred lane."
+msgstr ""
+
+#: .\templates\rules.html:210
+msgid ""
+"Natural lane* refers to the lane formed between two or more cars during "
+"braking and throughout the corner."
+msgstr ""
+
+#: .\templates\rules.html:212
+msgid ""
+"Neither attacker nor defender may force a driver against the track’s edges. "
+"Each driver must allow sporting battles."
+msgstr ""
+
+#: .\templates\rules.html:215
+#, fuzzy
+#| msgid ""
+#| "A driver is considered to have gained position (inside/outside) only when "
+#| "their car completely passes the defender. Using Helicorsa and mirrors is "
+#| "recommended to avoid side collisions."
+msgid ""
+"A driver is considered to have gained position (inside/outside) only when "
+"their car fully overtakes the defender. Use Helicorsa and mirrors to avoid "
+"side collisions."
+msgstr ""
+"Un pilota è considerato aver guadagnato posizione (interno/esterno) solo "
+"quando la sua auto supera completamente il difensore. Si raccomanda l'uso di "
+"Helicorsa e specchietti per evitare collisioni laterali."
+
+#: .\templates\rules.html:217
+#, fuzzy
+#| msgid ""
+#| "What are the conditions for overtaking at the start of a curve (braking "
+#| "zone)?"
+msgid "Conditions for overtaking at the start of a curve (braking zone):"
+msgstr ""
+"Quali sono le condizioni per il sorpasso all'inizio di una curva (zona di "
+"frenata)?"
+
+#: .\templates\rules.html:221
+msgid ""
+"The attacker’s trajectory does not obstruct the defender’s natural lane."
+msgstr ""
+
+#: .\templates\rules.html:223
+#, fuzzy
+#| msgid ""
+#| "If these conditions are not met, the attacker must abort the overtake and "
+#| "allow the defender to take their line."
+msgid ""
+"If these conditions are not met, the attacker must abort the overtake and "
+"allow the defender to take their line. Examples:"
+msgstr ""
+"Se queste condizioni non sono soddisfatte, l'attaccante deve abortire il "
+"sorpasso e permettere al difensore di prendere la sua traiettoria."
+
+#: .\templates\rules.html:225
+#, fuzzy
+#| msgid "Front-aligned cars:"
+msgid "Non-aligned drivers:"
+msgstr "Auto allineate frontalmente:"
+
+#: .\templates\rules.html:229
+#, python-format
+msgid ""
+"The attacker fails to reach 25%% alongside in the braking zone (red zone). "
+"The defender may take any line, and the attacker must adjust speed."
+msgstr ""
+
+#: .\templates\rules.html:231
+msgid "Aligned drivers:"
+msgstr ""
+
+#: .\templates\rules.html:238
 msgid ""
 "Both cases show aligned cars in the braking zone. Lane invasion is "
 "prohibited."
 msgstr ""
 
-#: .\templates\rules.html:326
+#: .\templates\rules.html:240
+#, fuzzy
+#| msgid "Four or more cars aligned in a braking zone:"
+msgid "Overtaking in the braking zone:"
+msgstr "Quattro o più auto allineate in zona di frenata:"
+
+#: .\templates\rules.html:242
+msgid ""
+"A full overtake in the braking zone is permissible if the attacker fully "
+"passes the defender. If still aligned by the end of the braking zone, the "
+"defender’s position must be respected."
+msgstr ""
+
+#: .\templates\rules.html:244
+#, fuzzy
+#| msgid "Any contact with another driver is considered an incident. A "
+msgid "Distance from another driver"
+msgstr "Qualsiasi contatto con un altro pilota è considerato incidente. Una "
+
+#: .\templates\rules.html:247
+#, fuzzy
+#| msgid ""
+#| "When battling (or lapping), drivers must leave enough space. Abruptly "
+#| "closing the gap is classified as Moderate."
+msgid ""
+"When battling (or lapping), drivers must leave sufficient space. Abruptly "
+"closing space is classified as Moderate."
+msgstr ""
+"Durante i duelli (o doppiaggi), i piloti devono lasciare spazio sufficiente. "
+"Chiudere bruscamente lo spazio è classificato come Moderato."
+
+#: .\templates\rules.html:249
+msgid "Lapped drivers:"
+msgstr ""
+
+#: .\templates\rules.html:252
+#, fuzzy
+#| msgid ""
+#| "Blue flag rules apply. Lapped drivers must maintain a predictable line "
+#| "and facilitate overtaking by lifting off the throttle. They must yield "
+#| "within a maximum of 4 corners."
+msgid ""
+"Blue flag rules apply. Lapped drivers must maintain a predictable line and "
+"facilitate overtaking by lifting off the throttle."
+msgstr ""
+"Si applicano le regole della bandiera blu. I piloti doppiati devono "
+"mantenere una traiettoria prevedibile e facilitare il sorpasso alzando il "
+"piede dall'acceleratore. Devono cedere il passo entro un massimo di 4 curve."
+
+#: .\templates\rules.html:254
+msgid "Lapped drivers must yield within 4 corners."
+msgstr ""
+
+#: .\templates\rules.html:257
+msgid "Direction changes"
+msgstr ""
+
+#: .\templates\rules.html:260
+#, fuzzy
+#| msgid ""
+#| "When defending on a straight, a driver may make one direction change. Two "
+#| "or more direction changes (e.g., zig-zag) are prohibited and classified "
+#| "as Moderate."
+msgid ""
+"When defending on a straight, a driver may make one directional change. "
+"Example:"
+msgstr ""
+"In difesa sul rettilineo, un pilota può fare un solo cambio di direzione. "
+"Due o più cambi di direzione (es. zig-zag) sono proibiti e classificati come "
+"Moderati."
+
+#: .\templates\rules.html:262
+msgid ""
+"After a right-hand corner, a defender on the left may move right once, then "
+"return left."
+msgstr ""
+
+#: .\templates\rules.html:264
+#, fuzzy
+#| msgid ""
+#| "When defending on a straight, a driver may make one direction change. Two "
+#| "or more direction changes (e.g., zig-zag) are prohibited and classified "
+#| "as Moderate."
+msgid ""
+"Two or more direction changes (e.g., zig-zag) are prohibited and classified "
+"as Moderate."
+msgstr ""
+"In difesa sul rettilineo, un pilota può fare un solo cambio di direzione. "
+"Due o più cambi di direzione (es. zig-zag) sono proibiti e classificati come "
+"Moderati."
+
+#: .\templates\rules.html:268
+msgid "Recovery after off-track:"
+msgstr ""
+
+#: .\templates\rules.html:270
+#, fuzzy
+#| msgid ""
+#| "A driver who partially leaves the track (3 wheels off) must yield to "
+#| "drivers on track and avoid collisions or obstructions. Not doing so is "
+#| "considered Moderate."
+msgid ""
+"A driver who partially leaves the track (3 wheels out) must yield to on-"
+"track drivers and avoid collisions/obstruction. Failure to do so is Moderate."
+msgstr ""
+"Un pilota che esce parzialmente dalla pista (3 ruote fuori) deve dare "
+"precedenza ai piloti in pista ed evitare collisioni od ostruzioni. Non farlo "
+"è considerato Moderato."
+
+#: .\templates\rules.html:272
+msgid "Ballast"
+msgstr ""
+
+#: .\templates\rules.html:277
+msgid "Absences"
+msgstr ""
+
+#: .\templates\rules.html:279
+#, fuzzy, python-format
+#| msgid ""
+#| "Drivers are expected to comply with the schedule. Three unjustified "
+#| "absences in a championship may result in exclusion. Events may be "
+#| "canceled if more than 90%% of drivers are absent."
+msgid ""
+"Drivers are expected to adhere to the calendar. Three unjustified absences "
+"in a championship may result in exclusion. Events may be canceled if >90%% "
+"of drivers are absent."
+msgstr ""
+"I piloti devono rispettare il programma. Tre assenze ingiustificate in un "
+"campionato possono comportare l'esclusione. Gli eventi possono essere "
+"cancellati se più del 90%% dei piloti è assente."
+
+#: .\templates\rules.html:282
+#, fuzzy
+#| msgid "Our Mission"
+msgid "Admission"
+msgstr "La Nostra Missione"
+
+#: .\templates\rules.html:284
+#, fuzzy, python-format
+#| msgid ""
+#| "According to regulations, new drivers can join until 50%% of the "
+#| "championship has passed. After that point, registrations will close "
+#| "unless otherwise specified."
+msgid ""
+"New drivers may join until 50%% of the championship has passed. After that, "
+"entries close unless otherwise specified."
+msgstr ""
+"Secondo il regolamento, nuovi piloti possono unirsi fino al 50%% del "
+"campionato. Dopo quel punto, le registrazioni si chiuderanno salvo diversa "
+"indicazione."
+
+#: .\templates\rules.html:287
+msgid "Protests"
+msgstr ""
+
+#: .\templates\rules.html:289
+#, fuzzy
+#| msgid ""
+#| "Protests must be sent by email to foroassetto@gmail.com. Public "
+#| "complaints against the organizers or ForoAssetto are prohibited."
+msgid ""
+"Protests must be emailed to simracingeurope@gmail.com. Public complaints "
+"against organizers or SimRacingEU are prohibited."
+msgstr ""
+"I reclami devono essere inviati via email a foroassetto@gmail.com. Sono "
+"vietati i reclami pubblici contro gli organizzatori o ForoAssetto."
+
+#: .\templates\rules.html:294
+#, fuzzy
+#| msgid ""
+#| "A driver who loses control must stop immediately. Partial track departure "
+#| "incidents that cause a drastic loss of speed or direction changes may be "
+#| "penalized."
+msgid ""
+"A driver who loses control must stop immediately. Partial off-track "
+"incidents causing drastic speed loss/direction changes may be penalized."
+msgstr ""
+"Un pilota che perde il controllo deve fermarsi immediatamente. Incidenti con "
+"uscita parziale dalla pista che causano una drastica perdita di velocità o "
+"cambi di direzione possono essere penalizzati."
+
+#: .\templates\rules.html:299
 #, fuzzy
 #| msgid ""
 #| "Drivers must not cross the white line at pit entry or exit. RealPenalty "
@@ -1469,7 +1944,29 @@ msgstr ""
 "I piloti non devono attraversare la linea bianca all'entrata o uscita dei "
 "box. RealPenalty applica penalità (es. drive-through) per le infrazioni."
 
-#: .\templates\rules.html:335
+#: .\templates\rules.html:301
+msgid "Parallel vehicles"
+msgstr ""
+
+#: .\templates\rules.html:303
+#, fuzzy
+#| msgid ""
+#| "Vehicles are considered parallel if any part of them overlaps. Each "
+#| "driver must stay in their \"imaginary lane\", even in scenarios with "
+#| "multiple cars."
+msgid ""
+"Vehicles are parallel if any part overlaps. Each driver must stay in their "
+"'imaginary lane,' even in multi-car scenarios."
+msgstr ""
+"I veicoli sono considerati paralleli se qualsiasi parte di essi si "
+"sovrappone. Ogni pilota deve rimanere nella propria \"corsia immaginaria\", "
+"anche in scenari con più auto."
+
+#: .\templates\rules.html:305
+msgid "Damage"
+msgstr ""
+
+#: .\templates\rules.html:307
 #, fuzzy
 #| msgid ""
 #| "If a car becomes immobilized, the \"return to pits\" button should be "
@@ -1483,7 +1980,33 @@ msgstr ""
 "\"ritorno ai box\". Sfruttare questa funzione per ottenere un vantaggio è "
 "considerato un'infrazione Grave."
 
-#: .\templates\rules.html:349
+#: .\templates\rules.html:309
+msgid "Exploits"
+msgstr ""
+
+#: .\templates\rules.html:311
+msgid ""
+"Deliberate track cuts, wall-riding, or using invalid laps for advantage are "
+"Severe. Examples:"
+msgstr ""
+
+#: .\templates\rules.html:313
+msgid "Skipping chicanes."
+msgstr ""
+
+#: .\templates\rules.html:315
+msgid "Bouncing off walls for speed."
+msgstr ""
+
+#: .\templates\rules.html:317
+msgid "Modifying CSP settings to gain an advantage in night championships."
+msgstr ""
+
+#: .\templates\rules.html:319
+msgid "Runoff areas"
+msgstr ""
+
+#: .\templates\rules.html:321
 #, fuzzy
 #| msgid ""
 #| "The use of escape areas must avoid gaining advantages. Repeating this "
@@ -1494,3 +2017,19 @@ msgid ""
 msgstr ""
 "L'uso delle vie di fuga deve evitare di ottenere vantaggi. Ripetere questa "
 "azione può essere considerato Moderato o Grave."
+
+#: .\templates\rules.html:323
+msgid "Changes"
+msgstr ""
+
+#: .\templates\rules.html:325
+msgid "This regulation is subject to updates."
+msgstr ""
+
+#: .\templates\rules.html:327
+msgid "Version numbers reflect revisions."
+msgstr ""
+
+#: .\templates\rules.html:329
+msgid "Staff SimRacingEU"
+msgstr ""

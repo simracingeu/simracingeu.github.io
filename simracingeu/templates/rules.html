@@ -1,153 +1,203 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load i18n %}
-
-
 {% block title %}Rules | SimRacing EU{% endblock %}
-
 {% block content %}
 <section class="esrc-banner container mt-4">
     <h1 class="display-4 mb-4">{% trans 'Rules' %}</h1>
-
+    
     <h2 class="mt-4 mb-3"><strong>{% trans 'Types of Penalties' %}</strong></h2>
     <p class="lead">
         <strong>{% trans "The following outlines the four types of penalties defined based on their impact on the driver:" %}</strong>
-        <br>
+    </p>
+    <p>
         <strong class="text-minor">{% trans "Minor Penalty" %}</strong>
         <br>
         {% trans "A minor penalty may range from a verbal warning to a time penalty of up to 5 seconds added to the race results." %}
-        <br>
+    </p>
+    <p>
         <strong class="text-info">{% trans "Automatic RP Penalty" %}</strong>
         <br>
         {% trans "This refers to automatic penalties issued by the Real Penalty system, including drive-through (passing through the pit lane without stopping) and stop-and-go penalties (passing through the pit lane with a mandatory stop)." %}
-        <br>
+    </p>
+    <p>
         <strong class="text-warning">{% trans "Moderate Penalty" %}</strong>
         <br>
-        {% trans "A moderate penalty may include:" %}
+        {% trans "A moderate penalty may include the following:" %}
         <ul>
             <li>{% trans "A 5-second time penalty in the event" %}</li>
             <li>{% trans "Ballast applied in the following event(s)" %}</li>
             <li>{% trans "Deduction of event points" %}</li>
         </ul>
-        <br>
         {% trans "Moderate penalties are further divided into minor and major:" %}
-        <br>
         <ul>
             <li>{% trans "Minor moderate penalties only result in time deductions" %}</li>
             <li>{% trans "Major moderate penalties may involve ballast or points deductions" %}</li>
         </ul>
-        <br>
+    </p>
+    <p>
         <strong class="text-danger">{% trans "Severe Penalty" %}</strong>
         <br>
-        {% trans "Severe penalties may involve:" %}
+        {% trans "Severe penalties may involve the following:" %}
         <ul>
             <li>{% trans "Disqualification from the event (the driver scores no points)" %}</li>
             <li>{% trans "Suspension from one or more future events" %}</li>
             <li>{% trans "In serious cases, permanent expulsion from the championship" %}</li>
         </ul>
-        <br>
+    </p>
+    <p>
         <strong class="text-dark-red">{% trans "Very Severe Penalty" %}</strong>
         <br>
-        {% trans "A very severe penalty results in:" %}
+        {% trans "A very severe penalty results in the following:" %}
         <ul>
             <li>{% trans "Expulsion from the championship" %}</li>
             <li>{% trans "Removal from all current and future championships" %}</li>
         </ul>
     </p>
+
     <h2 class="mt-5 mb-3"><strong>{% trans 'Software Requirements' %}</strong></h2>
     <p class="lead">
         <strong>{% trans 'Mandatory and Recommended Software' %}</strong>
+    </p>
+    <p>
         - {% trans 'The use of the latest version of Real Penalty is mandatory' %}
+        <br>
         - {% trans 'The Real Penalty package includes the Helicorsa app (strongly recommended for visibility)' %}
+        <br>
         - {% trans 'Presence in Discord voice channels during qualifying and races is mandatory' %}
-
+        <br>
         {% trans 'Note: Absence without valid reason will be considered a moderate penalty (severe for repeat offenses)' %}
     </p>
 
     <h2 class="mt-5 mb-3"><strong>{% trans 'Event Punctuality' %}</strong></h2>
     <p class="lead">
         <strong>{% trans 'All official SimRacingEU events are scheduled at predefined times' %}</strong>
+    </p>
+    <p>
         - {% trans "Times won't change unless >90% of drivers are absent (event cancellation)" %}
+        <br>
         - {% trans 'Event info available at:' %} 🔗 <a href="http://simracingeu.club/s1">http://simracingeu.club/s1</a>
+        <br>
         - {% trans 'Drivers must know number of laps (available via ACSM from championship start)' %}
     </p>
 
     <h2 class="mt-5 mb-3"><strong>{% trans 'Track Limits' %}</strong></h2>
     <p class="lead">
         <strong>{% trans 'Each circuit has defined lateral limits' %}</strong>
+    </p>
+    <p>
         - {% trans 'Usually marked by solid white lines' %}
+        <br>
         - {% trans 'Some circuits include curbs and green zones as track' %}
-
+        <br>
         <strong>{% trans 'Minimum requirement:' %}</strong> {% trans 'One tire must remain within limits at all times' %}
-
+        <br>
         {% trans 'Enforcement based on:' %}
+        <br>
         - {% trans 'Official Kunos limits for original circuits' %}
+        <br>
         - {% trans 'Custom limits for modded tracks' %}
+        <br>
         - {% trans 'Real Penalty recognition during events' %}
     </p>
+
     <h2 class="mt-5 mb-3"><strong>{% trans 'Conduct on Track' %}</strong></h2>
     <p class="lead">
         <strong>{% trans 'Race Start and Opening Laps' %}</strong>
+    </p>
+    <p>
         - {% trans 'Maintain safe distance during first two laps' %}
+        <br>
         - {% trans 'Maximum caution advised (opening lap incidents have greater consequences)' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Braking Rules:' %}</strong>
+        <br>
         - {% trans 'Sudden braking on straights: moderate penalty' %}
+        <br>
         - {% trans "Early braking accepted as defensive technique (attacker's responsibility to keep distance)" %}
     </p>
 
     <h2 class="mt-5 mb-3"><strong>{% trans 'Back to Pits Rules' %}</strong></h2>
     <p class="lead">
         <strong>{% trans 'General Rules:' %}</strong>
+    </p>
+    <p>
         - {% trans 'Only allowed when car is completely undrivable/poses danger' %}
+        <br>
         - {% trans 'Using it blocks car in pits' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Race Sessions:' %}</strong>
+        <br>
         - {% trans 'Attempting to rejoin after use → automatic disqualification' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Qualifying Sessions:' %}</strong>
+        <br>
         - {% trans 'Driver cannot continue after use' %}
+        <br>
         - {% trans 'Must start race with best pre-use time' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Pit Box Exception:' %}</strong>
+        <br>
         ✅ {% trans 'Allowed if car is within assigned pit stall' %}
     </p>
 
     <h2 class="mt-5 mb-3"><strong>{% trans 'Incident Classification' %}</strong></h2>
     <p class="lead">
         <strong>{% trans 'Definition:' %}</strong> {% trans 'Any contact with another driver' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Moderate Penalty:' %}</strong> {% trans 'If contact causes spin/off-track' %}
-
+        <br>
         <strong>{% trans 'Severity Factors:' %}</strong>
+        <br>
         - {% trans 'Speed difference at contact' %}
+        <br>
         - {% trans 'Intentionality' %}
+        <br>
         - {% trans 'Repeat offenses' %}
+        <br>
         - {% trans 'Consequences' %}
+        <br>
         - {% trans 'Failure to yield position' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Light Contact (1-on-1):' %}</strong>
+        <br>
         - {% trans '1-2 contacts (no spin/off-track) → Minor' %}
+        <br>
         - {% trans '1 contact causing spin/off-track → Moderate' %}
+        <br>
         - {% trans '3+ contacts in same corner → Moderate/Severe' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Moderate Contact (1-on-1):' %}</strong>
+        <br>
         - {% trans 'Causes spin/complete off-track' %}
+        <br>
         - {% trans '3+ incidents without yielding → Severe penalty' %}
-
+        <br>
         ⏱️ {% trans 'Different criteria may apply to endurance events' %}
     </p>
     <p>
         <strong>{% trans 'Possible Collisions' %}</strong>
-
+        <br>
         {% trans 'The following details the possible collision scenarios that have been differentiated:' %}
-
+    </p>
+    <p>
         <strong>{% trans 'Rear-end collision on a straight:' %}</strong>
+        <br>
         {% trans "This typically occurs in braking zones. Depending on the consequences of the collision, speed differential, loss of control, and yielding of position, it may be classified as Light-Moderate." %}
-
+    </p>
+    <p>
         <strong>{% trans 'Side collision:' %}</strong>
+        <br>
         {% trans "This usually occurs due to not using radar apps (e.g., Helicorsa) in a visible screen position. Depending on the consequences, speed differential, loss of control, and yielding of position, it may be classified as Light-Moderate." %}
-
+    </p>
+    <p>
         <strong>{% trans "Toward the outside of the curve (side-by-side):" %}</strong>
         <br>
         <strong>{% trans "Cars aligned front-to-front" %}</strong>
@@ -155,179 +205,202 @@
         <img src="{% static 'img/paralel.png' %}" style="width: 400px; display: block; margin: 0 auto;">
         <br>
         {% trans "Sporting battle: Slight adjustments to trajectory are permitted, allowing counter-maneuvers." %}
-        {% trans "Abusive battle: Adjustments to trajectory or positioning that abuse track position may be classified as Moderate." %}
         <br>
+        {% trans "Abusive battle: Adjustments to trajectory or positioning that abuse track position may be classified as Moderate." %}
+    </p>
+    <p>
         <strong>{% trans "Non-aligned cars:" %}</strong>
         <br>
         <img src="{% static 'img/abus1.png' %}" style="width: 400px; display: block; margin: 0 auto;">
         <br>
         {% trans "Half-car overlap against opponent’s front" %}
-        {% trans "This is directly considered an abusive action, disallowing any sporting battle and classified as Moderate." %}
         <br>
+        {% trans "This is directly considered an abusive action, disallowing any sporting battle and classified as Moderate." %}
+    </p>
+    <p>
         <strong>{% trans "Toward the outside with rear of the external car vs. front:" %}</strong>
         <br>
         <img src="{% static 'img/abus2.png' %}" style="width: 400px; display: block; margin: 0 auto;">
-        <br>{% trans "Here, the inside driver pushes the outside driver with their rear. This will be reviewed and may be classified as Light/Moderate." %}
         <br>
+        {% trans "Here, the inside driver pushes the outside driver with their rear. This will be reviewed and may be classified as Light/Moderate." %}
+    </p>
+    <p>
         <strong>{% trans "Extreme case: Four cars aligned in a braking zone" %}</strong>
         <br>
         <img src="{% static 'img/4ideal.png' %}" style="width: 400px; display: block; margin: 0 auto;">
         <br>
         {% trans "If four or more cars enter a braking zone side-by-side, each driver must respect their 'virtual' lane. Leaving this lane to make abusive contact (as defined earlier) will be classified as Moderate." %}
-
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Partial off-track:" %}</strong>
         <br>
         <img src="{% static 'img/partialout.png' %}" style="width: 400px; display: block; margin: 0 auto;">
         <br>
         {% trans "If the defending driver loses control by hitting gravel, and the attacking driver (close behind) collides, this may be analyzed as a non-punishable incident due to the defender’s loss of control." %}
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Full off-track:" %}</strong>
         <br>
         <img src="{% static 'img/total_out.png' %}" style="width: 400px; display: block; margin: 0 auto;">
         <br>
         {% trans "This will be reviewed to determine if the attacking driver could have avoided the collision. It may be classified as Light/Moderate." %}
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Overtaking" %}</strong>
         <br>
         <strong>{% trans "Non-lapped drivers" %}</strong>
         <br>
-
-        {% trans 'Overtaking is permitted on either side of the track, provided it does not interfere with the \"racing line\" of side-by-side drivers.' %}
-
+        {% trans 'Overtaking is permitted on either side of the track, provided it does not interfere with the "racing line" of side-by-side drivers.' %}
+        <br>
         {% trans "Any driver who hits another during an overtake may be investigated. The severity of the penalty will depend on" %}
+        <br>
         {% trans "the collision’s speed differential, consequences for the defending driver, impact on other drivers, and position yielding." %}
-
+        <br>
         {% trans "Minimal/moderate contact is allowed during position battles if it does not cause excessive trajectory changes or spins/offs." %}
-
+        <br>
         {% trans "When battling into a braking zone, drivers must maintain a safe distance to avoid collisions from early braking." %}
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Multiple cars in a braking zone:" %}</strong>
-        {% trans "If multiple cars enter a braking zone side-by-side, each driver must respect their \"natural lane.\" Example:" %}
-
+        <br>
+        {% trans "If multiple cars enter a braking zone side-by-side, each driver must respect their 'natural lane.' Example:" %}
+        <br>
         {% trans "If two defending drivers begin braking ahead, an attacking driver behind cannot brake later, switch lanes, and claim a preferred lane." %}
-
+        <br>
         {% trans "Natural lane* refers to the lane formed between two or more cars during braking and throughout the corner." %}
-
+        <br>
         {% trans "Neither attacker nor defender may force a driver against the track’s edges. Each driver must allow sporting battles." %}
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Gaining position:" %}</strong>
+        <br>
         {% trans "A driver is considered to have gained position (inside/outside) only when their car fully overtakes the defender. Use Helicorsa and mirrors to avoid side collisions." %}
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Conditions for overtaking at the start of a curve (braking zone):" %}</strong>
-
-        {% trans "Both cars arrive at similar speed/position, with the attacker at least 25% alongside the defender." %}
-
-        {% trans "The attacker’s trajectory does not obstruct the defender’s natural lane." %}
-
-        {% trans "If these conditions are not met, the attacker must abort the overtake and allow the defender to take their line. Examples:" %}
         <br>
+        {% trans "Both cars arrive at similar speed/position, with the attacker at least 25% alongside the defender." %}
+        <br>
+        {% trans "The attacker’s trajectory does not obstruct the defender’s natural lane." %}
+        <br>
+        {% trans "If these conditions are not met, the attacker must abort the overtake and allow the defender to take their line. Examples:" %}
+    </p>
+    <p>
         <strong>{% trans "Non-aligned drivers:" %}</strong>
         <br>
         <img src="{% static 'img/notpara1.png' %}" style="width: 400px; display: block; margin: 0 auto;">
         <br>
         {% trans "The attacker fails to reach 25% alongside in the braking zone (red zone). The defender may take any line, and the attacker must adjust speed." %}
-        <br>
+    </p>
+    <p>
         <strong>{% trans "Aligned drivers:" %}</strong>
         <br>
-    <div style="text-align: center; margin-bottom: 15px;">
-        <img src="{% static 'img/notpara21.png' %}" style="width: 400px; margin-right: 10px; display: inline-block;">
-        <img src="{% static 'img/notpara22.png' %}" style="width: 400px; margin-left: 10px; display: inline-block;">
-    </div>
-    <br>
-    {% trans "Both cases show aligned cars in the braking zone. Lane invasion is prohibited." %}
-    <br>
-    <strong>{% trans "Overtaking in the braking zone:" %}</strong>
-    <br>
-    {% trans "A full overtake in the braking zone is permissible if the attacker fully passes the defender. If still aligned by the end of the braking zone, the defender’s position must be respected." %}
-    <br>
-    <strong>{% trans "Distance from another driver" %}</strong>
-    <br>
-
-    {% trans "When battling (or lapping), drivers must leave sufficient space. Abruptly closing space is classified as Moderate." %}
-    <br>
-    <strong>{% trans "Lapped drivers:" %}</strong>
-    <br>
-
-    {% trans "Blue flag rules apply. Lapped drivers must maintain a predictable line and facilitate overtaking by lifting off the throttle." %}
-
-    {% trans "Lapped drivers must yield within 4 corners." %}
-
-    <br>
-    <strong>{% trans "Direction changes" %}</strong>
-    <br>
-
-    {% trans "When defending on a straight, a driver may make one directional change. Example:" %}
-
-    {% trans "After a right-hand corner, a defender on the left may move right once, then return left." %}
-
-    {% trans "Two or more direction changes (e.g., zig-zag) are prohibited and classified as Moderate." %}
-    <img src="{% static 'img/doble_cambio.png' %}" style="width: 400px; display: block; margin: 0 auto;">
-
-    <br>
-    <strong>{% trans "Recovery after off-track:" %}</strong>
-    <br>
-    {% trans "A driver who partially leaves the track (3 wheels out) must yield to on-track drivers and avoid collisions/obstruction. Failure to do so is Moderate." %}
-    <br>
-    <strong>{% trans "Ballast" %}</strong>
-    <br>
-    {% trans "Ballast is used to balance performance. If a car demonstrates excessive superiority, organizers may apply ballast (with prior notice)." %}
-    <br>
-
-    <strong>{% trans "Absences" %}</strong>
-    <br>
-    {% trans "Drivers are expected to adhere to the calendar. Three unjustified absences in a championship may result in exclusion. Events may be canceled if >90% of drivers are absent." %}
-    <br>
-
-    <strong>{% trans "Admission" %}</strong>
-    <br>
-    {% trans "New drivers may join until 50% of the championship has passed. After that, entries close unless otherwise specified." %}
-    <br>
-
-    <strong>{% trans "Protests" %}</strong>
-    <br>
-    {% trans "Protests must be emailed to simracingeurope@gmail.com. Public complaints against organizers or SimRacingEU are prohibited." %}
-    <br>
-
-    <strong>{% trans "Loss of car control" %}</strong>
-    <br>
-    {% trans "A driver who loses control must stop immediately. Partial off-track incidents causing drastic speed loss/direction changes may be penalized." %}
-    <br>
-
-    <strong>{% trans "Pit stops" %}</strong>
-    <br>
-    {% trans "Drivers must not cross the pit lane white line. RealPenalty enforces penalties (e.g., drive-through)." %}
-    <br>
-    <strong>{% trans "Parallel vehicles" %}</strong>
-    <br>
-    {% trans "Vehicles are parallel if any part overlaps. Each driver must stay in their 'imaginary lane,' even in multi-car scenarios." %}
-    <br>
-    <strong>{% trans "Damage" %}</strong>
-    <br>
-    {% trans "If a car is immobilized, use the 'back to pits' button. Exploiting this for advantage is Severe." %}
-    <br>
-    <strong>{% trans "Exploits" %}</strong>
-    <br>
-    {% trans "Deliberate track cuts, wall-riding, or using invalid laps for advantage are Severe. Examples:" %}
-
-    {% trans "Skipping chicanes." %}
-
-    {% trans "Bouncing off walls for speed." %}
-
-    {% trans "Modifying CSP settings to gain an advantage in night championships." %}
-    <br>
-    <strong>{% trans "Runoff areas" %}</strong>
-    <br>
-    {% trans "Runoff use must avoid gaining advantage. Repeating this may be Moderate/Severe." %}
-    <br>
-    <strong>{% trans "Changes" %}</strong>
-    <br>
-    {% trans "This regulation is subject to updates." %}
-
-    {% trans "Version numbers reflect revisions." %}
-
-    {% trans "Staff SimRacingEU" %}
+        <div style="text-align: center; margin-bottom: 15px;">
+            <img src="{% static 'img/notpara21.png' %}" style="width: 400px; margin-right: 10px; display: inline-block;">
+            <img src="{% static 'img/notpara22.png' %}" style="width: 400px; margin-left: 10px; display: inline-block;">
+        </div>
+        <br>
+        {% trans "Both cases show aligned cars in the braking zone. Lane invasion is prohibited." %}
     </p>
-
+    <p>
+        <strong>{% trans "Overtaking in the braking zone:" %}</strong>
+        <br>
+        {% trans "A full overtake in the braking zone is permissible if the attacker fully passes the defender. If still aligned by the end of the braking zone, the defender’s position must be respected." %}
+    </p>
+    <p>
+        <strong>{% trans "Distance from another driver" %}</strong>
+        <br>
+        {% trans "When battling (or lapping), drivers must leave sufficient space. Abruptly closing space is classified as Moderate." %}
+    </p>
+    <p>
+        <strong>{% trans "Lapped drivers:" %}</strong>
+        <br>
+        {% trans "Blue flag rules apply. Lapped drivers must maintain a predictable line and facilitate overtaking by lifting off the throttle." %}
+        <br>
+        {% trans "Lapped drivers must yield within 4 corners." %}
+    </p>
+    <p>
+        <strong>{% trans "Direction changes" %}</strong>
+        <br>
+        {% trans "When defending on a straight, a driver may make one directional change. Example:" %}
+        <br>
+        {% trans "After a right-hand corner, a defender on the left may move right once, then return left." %}
+        <br>
+        {% trans "Two or more direction changes (e.g., zig-zag) are prohibited and classified as Moderate." %}
+        <br>
+        <img src="{% static 'img/doble_cambio.png' %}" style="width: 400px; display: block; margin: 0 auto;">
+    </p>
+    <p>
+        <strong>{% trans "Recovery after off-track:" %}</strong>
+        <br>
+        {% trans "A driver who partially leaves the track (3 wheels out) must yield to on-track drivers and avoid collisions/obstruction. Failure to do so is Moderate." %}
+    </p>
+    <p>
+        <strong>{% trans "Ballast" %}</strong>
+        <br>
+        {% trans "Ballast is used to balance performance. If a car demonstrates excessive superiority, organizers may apply ballast (with prior notice)." %}
+    </p>
+    <p>
+        <strong>{% trans "Absences" %}</strong>
+        <br>
+        {% trans "Drivers are expected to adhere to the calendar. Three unjustified absences in a championship may result in exclusion. Events may be canceled if >90% of drivers are absent." %}
+    </p>
+    <p>
+        <strong>{% trans "Admission" %}</strong>
+        <br>
+        {% trans "New drivers may join until 50% of the championship has passed. After that, entries close unless otherwise specified." %}
+    </p>
+    <p>
+        <strong>{% trans "Protests" %}</strong>
+        <br>
+        {% trans "Protests must be emailed to simracingeurope@gmail.com. Public complaints against organizers or SimRacingEU are prohibited." %}
+    </p>
+    <p>
+        <strong>{% trans "Loss of car control" %}</strong>
+        <br>
+        {% trans "A driver who loses control must stop immediately. Partial off-track incidents causing drastic speed loss/direction changes may be penalized." %}
+    </p>
+    <p>
+        <strong>{% trans "Pit stops" %}</strong>
+        <br>
+        {% trans "Drivers must not cross the pit lane white line. RealPenalty enforces penalties (e.g., drive-through)." %}
+    </p>
+    <p>
+        <strong>{% trans "Parallel vehicles" %}</strong>
+        <br>
+        {% trans "Vehicles are parallel if any part overlaps. Each driver must stay in their 'imaginary lane,' even in multi-car scenarios." %}
+    </p>
+    <p>
+        <strong>{% trans "Damage" %}</strong>
+        <br>
+        {% trans "If a car is immobilized, use the 'back to pits' button. Exploiting this for advantage is Severe." %}
+    </p>
+    <p>
+        <strong>{% trans "Exploits" %}</strong>
+        <br>
+        {% trans "Deliberate track cuts, wall-riding, or using invalid laps for advantage are Severe. Examples:" %}
+        <br>
+        {% trans "Skipping chicanes." %}
+        <br>
+        {% trans "Bouncing off walls for speed." %}
+        <br>
+        {% trans "Modifying CSP settings to gain an advantage in night championships." %}
+    </p>
+    <p>
+        <strong>{% trans "Runoff areas" %}</strong>
+        <br>
+        {% trans "Runoff use must avoid gaining advantage. Repeating this may be Moderate/Severe." %}
+    </p>
+    <p>
+        <strong>{% trans "Changes" %}</strong>
+        <br>
+        {% trans "This regulation is subject to updates." %}
+        <br>
+        {% trans "Version numbers reflect revisions." %}
+        <br>
+        {% trans "Version 1 - 12/05/2025" %}
+        <br>
+        {% trans "Staff SimRacingEU" %}
+    </p>
 </section>
 {% endblock %}

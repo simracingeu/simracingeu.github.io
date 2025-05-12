@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-12 11:56+0200\n"
+"POT-Creation-Date: 2025-05-12 15:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,7 +280,7 @@ msgid ""
 "and-Go."
 msgstr ""
 
-#: .\templates\faq.html:47 .\templates\rules.html:120
+#: .\templates\faq.html:47 .\templates\rules.html:153
 msgid "Moderate Penalty:"
 msgstr ""
 
@@ -515,7 +515,7 @@ msgid ""
 "zone)?"
 msgstr ""
 
-#: .\templates\faq.html:142 .\templates\rules.html:219
+#: .\templates\faq.html:142 .\templates\rules.html:282
 #, python-format
 msgid ""
 "Both cars arrive at similar speed/position, with the attacker at least 25%% "
@@ -579,7 +579,7 @@ msgstr ""
 msgid "How is ballast used in the championship?"
 msgstr ""
 
-#: .\templates\faq.html:166 .\templates\rules.html:274
+#: .\templates\faq.html:166 .\templates\rules.html:341
 msgid ""
 "Ballast is used to balance performance. If a car demonstrates excessive "
 "superiority, organizers may apply ballast (with prior notice)."
@@ -680,6 +680,8 @@ msgid ""
 "Yes, these regulations are subject to updates. Version numbers reflect "
 "revisions."
 msgstr ""
+
+
 
 #: .\templates\faq.html:209
 msgid "What software is mandatory to participate?"
@@ -910,35 +912,35 @@ msgstr ""
 msgid "coming soon"
 msgstr ""
 
-#: .\templates\rules.html:10
+#: .\templates\rules.html:7
 msgid "Rules"
 msgstr ""
 
-#: .\templates\rules.html:12
+#: .\templates\rules.html:9
 msgid "Types of Penalties"
 msgstr ""
 
-#: .\templates\rules.html:14
+#: .\templates\rules.html:11
 msgid ""
 "The following outlines the four types of penalties defined based on their "
 "impact on the driver:"
 msgstr ""
 
-#: .\templates\rules.html:16
+#: .\templates\rules.html:14
 msgid "Minor Penalty"
 msgstr ""
 
-#: .\templates\rules.html:18
+#: .\templates\rules.html:16
 msgid ""
 "A minor penalty may range from a verbal warning to a time penalty of up to 5 "
 "seconds added to the race results."
 msgstr ""
 
-#: .\templates\rules.html:20
+#: .\templates\rules.html:19
 msgid "Automatic RP Penalty"
 msgstr ""
 
-#: .\templates\rules.html:22
+#: .\templates\rules.html:21
 msgid ""
 "This refers to automatic penalties issued by the Real Penalty system, "
 "including drive-through (passing through the pit lane without stopping) and "
@@ -946,7 +948,7 @@ msgid ""
 msgstr ""
 
 #: .\templates\rules.html:26
-msgid "A moderate penalty may include:"
+msgid "A moderate penalty may include the following:"
 msgstr ""
 
 #: .\templates\rules.html:28
@@ -961,35 +963,35 @@ msgstr ""
 msgid "Deduction of event points"
 msgstr ""
 
-#: .\templates\rules.html:33
+#: .\templates\rules.html:32
 msgid "Moderate penalties are further divided into minor and major:"
 msgstr ""
 
-#: .\templates\rules.html:36
+#: .\templates\rules.html:34
 msgid "Minor moderate penalties only result in time deductions"
 msgstr ""
 
-#: .\templates\rules.html:37
+#: .\templates\rules.html:35
 msgid "Major moderate penalties may involve ballast or points deductions"
 msgstr ""
 
-#: .\templates\rules.html:40
+#: .\templates\rules.html:39
 msgid "Severe Penalty"
 msgstr ""
 
-#: .\templates\rules.html:42
-msgid "Severe penalties may involve:"
+#: .\templates\rules.html:41
+msgid "Severe penalties may involve the following:"
 msgstr ""
 
-#: .\templates\rules.html:44
+#: .\templates\rules.html:43
 msgid "Disqualification from the event (the driver scores no points)"
 msgstr ""
 
-#: .\templates\rules.html:45
+#: .\templates\rules.html:44
 msgid "Suspension from one or more future events"
 msgstr ""
 
-#: .\templates\rules.html:46
+#: .\templates\rules.html:45
 msgid "In serious cases, permanent expulsion from the championship"
 msgstr ""
 
@@ -998,7 +1000,7 @@ msgid "Very Severe Penalty"
 msgstr ""
 
 #: .\templates\rules.html:51
-msgid "A very severe penalty results in:"
+msgid "A very severe penalty results in the following:"
 msgstr ""
 
 #: .\templates\rules.html:53
@@ -1009,269 +1011,271 @@ msgstr ""
 msgid "Removal from all current and future championships"
 msgstr ""
 
-#: .\templates\rules.html:57
+#: .\templates\rules.html:58
 msgid "Software Requirements"
 msgstr ""
 
-#: .\templates\rules.html:59
+#: .\templates\rules.html:60
 msgid "Mandatory and Recommended Software"
 msgstr ""
 
-#: .\templates\rules.html:60
+#: .\templates\rules.html:63
 msgid "The use of the latest version of Real Penalty is mandatory"
 msgstr ""
 
-#: .\templates\rules.html:61
+#: .\templates\rules.html:65
 msgid ""
 "The Real Penalty package includes the Helicorsa app (strongly recommended "
 "for visibility)"
 msgstr ""
 
-#: .\templates\rules.html:62
+#: .\templates\rules.html:67
 msgid ""
 "Presence in Discord voice channels during qualifying and races is mandatory"
 msgstr ""
 
-#: .\templates\rules.html:64
+#: .\templates\rules.html:69
 msgid ""
 "Note: Absence without valid reason will be considered a moderate penalty "
 "(severe for repeat offenses)"
 msgstr ""
 
-#: .\templates\rules.html:67
+#: .\templates\rules.html:72
 msgid "Event Punctuality"
 msgstr ""
 
-#: .\templates\rules.html:69
+#: .\templates\rules.html:74
 msgid "All official SimRacingEU events are scheduled at predefined times"
 msgstr ""
 
-#: .\templates\rules.html:70
+#: .\templates\rules.html:77
 #, python-format
 msgid ""
 "Times won't change unless >90%% of drivers are absent (event cancellation)"
 msgstr ""
 
-#: .\templates\rules.html:71
+#: .\templates\rules.html:79
 msgid "Event info available at:"
 msgstr ""
 
-#: .\templates\rules.html:72
+#: .\templates\rules.html:81
 msgid ""
 "Drivers must know number of laps (available via ACSM from championship start)"
 msgstr ""
 
-#: .\templates\rules.html:75
+#: .\templates\rules.html:84
 msgid "Track Limits"
 msgstr ""
 
-#: .\templates\rules.html:77
+#: .\templates\rules.html:86
 msgid "Each circuit has defined lateral limits"
 msgstr ""
 
-#: .\templates\rules.html:78
+#: .\templates\rules.html:89
 msgid "Usually marked by solid white lines"
 msgstr ""
 
-#: .\templates\rules.html:79
+#: .\templates\rules.html:91
 msgid "Some circuits include curbs and green zones as track"
 msgstr ""
 
-#: .\templates\rules.html:81
+#: .\templates\rules.html:93
 msgid "Minimum requirement:"
 msgstr ""
 
-#: .\templates\rules.html:81
+#: .\templates\rules.html:93
 msgid "One tire must remain within limits at all times"
 msgstr ""
 
-#: .\templates\rules.html:83
+#: .\templates\rules.html:95
 msgid "Enforcement based on:"
 msgstr ""
 
-#: .\templates\rules.html:84
+#: .\templates\rules.html:97
 msgid "Official Kunos limits for original circuits"
 msgstr ""
 
-#: .\templates\rules.html:85
+#: .\templates\rules.html:99
 msgid "Custom limits for modded tracks"
 msgstr ""
 
-#: .\templates\rules.html:86
+#: .\templates\rules.html:101
 msgid "Real Penalty recognition during events"
 msgstr ""
 
-#: .\templates\rules.html:88
+#: .\templates\rules.html:104
 msgid "Conduct on Track"
 msgstr ""
 
-#: .\templates\rules.html:90
+#: .\templates\rules.html:106
 msgid "Race Start and Opening Laps"
 msgstr ""
 
-#: .\templates\rules.html:91
+#: .\templates\rules.html:109
 msgid "Maintain safe distance during first two laps"
 msgstr ""
 
-#: .\templates\rules.html:92
+#: .\templates\rules.html:111
 msgid ""
 "Maximum caution advised (opening lap incidents have greater consequences)"
 msgstr ""
 
-#: .\templates\rules.html:94
+#: .\templates\rules.html:114
 msgid "Braking Rules:"
 msgstr ""
 
-#: .\templates\rules.html:95
+#: .\templates\rules.html:116
 msgid "Sudden braking on straights: moderate penalty"
 msgstr ""
 
-#: .\templates\rules.html:96
-msgid "Early braking accepted as defensive technique (attacker\\"
+#: .\templates\rules.html:118
+msgid ""
+"Early braking accepted as defensive technique (attacker's responsibility to "
+"keep distance)"
 msgstr ""
 
-#: .\templates\rules.html:99
+#: .\templates\rules.html:121
 msgid "Back to Pits Rules"
 msgstr ""
 
-#: .\templates\rules.html:101
+#: .\templates\rules.html:123
 msgid "General Rules:"
 msgstr ""
 
-#: .\templates\rules.html:102
+#: .\templates\rules.html:126
 msgid "Only allowed when car is completely undrivable/poses danger"
 msgstr ""
 
-#: .\templates\rules.html:103
+#: .\templates\rules.html:128
 msgid "Using it blocks car in pits"
 msgstr ""
 
-#: .\templates\rules.html:105
+#: .\templates\rules.html:131
 msgid "Race Sessions:"
 msgstr ""
 
-#: .\templates\rules.html:106
+#: .\templates\rules.html:133
 msgid "Attempting to rejoin after use → automatic disqualification"
 msgstr ""
 
-#: .\templates\rules.html:108
+#: .\templates\rules.html:136
 msgid "Qualifying Sessions:"
 msgstr ""
 
-#: .\templates\rules.html:109
+#: .\templates\rules.html:138
 msgid "Driver cannot continue after use"
 msgstr ""
 
-#: .\templates\rules.html:110
+#: .\templates\rules.html:140
 msgid "Must start race with best pre-use time"
 msgstr ""
 
-#: .\templates\rules.html:112
+#: .\templates\rules.html:143
 msgid "Pit Box Exception:"
 msgstr ""
 
-#: .\templates\rules.html:113
+#: .\templates\rules.html:145
 msgid "Allowed if car is within assigned pit stall"
 msgstr ""
 
-#: .\templates\rules.html:116
+#: .\templates\rules.html:148
 msgid "Incident Classification"
 msgstr ""
 
-#: .\templates\rules.html:118
+#: .\templates\rules.html:150
 msgid "Definition:"
 msgstr ""
 
-#: .\templates\rules.html:118
+#: .\templates\rules.html:150
 msgid "Any contact with another driver"
 msgstr ""
 
-#: .\templates\rules.html:120
+#: .\templates\rules.html:153
 msgid "If contact causes spin/off-track"
 msgstr ""
 
-#: .\templates\rules.html:122
+#: .\templates\rules.html:155
 msgid "Severity Factors:"
 msgstr ""
 
-#: .\templates\rules.html:123
+#: .\templates\rules.html:157
 msgid "Speed difference at contact"
 msgstr ""
 
-#: .\templates\rules.html:124
+#: .\templates\rules.html:159
 msgid "Intentionality"
 msgstr ""
 
-#: .\templates\rules.html:125
+#: .\templates\rules.html:161
 msgid "Repeat offenses"
 msgstr ""
 
-#: .\templates\rules.html:126
+#: .\templates\rules.html:163
 msgid "Consequences"
 msgstr ""
 
-#: .\templates\rules.html:127
+#: .\templates\rules.html:165
 msgid "Failure to yield position"
 msgstr ""
 
-#: .\templates\rules.html:129
+#: .\templates\rules.html:168
 msgid "Light Contact (1-on-1):"
 msgstr ""
 
-#: .\templates\rules.html:130
+#: .\templates\rules.html:170
 msgid "1-2 contacts (no spin/off-track) → Minor"
 msgstr ""
 
-#: .\templates\rules.html:131
+#: .\templates\rules.html:172
 msgid "1 contact causing spin/off-track → Moderate"
 msgstr ""
 
-#: .\templates\rules.html:132
+#: .\templates\rules.html:174
 msgid "3+ contacts in same corner → Moderate/Severe"
 msgstr ""
 
-#: .\templates\rules.html:134
+#: .\templates\rules.html:177
 msgid "Moderate Contact (1-on-1):"
 msgstr ""
 
-#: .\templates\rules.html:135
+#: .\templates\rules.html:179
 msgid "Causes spin/complete off-track"
 msgstr ""
 
-#: .\templates\rules.html:136
+#: .\templates\rules.html:181
 msgid "3+ incidents without yielding → Severe penalty"
 msgstr ""
 
-#: .\templates\rules.html:138
+#: .\templates\rules.html:183
 msgid "Different criteria may apply to endurance events"
 msgstr ""
 
-#: .\templates\rules.html:141
+#: .\templates\rules.html:186
 msgid "Possible Collisions"
 msgstr ""
 
-#: .\templates\rules.html:143
+#: .\templates\rules.html:188
 msgid ""
 "The following details the possible collision scenarios that have been "
 "differentiated:"
 msgstr ""
 
-#: .\templates\rules.html:145
+#: .\templates\rules.html:191
 msgid "Rear-end collision on a straight:"
 msgstr ""
 
-#: .\templates\rules.html:146
+#: .\templates\rules.html:193
 msgid ""
 "This typically occurs in braking zones. Depending on the consequences of the "
 "collision, speed differential, loss of control, and yielding of position, it "
 "may be classified as Light-Moderate."
 msgstr ""
 
-#: .\templates\rules.html:148
+#: .\templates\rules.html:196
 msgid "Side collision:"
 msgstr ""
 
-#: .\templates\rules.html:149
+#: .\templates\rules.html:198
 msgid ""
 "This usually occurs due to not using radar apps (e.g., Helicorsa) in a "
 "visible screen position. Depending on the consequences, speed differential, "
@@ -1279,271 +1283,271 @@ msgid ""
 "Moderate."
 msgstr ""
 
-#: .\templates\rules.html:151
+#: .\templates\rules.html:201
 msgid "Toward the outside of the curve (side-by-side):"
 msgstr ""
 
-#: .\templates\rules.html:153
+#: .\templates\rules.html:203
 msgid "Cars aligned front-to-front"
 msgstr ""
 
-#: .\templates\rules.html:157
+#: .\templates\rules.html:207
 msgid ""
 "Sporting battle: Slight adjustments to trajectory are permitted, allowing "
 "counter-maneuvers."
 msgstr ""
 
-#: .\templates\rules.html:158
+#: .\templates\rules.html:209
 msgid ""
 "Abusive battle: Adjustments to trajectory or positioning that abuse track "
 "position may be classified as Moderate."
 msgstr ""
 
-#: .\templates\rules.html:160
+#: .\templates\rules.html:212
 msgid "Non-aligned cars:"
 msgstr ""
 
-#: .\templates\rules.html:164
+#: .\templates\rules.html:216
 msgid "Half-car overlap against opponent’s front"
 msgstr ""
 
-#: .\templates\rules.html:165
+#: .\templates\rules.html:218
 msgid ""
 "This is directly considered an abusive action, disallowing any sporting "
 "battle and classified as Moderate."
 msgstr ""
 
-#: .\templates\rules.html:167
+#: .\templates\rules.html:221
 msgid "Toward the outside with rear of the external car vs. front:"
 msgstr ""
 
-#: .\templates\rules.html:170
+#: .\templates\rules.html:225
 msgid ""
 "Here, the inside driver pushes the outside driver with their rear. This will "
 "be reviewed and may be classified as Light/Moderate."
 msgstr ""
 
-#: .\templates\rules.html:172
+#: .\templates\rules.html:228
 msgid "Extreme case: Four cars aligned in a braking zone"
 msgstr ""
 
-#: .\templates\rules.html:176
+#: .\templates\rules.html:232
 msgid ""
 "If four or more cars enter a braking zone side-by-side, each driver must "
 "respect their 'virtual' lane. Leaving this lane to make abusive contact (as "
 "defined earlier) will be classified as Moderate."
 msgstr ""
 
-#: .\templates\rules.html:179
+#: .\templates\rules.html:235
 msgid "Partial off-track:"
 msgstr ""
 
-#: .\templates\rules.html:183
+#: .\templates\rules.html:239
 msgid ""
 "If the defending driver loses control by hitting gravel, and the attacking "
 "driver (close behind) collides, this may be analyzed as a non-punishable "
 "incident due to the defender’s loss of control."
 msgstr ""
 
-#: .\templates\rules.html:185
+#: .\templates\rules.html:242
 msgid "Full off-track:"
 msgstr ""
 
-#: .\templates\rules.html:189
+#: .\templates\rules.html:246
 msgid ""
 "This will be reviewed to determine if the attacking driver could have "
 "avoided the collision. It may be classified as Light/Moderate."
 msgstr ""
 
-#: .\templates\rules.html:191
+#: .\templates\rules.html:249
 msgid "Overtaking"
 msgstr ""
 
-#: .\templates\rules.html:193
+#: .\templates\rules.html:251
 msgid "Non-lapped drivers"
 msgstr ""
 
-#: .\templates\rules.html:196
+#: .\templates\rules.html:253
 msgid ""
 "Overtaking is permitted on either side of the track, provided it does not "
-"interfere with the \\\"racing line\\\" of side-by-side drivers."
+"interfere with the \"racing line\" of side-by-side drivers."
 msgstr ""
 
-#: .\templates\rules.html:198
+#: .\templates\rules.html:255
 msgid ""
 "Any driver who hits another during an overtake may be investigated. The "
 "severity of the penalty will depend on"
 msgstr ""
 
-#: .\templates\rules.html:199
+#: .\templates\rules.html:257
 msgid ""
 "the collision’s speed differential, consequences for the defending driver, "
 "impact on other drivers, and position yielding."
 msgstr ""
 
-#: .\templates\rules.html:201
+#: .\templates\rules.html:259
 msgid ""
 "Minimal/moderate contact is allowed during position battles if it does not "
 "cause excessive trajectory changes or spins/offs."
 msgstr ""
 
-#: .\templates\rules.html:203
+#: .\templates\rules.html:261
 msgid ""
 "When battling into a braking zone, drivers must maintain a safe distance to "
 "avoid collisions from early braking."
 msgstr ""
 
-#: .\templates\rules.html:205
+#: .\templates\rules.html:264
 msgid "Multiple cars in a braking zone:"
 msgstr ""
 
-#: .\templates\rules.html:206
+#: .\templates\rules.html:266
 msgid ""
 "If multiple cars enter a braking zone side-by-side, each driver must respect "
-"their \\"
+"their 'natural lane.' Example:"
 msgstr ""
 
-#: .\templates\rules.html:208
+#: .\templates\rules.html:268
 msgid ""
 "If two defending drivers begin braking ahead, an attacking driver behind "
 "cannot brake later, switch lanes, and claim a preferred lane."
 msgstr ""
 
-#: .\templates\rules.html:210
+#: .\templates\rules.html:270
 msgid ""
 "Natural lane* refers to the lane formed between two or more cars during "
 "braking and throughout the corner."
 msgstr ""
 
-#: .\templates\rules.html:212
+#: .\templates\rules.html:272
 msgid ""
 "Neither attacker nor defender may force a driver against the track’s edges. "
 "Each driver must allow sporting battles."
 msgstr ""
 
-#: .\templates\rules.html:214
+#: .\templates\rules.html:275
 msgid "Gaining position:"
 msgstr ""
 
-#: .\templates\rules.html:215
+#: .\templates\rules.html:277
 msgid ""
 "A driver is considered to have gained position (inside/outside) only when "
 "their car fully overtakes the defender. Use Helicorsa and mirrors to avoid "
 "side collisions."
 msgstr ""
 
-#: .\templates\rules.html:217
+#: .\templates\rules.html:280
 msgid "Conditions for overtaking at the start of a curve (braking zone):"
 msgstr ""
 
-#: .\templates\rules.html:221
+#: .\templates\rules.html:284
 msgid ""
 "The attacker’s trajectory does not obstruct the defender’s natural lane."
 msgstr ""
 
-#: .\templates\rules.html:223
+#: .\templates\rules.html:286
 msgid ""
 "If these conditions are not met, the attacker must abort the overtake and "
 "allow the defender to take their line. Examples:"
 msgstr ""
 
-#: .\templates\rules.html:225
+#: .\templates\rules.html:289
 msgid "Non-aligned drivers:"
 msgstr ""
 
-#: .\templates\rules.html:229
+#: .\templates\rules.html:293
 #, python-format
 msgid ""
 "The attacker fails to reach 25%% alongside in the braking zone (red zone). "
 "The defender may take any line, and the attacker must adjust speed."
 msgstr ""
 
-#: .\templates\rules.html:231
+#: .\templates\rules.html:296
 msgid "Aligned drivers:"
 msgstr ""
 
-#: .\templates\rules.html:238
+#: .\templates\rules.html:303
 msgid ""
 "Both cases show aligned cars in the braking zone. Lane invasion is "
 "prohibited."
 msgstr ""
 
-#: .\templates\rules.html:240
+#: .\templates\rules.html:306
 msgid "Overtaking in the braking zone:"
 msgstr ""
 
-#: .\templates\rules.html:242
+#: .\templates\rules.html:308
 msgid ""
 "A full overtake in the braking zone is permissible if the attacker fully "
 "passes the defender. If still aligned by the end of the braking zone, the "
 "defender’s position must be respected."
 msgstr ""
 
-#: .\templates\rules.html:244
+#: .\templates\rules.html:311
 msgid "Distance from another driver"
 msgstr ""
 
-#: .\templates\rules.html:247
+#: .\templates\rules.html:313
 msgid ""
 "When battling (or lapping), drivers must leave sufficient space. Abruptly "
 "closing space is classified as Moderate."
 msgstr ""
 
-#: .\templates\rules.html:249
+#: .\templates\rules.html:316
 msgid "Lapped drivers:"
 msgstr ""
 
-#: .\templates\rules.html:252
+#: .\templates\rules.html:318
 msgid ""
 "Blue flag rules apply. Lapped drivers must maintain a predictable line and "
 "facilitate overtaking by lifting off the throttle."
 msgstr ""
 
-#: .\templates\rules.html:254
+#: .\templates\rules.html:320
 msgid "Lapped drivers must yield within 4 corners."
 msgstr ""
 
-#: .\templates\rules.html:257
+#: .\templates\rules.html:323
 msgid "Direction changes"
 msgstr ""
 
-#: .\templates\rules.html:260
+#: .\templates\rules.html:325
 msgid ""
 "When defending on a straight, a driver may make one directional change. "
 "Example:"
 msgstr ""
 
-#: .\templates\rules.html:262
+#: .\templates\rules.html:327
 msgid ""
 "After a right-hand corner, a defender on the left may move right once, then "
 "return left."
 msgstr ""
 
-#: .\templates\rules.html:264
+#: .\templates\rules.html:329
 msgid ""
 "Two or more direction changes (e.g., zig-zag) are prohibited and classified "
 "as Moderate."
 msgstr ""
 
-#: .\templates\rules.html:268
+#: .\templates\rules.html:334
 msgid "Recovery after off-track:"
 msgstr ""
 
-#: .\templates\rules.html:270
+#: .\templates\rules.html:336
 msgid ""
 "A driver who partially leaves the track (3 wheels out) must yield to on-"
 "track drivers and avoid collisions/obstruction. Failure to do so is Moderate."
 msgstr ""
 
-#: .\templates\rules.html:272
+#: .\templates\rules.html:339
 msgid "Ballast"
 msgstr ""
 
-#: .\templates\rules.html:277
+#: .\templates\rules.html:344
 msgid "Absences"
 msgstr ""
 
-#: .\templates\rules.html:279
+#: .\templates\rules.html:346
 #, python-format
 msgid ""
 "Drivers are expected to adhere to the calendar. Three unjustified absences "
@@ -1551,111 +1555,116 @@ msgid ""
 "of drivers are absent."
 msgstr ""
 
-#: .\templates\rules.html:282
+#: .\templates\rules.html:349
 msgid "Admission"
 msgstr ""
 
-#: .\templates\rules.html:284
+#: .\templates\rules.html:351
 #, python-format
 msgid ""
 "New drivers may join until 50%% of the championship has passed. After that, "
 "entries close unless otherwise specified."
 msgstr ""
 
-#: .\templates\rules.html:287
+#: .\templates\rules.html:354
 msgid "Protests"
 msgstr ""
 
-#: .\templates\rules.html:289
+#: .\templates\rules.html:356
 msgid ""
 "Protests must be emailed to simracingeurope@gmail.com. Public complaints "
 "against organizers or SimRacingEU are prohibited."
 msgstr ""
 
-#: .\templates\rules.html:292
+#: .\templates\rules.html:359
 msgid "Loss of car control"
 msgstr ""
 
-#: .\templates\rules.html:294
+#: .\templates\rules.html:361
 msgid ""
 "A driver who loses control must stop immediately. Partial off-track "
 "incidents causing drastic speed loss/direction changes may be penalized."
 msgstr ""
 
-#: .\templates\rules.html:297
+#: .\templates\rules.html:364
 msgid "Pit stops"
 msgstr ""
 
-#: .\templates\rules.html:299
+#: .\templates\rules.html:366
 msgid ""
 "Drivers must not cross the pit lane white line. RealPenalty enforces "
 "penalties (e.g., drive-through)."
 msgstr ""
 
-#: .\templates\rules.html:301
+#: .\templates\rules.html:369
 msgid "Parallel vehicles"
 msgstr ""
 
-#: .\templates\rules.html:303
+#: .\templates\rules.html:371
 msgid ""
 "Vehicles are parallel if any part overlaps. Each driver must stay in their "
 "'imaginary lane,' even in multi-car scenarios."
 msgstr ""
 
-#: .\templates\rules.html:305
+#: .\templates\rules.html:374
 msgid "Damage"
 msgstr ""
 
-#: .\templates\rules.html:307
+#: .\templates\rules.html:376
 msgid ""
 "If a car is immobilized, use the 'back to pits' button. Exploiting this for "
 "advantage is Severe."
 msgstr ""
 
-#: .\templates\rules.html:309
+#: .\templates\rules.html:379
 msgid "Exploits"
 msgstr ""
 
-#: .\templates\rules.html:311
+#: .\templates\rules.html:381
 msgid ""
 "Deliberate track cuts, wall-riding, or using invalid laps for advantage are "
 "Severe. Examples:"
 msgstr ""
 
-#: .\templates\rules.html:313
+#: .\templates\rules.html:383
 msgid "Skipping chicanes."
 msgstr ""
 
-#: .\templates\rules.html:315
+#: .\templates\rules.html:385
 msgid "Bouncing off walls for speed."
 msgstr ""
 
-#: .\templates\rules.html:317
+#: .\templates\rules.html:387
 msgid "Modifying CSP settings to gain an advantage in night championships."
 msgstr ""
 
-#: .\templates\rules.html:319
+#: .\templates\rules.html:390
 msgid "Runoff areas"
 msgstr ""
 
-#: .\templates\rules.html:321
+#: .\templates\rules.html:392
 msgid ""
 "Runoff use must avoid gaining advantage. Repeating this may be Moderate/"
 "Severe."
 msgstr ""
 
-#: .\templates\rules.html:323
+#: .\templates\rules.html:395
 msgid "Changes"
 msgstr ""
 
-#: .\templates\rules.html:325
+#: .\templates\rules.html:397
 msgid "This regulation is subject to updates."
 msgstr ""
 
-#: .\templates\rules.html:327
+#: .\templates\rules.html:399
 msgid "Version numbers reflect revisions."
 msgstr ""
 
-#: .\templates\rules.html:329
+#: .\templates\rules.html:401
+msgid "Version 1 - 12/05/2025"
+msgstr ""
+
+#: .\templates\rules.html:403
 msgid "Staff SimRacingEU"
 msgstr ""
+

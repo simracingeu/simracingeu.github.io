@@ -10,12 +10,14 @@
             let currentPath = window.location.pathname;
             let newPath = currentPath;
             
-            const langPrefixPattern = /^\/(fr|es|en)\/.*/;
+            // Eliminar cualquier prefijo de idioma existente
+            const langPrefixPattern = /^\/(fr|es|en|pt)\//;
             if (langPrefixPattern.test(currentPath)) {
-                newPath = `/${languageCode}${currentPath.substring(3)}`;
-            } else {
-                newPath = `/${languageCode}${currentPath}`;
+                newPath = currentPath.replace(/^\/(fr|es|en|pt)\//, '/');
             }
+            
+            // Construir nueva URL con el idioma seleccionado
+            newPath = `/${languageCode}${newPath}`;
             
             fetch(`/i18n/setlang/`, {
                 method: 'POST',

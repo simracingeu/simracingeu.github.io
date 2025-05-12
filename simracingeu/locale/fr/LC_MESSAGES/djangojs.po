@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-12 12:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\static\js\script.js:39
+msgid "Add New Community"
+msgstr "Ajouter une nouvelle communauté"
+
+#: .\static\js\script.js:45
+msgid "Community name:"
+msgstr "Nom de la communauté :"
+
+#: .\static\js\script.js:54
+msgid "Description:"
+msgstr "Description :"
+
+#: .\static\js\script.js:62
+msgid "Country:"
+msgstr "Pays :"
+
+#: .\static\js\script.js:78
+msgid "-- Select a country --"
+msgstr "-- Sélectionnez un pays --"
+
+#: .\static\js\script.js:91
+msgid "Logo:"
+msgstr "Logo :"
+
+#: .\static\js\script.js:100
+msgid "Discord URL:"
+msgstr "URL Discord :"
+
+#: .\static\js\script.js:108
+msgid "Website:"
+msgstr "Site web :"
+
+#: .\static\js\script.js:116
+msgid "Patreon URL:"
+msgstr "URL Patreon :"
+
+#: .\static\js\script.js:126 .\static\js\script.js:280
+msgid "Submit"
+msgstr "Soumettre"
+
+#: .\static\js\script.js:131 .\static\js\script.js:285
+#: .\static\js\script.js:370
+msgid "Back"
+msgstr "Retour"
+
+#: .\static\js\script.js:157
+msgid "Contact Email"
+msgstr "Email de contact"
+
+#: .\static\js\script.js:202
+msgid "Community created successfully!"
+msgstr "Communauté créée avec succès !"
+
+#: .\static\js\script.js:208
+msgid "Error creating community. Please try again."
+msgstr "Erreur lors de la création de la communauté. Veuillez réessayer."
+
+#: .\static\js\script.js:219
+msgid "Add New Driver"
+msgstr "Ajouter un nouveau pilote"
+
+#: .\static\js\script.js:225
+msgid "Driver name:"
+msgstr "Nom du pilote :"
+
+#: .\static\js\script.js:234
+msgid "Community:"
+msgstr "Communauté :"
+
+#: .\static\js\script.js:243
+msgid "-- Select a community --"
+msgstr "-- Sélectionnez une communauté --"
+
+#: .\static\js\script.js:265
+msgid "Error loading communities. Please try again."
+msgstr "Erreur lors du chargement des communautés. Veuillez réessayer."
+
+#: .\static\js\script.js:269
+msgid "Avatar:"
+msgstr "Avatar :"
+
+#: .\static\js\script.js:338
+msgid "Driver created successfully!"
+msgstr "Pilote créé avec succès !"
+
+#: .\static\js\script.js:344
+msgid "Error creating driver. Please try again."
+msgstr "Erreur lors de la création du pilote. Veuillez réessayer."
+
+#: .\static\js\script.js:356
+msgid "Loading events..."
+msgstr "Chargement des événements..."
+
+#: .\static\js\script.js:368
+msgid "Event Calendar"
+msgstr "Calendrier des événements"
+
+#: .\static\js\script.js:368
+msgid "Error loading events. Please try again later."
+msgstr "Erreur lors du chargement des événements. Veuillez réessayer plus tard."

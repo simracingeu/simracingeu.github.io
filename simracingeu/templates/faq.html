@@ -11,10 +11,11 @@
         <p>{% trans 'Solving common queries and providing essential support.' %}</p>
     
         <div id="search-container">
-            <input type="text" id="search-input" placeholder="{% trans 'Search questions...' %}">
-            <ul id="search-results" class="search-results"></ul>
+            <input type="text" id="search-input" placeholder="{% trans 'Search questions...' %}" class="form-control">
+            <button id="toggle-all" class="btn btn-primary">{% trans 'Expand/Collapse All' %}</button>
+            <ul id="search-results" class="search-results list-unstyled"></ul>
         </div>
-    
+   
         <div class="faq-section" id="registro">
             <h3>{% trans 'Registration' %}</h3>
             <div class="faq-item">
@@ -117,7 +118,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">{% trans 'What happens in case of a partial track departure?' %}</div>
-                <div class="faq-answer">{% trans 'If the defending driver loses control by hitting the gravel and the attacking driver (close behind) collides, this may be analyzed as a non-punishable incident due to the defender\'s loss of control.' %}</div>
+                <div class="faq-answer">{% trans "If the defending driver loses control by hitting the gravel and the attacking driver (close behind) collides, this may be analyzed as a non-punishable incident due to the defender's loss of control." %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">{% trans 'What happens in case of a complete track departure?' %}</div>
@@ -171,7 +172,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">{% trans 'How can protests be submitted?' %}</div>
-                <div class="faq-answer">{% trans 'Protests must be sent by email to foroassetto@gmail.com. Public complaints against the organizers or ForoAssetto are prohibited.' %}</div>
+                <div class="faq-answer">{% trans 'Protests must be sent by email to simracingeurope@gmail.com. Public complaints against the organizers or ForoAssetto are prohibited.' %}</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">{% trans 'What should a driver do if they lose control of the car?' %}</div>
@@ -260,45 +261,58 @@
         </div>
     
         <script>
+
+
             document.addEventListener('DOMContentLoaded', function() {
-                const faqQuestions = document.querySelectorAll('.faq-question');
-                faqQuestions.forEach(question => {
-                    question.addEventListener('click', function() {
-                        const answer = this.nextElementSibling;
-                        answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-                    });
-                });
-    
-                const searchInput = document.getElementById('search-input');
-                const searchResults = document.getElementById('search-results');
-                const faqItems = document.querySelectorAll('.faq-item');
-    
-                searchInput.addEventListener('input', function() {
-                    const searchTerm = this.value.toLowerCase();
-                    searchResults.innerHTML = '';
-    
-                    if (searchTerm.length < 3) {
-                        searchResults.style.display = 'none';
-                        return;
-                    }
-    
-                    let resultsFound = false;
-                    faqItems.forEach(item => {
-                        const question = item.querySelector('.faq-question').textContent.toLowerCase();
-                        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
-                        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
-                            const listItem = document.createElement('li');
-                            const questionText = item.querySelector('.faq-question').textContent;
-                            const sectionId = item.closest('.faq-section').id;
-                            listItem.innerHTML = `<a href="#${sectionId}">${questionText}</a>`;
-                            searchResults.appendChild(listItem);
-                            resultsFound = true;
-                        }
-                    });
-    
-                    searchResults.style.display = resultsFound ? 'block' : 'none';
+            const searchInput = document.getElementById('search-input');
+            const faqItems = document.querySelectorAll('.faq-item');
+            const searchResults = document.getElementById('search-results');
+            
+            // Add click event for FAQ questions
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = 'block';
                 });
             });
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                searchResults.innerHTML = '';
+                
+                if (searchTerm.length < 2) {
+                    faqItems.forEach(item => item.style.display = 'block');
+                    return;
+                }
+                
+                let hasResults = false;
+                
+
+
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        hasResults = true;
+                        
+                        // Highlight matching text
+                        const resultItem = document.createElement('li');
+                        resultItem.innerHTML = `<a href="#${item.closest('.faq-section').id}">${item.querySelector('.faq-question').textContent}</a>`;
+                        searchResults.appendChild(resultItem);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                if (!hasResults) {
+                    const noResults = document.createElement('li');
+                    noResults.textContent = "{% trans 'No results found' %}";
+                    searchResults.appendChild(noResults);
+                }
+            });
+        });
         </script>
     </div>
 </section>

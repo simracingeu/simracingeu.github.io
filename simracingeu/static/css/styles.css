@@ -616,11 +616,11 @@ header {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+    box-sizing: border-box; 
 }
 
 #add-community-form input[type="file"] {
-    padding: 5px; /* Ajuste específico para input file */
+    padding: 5px; 
 }
 
 #add-community-form button {
@@ -636,7 +636,7 @@ header {
 }
 
 #add-community-form button[type="submit"] {
-    background-color: #5cb85c; /* Verde */
+    background-color: #5cb85c;
     color: white;
 }
 
@@ -645,7 +645,7 @@ header {
 }
 
 #add-community-form button[type="button"] {
-    background-color: #f0ad4e; /* Naranja */
+    background-color: #f0ad4e;
     color: white;
     margin-left: 10px;
 }
@@ -669,7 +669,47 @@ header {
     background-color: #4cae4c;
 }
 
-/* Estilos para la lista de comunidades */
+/* FAQ Styles */
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #f8f9fa;
+    color: #212529;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background: #e9ecef;
+    color: #212529;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    background: #dee2e6;
+    color: #212529;
+}
+
+#search-results {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#search-results li {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-results li:hover {
+    background-color: #f0f0f0;
+}
+
 #communities-list {
     max-width: 600px;
     margin: 2rem auto;

@@ -717,11 +717,11 @@ msgstr "Come si possono presentare i reclami?"
 
 #: .\templates\faq.html:174
 msgid ""
-"Protests must be sent by email to foroassetto@gmail.com. Public complaints "
-"against the organizers or ForoAssetto are prohibited."
+"Protests must be sent by email to simracingeurope@gmail.com. Public complaints "
+"against the organizers or SimRacingEU are prohibited."
 msgstr ""
-"I reclami devono essere inviati via email a foroassetto@gmail.com. Sono "
-"vietati i reclami pubblici contro gli organizzatori o ForoAssetto."
+"I reclami devono essere inviati via email a simracingeurope@gmail.com. Sono "
+"vietati i reclami pubblici contro gli organizzatori o SimRacingEU."
 
 #: .\templates\faq.html:177
 msgid "What should a driver do if they lose control of the car?"
@@ -909,11 +909,10 @@ msgstr ""
 
 #: .\templates\index.html:18
 msgid ""
-"SimRacing Collective Championship, an innovative, free-to-enter tournament "
-"designed to unite the continent\\"
+"SimRacing Collective Championship, an innovative, free-to-enter tournament designed to unite the continent's finest virtual racing talent"
 msgstr ""
 "Campionato Collettivo SimRacing, un torneo innovativo e gratuito progettato "
-"per unire il continente\\"
+"per unire i migliori talenti del racing virtuale del continente"
 
 #: .\templates\index.html:19
 msgid "and celebrate the rich diversity of our European simracing culture."

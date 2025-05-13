@@ -603,8 +603,8 @@ msgstr ""
 
 #: .\templates\faq.html:174
 msgid ""
-"Protests must be sent by email to foroassetto@gmail.com. Public complaints "
-"against the organizers or ForoAssetto are prohibited."
+"Protests must be sent by email to  simracingeurope@gmail.com. Public complaints "
+"against the organizers or SimRacingEU are prohibited."
 msgstr ""
 
 #: .\templates\faq.html:177
@@ -780,8 +780,7 @@ msgstr ""
 
 #: .\templates\index.html:18
 msgid ""
-"SimRacing Collective Championship, an innovative, free-to-enter tournament "
-"designed to unite the continent\\"
+"SimRacing Collective Championship, an innovative, free-to-enter tournament designed to unite the continent's finest virtual racing talent"
 msgstr ""
 
 #: .\templates\index.html:19

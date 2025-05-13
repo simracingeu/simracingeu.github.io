@@ -515,9 +515,9 @@ msgid ""
 "maneuvers are permitted. Adjustments or positioning that abuse track "
 "position may be classified as Moderate."
 msgstr ""
-"En un combate deportivo, se permiten ligeros ajustes de trayectoria que "
-"permitan contra-maniobras. Los ajustes o posicionamientos que abusen de la "
-"posición en pista pueden clasificarse como Moderados."
+"En un combate deportivo, se permiten ligeros contactos, incluyendo colisiones controladas en paralelo de morro con morro"
+"siempre que no desvíen significativamente la trayectoria del oponente ni provoquen una pérdida de control." 
+"Sin embargo, colisiones que abusen de la posición en pista pueden clasificarse como Moderados."
 
 #: .\templates\faq.html:112
 msgid "Non-aligned cars (half-car overlap against opponent\\"
@@ -720,11 +720,11 @@ msgstr "¿Cómo se pueden presentar las protestas?"
 
 #: .\templates\faq.html:174
 msgid ""
-"Protests must be sent by email to foroassetto@gmail.com. Public complaints "
-"against the organizers or ForoAssetto are prohibited."
+"Protests must be sent by email to simracingeurope@gmail.com. Public complaints "
+"against the organizers or SimRacingEU are prohibited."
 msgstr ""
-"Las protestas deben enviarse por correo electrónico a foroassetto@gmail.com. "
-"Las quejas públicas contra los organizadores o ForoAssetto están prohibidas."
+"Las protestas deben enviarse por correo electrónico a simracingeurope@gmail.com. "
+"Las quejas públicas contra los organizadores o SimRacingEU están prohibidas."
 
 #: .\templates\faq.html:177
 msgid "What should a driver do if they lose control of the car?"
@@ -939,11 +939,10 @@ msgstr ""
 
 #: .\templates\index.html:18
 msgid ""
-"SimRacing Collective Championship, an innovative, free-to-enter tournament "
-"designed to unite the continent\\"
+"SimRacing Collective Championship, an innovative, free-to-enter tournament designed to unite the continent's finest virtual racing talent"
 msgstr ""
 "Campeonato Colectivo de SimRacing, un torneo innovador y gratuito diseñado "
-"para unir el continente\\"
+"para unir al mejor talento de carreras virtuales del continente"
 
 #: .\templates\index.html:19
 msgid "and celebrate the rich diversity of our European simracing culture."
@@ -1504,7 +1503,7 @@ msgstr "Hacia el exterior de la curva (en paralelo):"
 
 #: .\templates\rules.html:203
 msgid "Cars aligned front-to-front"
-msgstr "Coches alineados frente a frente"
+msgstr "Coches totalmente paralelos"
 
 #: .\templates\rules.html:207
 msgid ""
@@ -1525,7 +1524,7 @@ msgstr ""
 
 #: .\templates\rules.html:212
 msgid "Non-aligned cars:"
-msgstr "Coches alineados frontalmente:"
+msgstr "Coches no alineados:"
 
 #: .\templates\rules.html:216
 msgid "Half-car overlap against opponent’s front"
@@ -1709,7 +1708,7 @@ msgstr ""
 
 #: .\templates\rules.html:289
 msgid "Non-aligned drivers:"
-msgstr "Coches alineados frontalmente:"
+msgstr "Coches no alineados:"
 
 #: .\templates\rules.html:293
 #, python-format
@@ -1861,8 +1860,8 @@ msgid ""
 "Protests must be emailed to simracingeurope@gmail.com. Public complaints "
 "against organizers or SimRacingEU are prohibited."
 msgstr ""
-"Las protestas deben enviarse por correo electrónico a foroassetto@gmail.com. "
-"Las quejas públicas contra los organizadores o ForoAssetto están prohibidas."
+"Las protestas deben enviarse por correo electrónico a simracingeurope@gmail.com. "
+"Las quejas públicas contra los organizadores o SimRacingEU están prohibidas."
 
 #: .\templates\rules.html:359
 msgid "Loss of car control"

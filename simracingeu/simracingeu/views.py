@@ -1,9 +1,13 @@
-from django.shortcuts import render
 from communities.models import Championship
 
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.conf import settings
+from django.utils.translation import gettext as _
+import logging
+
+logger = logging.getLogger(__name__)
 
 def calendar_view(request):
     game_filter = request.GET.get('game', None)
@@ -29,38 +33,34 @@ def calendar_view(request):
 
 def contact(request):
     if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
-        
+        name = request.POST.get('name', '').strip()
+        email = request.POST.get('email', '').strip()
+        message = request.POST.get('message', '').strip()
+
         if not all([name, email, message]):
-            messages.error(request, 'Por favor completa todos los campos requeridos.')
+            messages.error(request, _('Please complete all required fields.'))
             return redirect('contact')
-        
+
         subject = f'Mensaje de contacto de {name}'
-        message_body = f"""
-        Nombre: {name}
-        Email: {email}
-        
-        Mensaje:
-        {message}
-        """
-        
+        message_body = (
+            f"Nombre: {name}\n"
+            f"Email: {email}\n\n"
+            f"Mensaje:\n{message}"
+        )
+
         try:
             send_mail(
                 subject,
                 message_body,
-                None,  # Usará EMAIL_HOST_USER de settings.py
+                settings.EMAIL_HOST_USER,
                 ['simracingeurope@gmail.com'],
                 fail_silently=False,
             )
-            messages.success(request, '¡Tu mensaje ha sido enviado con éxito!')
-            return redirect('contact')
+            messages.success(request, _('Your message has been sent successfully!'))
         except Exception as e:
-            messages.error(request, 'Hubo un error al enviar tu mensaje. Por favor intenta nuevamente más tarde.')
-            # Log del error para depuración
-            import logging
-            logger = logging.getLogger(__name__)
             logger.error(f'Error al enviar email de contacto: {e}')
-    
+            messages.error(request, _('There was an error sending your message. Please try again later.'))
+
+        return redirect('contact')
+
     return render(request, 'contact.html')

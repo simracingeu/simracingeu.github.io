@@ -152,6 +152,16 @@ LOCALIZATION = {
 
 STATIC_URL = 'static/'
 
+EMAIL_HOST_USER = "simracingeurope@gmail.com"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'simracingeurope@gmail.com'
+EMAIL_HOST_PASSWORD = "dmio ovgg ayoe sbvo" #rogz sifo lirx owgx
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",

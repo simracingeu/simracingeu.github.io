@@ -1667,3 +1667,14 @@ msgstr ""
 msgid "Staff SimRacingEU"
 msgstr ""
 
+#: .\templates\rules.html:403
+msgid "Please complete all required fields."
+msgstr ""
+
+#: .\templates\rules.html:403
+msgid "Your message has been sent successfully!"
+msgstr ""
+
+#: .\templates\rules.html:403
+msgid "There was an error sending your message. Please try again later."
+msgstr ""

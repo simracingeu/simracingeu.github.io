@@ -1940,3 +1940,14 @@ msgstr "Versão 1.0 - 12/05/2025"
 #: .\templates\rules.html:403
 msgid "Staff SimRacingEU"
 msgstr "Equipa SimRacingEU"
+#: .\simracingeu\views.py:41
+msgid "Please complete all required fields."
+msgstr "Por favor, preencha todos os campos obrigatórios."
+
+#: .\simracingeu\views.py:59
+msgid "Your message has been sent successfully!"
+msgstr "A sua mensagem foi enviada com sucesso!"
+
+#: .\simracingeu\views.py:62
+msgid "There was an error sending your message. Please try again later."
+msgstr "Ocorreu um erro ao enviar a sua mensagem. Por favor, tente novamente mais tarde."

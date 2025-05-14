@@ -33,7 +33,9 @@ class Game(models.Model):
     nombre = models.CharField(max_length=50, choices=[
         ('AC', 'Assetto Corsa'),
         ('ACC', 'Assetto Corsa Competizione'),
-        ('LMU', 'Le Mans Ultimate')
+        ('LMU', 'Le Mans Ultimate'),
+        ('REN', 'Rennsport'),
+        ('ACEVO', 'Assetto Corsa Evo'),
     ])
     
     def __str__(self):

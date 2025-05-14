@@ -147,7 +147,7 @@ addCommunityBtn.addEventListener('click', function() {
         {label: patreonLabel, input: patreonInput}
     ].forEach(({label, input}) => {
         const group = document.createElement('div');
-        group.className = 'mb-3';
+        group.className = 'mb-3 text-start';
         group.appendChild(label);
         group.appendChild(input);
         form.appendChild(group);
@@ -162,7 +162,7 @@ addCommunityBtn.addEventListener('click', function() {
     emailInput.name = 'contact_email';
     
     const emailGroup = document.createElement('div');
-    emailGroup.className = 'mb-3';
+    emailGroup.className = 'mb-3 text-start';
     emailGroup.appendChild(emailLabel);
     emailGroup.appendChild(emailInput);
     form.appendChild(emailGroup);
@@ -291,22 +291,22 @@ addDriverBtn.addEventListener('click', async function() {
     });
     
     const nameGroup = document.createElement('div');
-    nameGroup.className = 'mb-3';
-    nameGroup.appendChild(nameLabel);
-    nameGroup.appendChild(nameInput);
-    form.appendChild(nameGroup);
-    
-    const communityGroup = document.createElement('div');
-    communityGroup.className = 'mb-3';
-    communityGroup.appendChild(communityLabel);
-    communityGroup.appendChild(communitySelect);
-    form.appendChild(communityGroup);
-    
-    const avatarGroup = document.createElement('div');
-    avatarGroup.className = 'mb-3';
-    avatarGroup.appendChild(avatarLabel);
-    avatarGroup.appendChild(avatarInput);
-    form.appendChild(avatarGroup);
+        nameGroup.className = 'mb-3 text-start';
+        nameGroup.appendChild(nameLabel);
+        nameGroup.appendChild(nameInput);
+        form.appendChild(nameGroup);
+        
+        const communityGroup = document.createElement('div');
+        communityGroup.className = 'mb-3 text-start';
+        communityGroup.appendChild(communityLabel);
+        communityGroup.appendChild(communitySelect);
+        form.appendChild(communityGroup);
+        
+        const avatarGroup = document.createElement('div');
+        avatarGroup.className = 'mb-3 text-start';
+        avatarGroup.appendChild(avatarLabel);
+        avatarGroup.appendChild(avatarInput);
+        form.appendChild(avatarGroup);
     
     const buttonGroup = document.createElement('div');
     buttonGroup.className = 'd-flex gap-2';

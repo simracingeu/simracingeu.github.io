@@ -33,6 +33,10 @@ def contact(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
         
+        if not all([name, email, message]):
+            messages.error(request, 'Por favor completa todos los campos requeridos.')
+            return redirect('contact')
+        
         subject = f'Mensaje de contacto de {name}'
         message_body = f"""
         Nombre: {name}
@@ -46,13 +50,17 @@ def contact(request):
             send_mail(
                 subject,
                 message_body,
-                email,
+                None,  # Usará EMAIL_HOST_USER de settings.py
                 ['simracingeurope@gmail.com'],
                 fail_silently=False,
             )
             messages.success(request, '¡Tu mensaje ha sido enviado con éxito!')
             return redirect('contact')
         except Exception as e:
-            messages.error(request, f'Error al enviar el mensaje: {e}')
+            messages.error(request, 'Hubo un error al enviar tu mensaje. Por favor intenta nuevamente más tarde.')
+            # Log del error para depuración
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.error(f'Error al enviar email de contacto: {e}')
     
     return render(request, 'contact.html')

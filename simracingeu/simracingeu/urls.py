@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from django.conf.urls.i18n import i18n_patterns
 from django.views.i18n import JavaScriptCatalog
-from simracingeu.views import calendar_view, contact
+from simracingeu.views import calendar_view, contact, subscribe
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,5 +38,6 @@ urlpatterns += i18n_patterns(
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
     path('legal/', TemplateView.as_view(template_name='legal.html'), name='legal'),
     path('contact/', contact, name='contact'),
+    path('subscribe/', subscribe, name='subscribe'),
     path('registration/', TemplateView.as_view(template_name='registration.html'), name='registration'),
 )

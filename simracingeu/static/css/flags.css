@@ -1,15 +1,29 @@
-/* Estilos para las banderas en el select */
-select option {
-    padding: 5px 10px;
+.language-flag-selected {
+    width: 24px;
+    height: auto;
+    border-radius: 3px;
+    vertical-align: middle;
 }
 
-select option div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-select option img {
+.language-flag {
     width: 20px;
     height: auto;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+#languageDropdownMenuLink {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#languageDropdownMenuLink::after {
+    margin-left: 0.5rem;
 }

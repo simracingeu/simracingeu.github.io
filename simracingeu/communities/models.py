@@ -62,3 +62,7 @@ class Event(models.Model):
     def __str__(self):
         return self.nombre
 
+class Subscription(models.Model):
+    email = models.EmailField(unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)

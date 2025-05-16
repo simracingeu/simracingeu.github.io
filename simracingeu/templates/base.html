@@ -10,13 +10,11 @@
             let currentPath = window.location.pathname;
             let newPath = currentPath;
             
-            // Eliminar cualquier prefijo de idioma existente
             const langPrefixPattern = /^\/(fr|es|en|pt)\//;
             if (langPrefixPattern.test(currentPath)) {
                 newPath = currentPath.replace(/^\/(fr|es|en|pt)\//, '/');
             }
             
-            // Construir nueva URL con el idioma seleccionado
             newPath = `/${languageCode}${newPath}`;
             
             fetch(`/i18n/setlang/`, {
@@ -39,7 +37,6 @@
     </script>
 
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0BB0T26T8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -70,6 +67,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flags.css' %}">
     <link rel="icon" href="{% static 'img/favicon.ico' %}">
 
 
@@ -85,7 +83,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'registration' %}">{% trans 'Registration' %}</a>
                         </li>
@@ -99,23 +97,38 @@
                             <a class="nav-link" href="{% url 'contact' %}">{% trans 'Contact' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'legal' %}">{% trans 'Legal Pages' %}</a>
+                            <a class="nav-link" href="{% url 'subscribe' %}">{% trans 'Subscribe' %}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'rules' %}">{% trans 'Championship Rules' %}</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInfo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                + {% trans 'Info' %}
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownInfo">
+                                <li><a class="dropdown-item" href="{% url 'legal' %}">{% trans 'Legal Pages' %}</a></li>
+                                <li><a class="dropdown-item" href="{% url 'faq' %}">{% trans 'FAQ' %}</a></li>
+                                <li><a class="dropdown-item" href="{% url 'rules' %}">{% trans 'Championship Rules' %}</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'faq' %}">{% trans 'FAQ' %}</a>
-                        </li>
-                        <li class="nav-item">
-                            <select class="form-select" aria-label="Language selector" onchange="setLanguage(this.value)" style="width: auto; margin-left: 10px;">
-                                <option selected disabled>{% trans 'Language' %}</option>
-                                {% get_available_languages as LANGUAGES %}
-                                {% get_language_info_list for LANGUAGES as languages %}
-                                {% for language in languages %}
-                                    <option value="{{ language.code }}">{{ language.name_local }}</option>
+                        {% get_current_language as CURRENT_LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages_info %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="{% static 'img/flags/' %}{% if CURRENT_LANGUAGE_CODE == 'en' %}gb{% else %}{{ CURRENT_LANGUAGE_CODE }}{% endif %}.svg" alt="{{ CURRENT_LANGUAGE_CODE }}" class="language-flag-selected">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMenuLink">
+                                {% for lang_info in languages_info %}
+                                    {% if lang_info.code != CURRENT_LANGUAGE_CODE %}
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="setLanguage('{{ lang_info.code }}'); return false;">
+                                            <img src="{% static 'img/flags/' %}{% if lang_info.code == 'en' %}gb{% else %}{{ lang_info.code }}{% endif %}.svg" alt="{{ lang_info.name_local|capfirst }}" class="language-flag me-2"> {{ lang_info.name_local|capfirst }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
                                 {% endfor %}
-                            </select>
+
+
+                            </ul>
                         </li>
                     </ul>
                 </div>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-12 15:43+0200\n"
+"POT-Creation-Date: 2025-05-16 09:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\_calendar_content.html:10 .\templates\calendar.html:30
+#: .\simracingeu\views.py:41
+msgid "Please complete all required fields."
+msgstr ""
+
+#: .\simracingeu\views.py:59
+msgid "Your message has been sent successfully!"
+msgstr ""
+
+#: .\simracingeu\views.py:62
+msgid "There was an error sending your message. Please try again later."
+msgstr ""
+
+#: .\simracingeu\views.py:74
+msgid "Thanks for subscribing!"
+msgstr ""
+
+#: .\simracingeu\views.py:76
+msgid "This email is already subscribed."
+msgstr ""
+
+#: .\templates\_calendar_content.html:12 .\templates\calendar.html:30
 msgid "Event"
 msgstr ""
 
-#: .\templates\_calendar_content.html:11 .\templates\calendar.html:31
+#: .\templates\_calendar_content.html:13 .\templates\calendar.html:31
 msgid "Date"
 msgstr ""
 
-#: .\templates\_calendar_content.html:12 .\templates\calendar.html:32
+#: .\templates\_calendar_content.html:14 .\templates\calendar.html:32
 msgid "Format"
 msgstr ""
 
@@ -138,39 +158,43 @@ msgstr ""
 msgid "Our championship history"
 msgstr ""
 
-#: .\templates\base.html:63 .\templates\faq.html:19
+#: .\templates\base.html:88 .\templates\faq.html:20
 msgid "Registration"
 msgstr ""
 
-#: .\templates\base.html:66 .\templates\calendar.html:5
+#: .\templates\base.html:91 .\templates\calendar.html:5
 msgid "Event Calendar"
 msgstr ""
 
-#: .\templates\base.html:69
+#: .\templates\base.html:94
 msgid "About us"
 msgstr ""
 
-#: .\templates\base.html:72 .\templates\contact.html:4
+#: .\templates\base.html:97 .\templates\contact.html:4
 msgid "Contact"
 msgstr ""
 
-#: .\templates\base.html:75
+#: .\templates\base.html:100
+msgid "Subscribe"
+msgstr ""
+
+#: .\templates\base.html:104
+msgid "Info"
+msgstr ""
+
+#: .\templates\base.html:107
 msgid "Legal Pages"
 msgstr ""
 
-#: .\templates\base.html:78 .\templates\faq.html:39
-msgid "Championship Rules"
-msgstr ""
-
-#: .\templates\base.html:81
+#: .\templates\base.html:108
 msgid "FAQ"
 msgstr ""
 
-#: .\templates\base.html:85
-msgid "Language"
+#: .\templates\base.html:109 .\templates\faq.html:40
+msgid "Championship Rules"
 msgstr ""
 
-#: .\templates\base.html:105
+#: .\templates\base.html:145
 msgid "All rights reserved."
 msgstr ""
 
@@ -186,19 +210,19 @@ msgstr ""
 msgid "Send us a message"
 msgstr ""
 
-#: .\templates\contact.html:18
+#: .\templates\contact.html:27
 msgid "Name"
 msgstr ""
 
-#: .\templates\contact.html:22
+#: .\templates\contact.html:31
 msgid "Email"
 msgstr ""
 
-#: .\templates\contact.html:26
+#: .\templates\contact.html:35
 msgid "Message"
 msgstr ""
 
-#: .\templates\contact.html:30
+#: .\templates\contact.html:39
 msgid "Send Message"
 msgstr ""
 
@@ -214,43 +238,47 @@ msgstr ""
 msgid "Search questions..."
 msgstr ""
 
-#: .\templates\faq.html:21
-msgid "How do I register for the championship?"
+#: .\templates\faq.html:15
+msgid "Expand/Collapse All"
 msgstr ""
 
 #: .\templates\faq.html:22
+msgid "How do I register for the championship?"
+msgstr ""
+
+#: .\templates\faq.html:23
 msgid ""
 "Information about the registration process will be provided on the "
 "championship's main page or through a specific registration link. Make sure "
 "to follow all the indicated steps."
 msgstr ""
 
-#: .\templates\faq.html:25
+#: .\templates\faq.html:26
 msgid "Is there a registration deadline?"
 msgstr ""
 
-#: .\templates\faq.html:26
+#: .\templates\faq.html:27
 msgid ""
 "Yes, there is usually a registration deadline. This date will be announced "
 "in the championship information. Register before the deadline to secure your "
 "participation."
 msgstr ""
 
-#: .\templates\faq.html:29
+#: .\templates\faq.html:30
 msgid "What information do I need to register?"
 msgstr ""
 
-#: .\templates\faq.html:30
+#: .\templates\faq.html:31
 msgid ""
 "Typically, you will be asked to provide your name, contact information, "
 "player ID (if applicable), and possibly details about your simulation setup."
 msgstr ""
 
-#: .\templates\faq.html:33
+#: .\templates\faq.html:34
 msgid "Can I register after the championship has started?"
 msgstr ""
 
-#: .\templates\faq.html:34
+#: .\templates\faq.html:35
 #, python-format
 msgid ""
 "According to regulations, new drivers can join until 50%% of the "
@@ -258,69 +286,69 @@ msgid ""
 "otherwise specified."
 msgstr ""
 
-#: .\templates\faq.html:41
+#: .\templates\faq.html:42
 msgid "What are the types of penalties in the championship?"
 msgstr ""
 
-#: .\templates\faq.html:45
+#: .\templates\faq.html:46
 msgid "Minor Penalty:"
 msgstr ""
 
-#: .\templates\faq.html:45
+#: .\templates\faq.html:46
 msgid "Verbal warning or up to 5 seconds added to the result."
 msgstr ""
 
-#: .\templates\faq.html:46
+#: .\templates\faq.html:47
 msgid "Automatic RP Penalty:"
 msgstr ""
 
-#: .\templates\faq.html:46
+#: .\templates\faq.html:47
 msgid ""
 "Penalties issued by the Real Penalty system, such as Drive-Through or Stop-"
 "and-Go."
 msgstr ""
 
-#: .\templates\faq.html:47 .\templates\rules.html:153
+#: .\templates\faq.html:48 .\templates\rules.html:153
 msgid "Moderate Penalty:"
 msgstr ""
 
-#: .\templates\faq.html:49
+#: .\templates\faq.html:50
 msgid "5-second deduction in the event."
 msgstr ""
 
-#: .\templates\faq.html:50
+#: .\templates\faq.html:51
 msgid "Ballast application in future events."
 msgstr ""
 
-#: .\templates\faq.html:51
+#: .\templates\faq.html:52
 msgid "Deduction of event points."
 msgstr ""
 
-#: .\templates\faq.html:53
+#: .\templates\faq.html:54
 msgid "Divided into minor (time only) and major (ballast or points)."
 msgstr ""
 
-#: .\templates\faq.html:55
+#: .\templates\faq.html:56
 msgid "Severe Penalty:"
 msgstr ""
 
-#: .\templates\faq.html:57
+#: .\templates\faq.html:58
 msgid "Event disqualification (no points)."
 msgstr ""
 
-#: .\templates\faq.html:58
+#: .\templates\faq.html:59
 msgid "Suspension from one or more future events."
 msgstr ""
 
-#: .\templates\faq.html:59
+#: .\templates\faq.html:60
 msgid "In serious cases, permanent expulsion from the championship."
 msgstr ""
 
-#: .\templates\faq.html:72
+#: .\templates\faq.html:73
 msgid "What is considered unsportsmanlike driving?"
 msgstr ""
 
-#: .\templates\faq.html:73
+#: .\templates\faq.html:74
 msgid ""
 "Any action that violates championship rules, endangers other drivers, or "
 "attempts to gain an unfair advantage is considered unsportsmanlike driving. "
@@ -328,19 +356,19 @@ msgid ""
 "flags."
 msgstr ""
 
-#: .\templates\faq.html:76
+#: .\templates\faq.html:77
 msgid "How are on-track incidents handled?"
 msgstr ""
 
-#: .\templates\faq.html:77
+#: .\templates\faq.html:78
 msgid "Any contact with another driver is considered an incident. A "
 msgstr ""
 
-#: .\templates\faq.html:77 .\templates\rules.html:24
+#: .\templates\faq.html:78 .\templates\rules.html:24
 msgid "Moderate Penalty"
 msgstr ""
 
-#: .\templates\faq.html:77
+#: .\templates\faq.html:78
 msgid ""
 " will be applied if the contact causes a spin or track departure. Severity "
 "is assessed based on speed difference, intent, recurrence, and consequences. "
@@ -348,33 +376,33 @@ msgid ""
 "situations."
 msgstr ""
 
-#: .\templates\faq.html:80
+#: .\templates\faq.html:81
 msgid "What rules apply for the start and first laps?"
 msgstr ""
 
-#: .\templates\faq.html:81
+#: .\templates\faq.html:82
 msgid ""
 "It is recommended to maintain a safe distance during the first two laps. "
 "Maximum caution is advised as incidents in the first lap have greater "
 "consequences."
 msgstr ""
 
-#: .\templates\faq.html:84
+#: .\templates\faq.html:85
 msgid "What are the rules about braking on track?"
 msgstr ""
 
-#: .\templates\faq.html:85
+#: .\templates\faq.html:86
 msgid ""
 "Sudden braking on straights is considered a moderate penalty. Early braking "
 "as a defensive technique is allowed, with the responsibility on the "
 "attacking driver to maintain distance."
 msgstr ""
 
-#: .\templates\faq.html:88
+#: .\templates\faq.html:89
 msgid "When is returning to the pits allowed?"
 msgstr ""
 
-#: .\templates\faq.html:89
+#: .\templates\faq.html:90
 msgid ""
 "Returning to the pits is only allowed when the car is completely unusable or "
 "represents a danger. Using it locks the car in the pits. In race sessions, "
@@ -384,41 +412,41 @@ msgid ""
 "pit box."
 msgstr ""
 
-#: .\templates\faq.html:92
+#: .\templates\faq.html:93
 msgid "What is considered light contact on track?"
 msgstr ""
 
-#: .\templates\faq.html:93
+#: .\templates\faq.html:94
 msgid "In a one-on-one battle, 1 or 2 contacts that don\\"
 msgstr ""
 
-#: .\templates\faq.html:96
+#: .\templates\faq.html:97
 msgid "What is considered moderate contact on track?"
 msgstr ""
 
-#: .\templates\faq.html:97
+#: .\templates\faq.html:98
 msgid ""
 "In a one-on-one battle, contact that causes a spin or complete track "
 "departure is considered moderate. Three or more incidents without yielding "
 "position may result in a severe penalty."
 msgstr ""
 
-#: .\templates\faq.html:100
+#: .\templates\faq.html:101
 msgid "How are straight-line rear-end collisions classified?"
 msgstr ""
 
-#: .\templates\faq.html:101
+#: .\templates\faq.html:102
 msgid ""
 "Straight-line rear-end collisions, which usually occur in braking zones, can "
 "be classified as Light or Moderate depending on the consequences, speed "
 "difference, loss of control, and position surrender."
 msgstr ""
 
-#: .\templates\faq.html:104
+#: .\templates\faq.html:105
 msgid "How are side collisions classified?"
 msgstr ""
 
-#: .\templates\faq.html:105
+#: .\templates\faq.html:106
 msgid ""
 "Side collisions usually occur from not using radar apps like Helicorsa in a "
 "visible screen position. Depending on consequences, speed difference, loss "
@@ -426,170 +454,170 @@ msgid ""
 "Moderate."
 msgstr ""
 
-#: .\templates\faq.html:108
+#: .\templates\faq.html:109
 msgid "What rules apply in parallel curves?"
 msgstr ""
 
-#: .\templates\faq.html:111
+#: .\templates\faq.html:112
 msgid "Front-aligned cars:"
 msgstr ""
 
-#: .\templates\faq.html:111
+#: .\templates\faq.html:112
 msgid ""
 "In a sporting battle, slight trajectory adjustments that allow counter-"
 "maneuvers are permitted. Adjustments or positioning that abuse track "
 "position may be classified as Moderate."
 msgstr ""
 
-#: .\templates\faq.html:112
+#: .\templates\faq.html:113
 msgid "Non-aligned cars (half-car overlap against opponent\\"
 msgstr ""
 
-#: .\templates\faq.html:112
+#: .\templates\faq.html:113
 msgid ""
 "This is considered abusive behavior, not allowing sporting battle, and "
 "classified as Moderate."
 msgstr ""
 
-#: .\templates\faq.html:113
+#: .\templates\faq.html:114
 msgid "Rear of outside car against front of inside car:"
 msgstr ""
 
-#: .\templates\faq.html:113
+#: .\templates\faq.html:114
 msgid "Will be reviewed and may be classified as Light/Moderate."
 msgstr ""
 
-#: .\templates\faq.html:114
+#: .\templates\faq.html:115
 msgid "Four or more cars aligned in a braking zone:"
 msgstr ""
 
-#: .\templates\faq.html:114
+#: .\templates\faq.html:115
 msgid ""
 "Each driver must respect their \"virtual\" lane. Leaving this lane to make "
 "abusive contact will be classified as Moderate."
 msgstr ""
 
-#: .\templates\faq.html:119
+#: .\templates\faq.html:120
 msgid "What happens in case of a partial track departure?"
 msgstr ""
 
-#: .\templates\faq.html:120
+#: .\templates\faq.html:121
 msgid ""
 "If the defending driver loses control by hitting the gravel and the "
 "attacking driver (close behind) collides, this may be analyzed as a non-"
-"punishable incident due to the defender\\"
-msgstr ""
-
-#: .\templates\faq.html:123
-msgid "What happens in case of a complete track departure?"
+"punishable incident due to the defender's loss of control."
 msgstr ""
 
 #: .\templates\faq.html:124
+msgid "What happens in case of a complete track departure?"
+msgstr ""
+
+#: .\templates\faq.html:125
 msgid ""
 "It will be reviewed to determine if the attacking driver could have avoided "
 "the collision. It may be classified as Light/Moderate."
 msgstr ""
 
-#: .\templates\faq.html:127
+#: .\templates\faq.html:128
 msgid "What are the rules for overtaking?"
 msgstr ""
 
-#: .\templates\faq.html:128
+#: .\templates\faq.html:129
 msgid "Overtaking is allowed on any side of the track, as long as it doesn\\"
 msgstr ""
 
-#: .\templates\faq.html:135
+#: .\templates\faq.html:136
 msgid "When is a driver considered to have gained position during an overtake?"
 msgstr ""
 
-#: .\templates\faq.html:136
+#: .\templates\faq.html:137
 msgid ""
 "A driver is considered to have gained position (inside/outside) only when "
 "their car completely passes the defender. Using Helicorsa and mirrors is "
 "recommended to avoid side collisions."
 msgstr ""
 
-#: .\templates\faq.html:139
+#: .\templates\faq.html:140
 msgid ""
 "What are the conditions for overtaking at the start of a curve (braking "
 "zone)?"
 msgstr ""
 
-#: .\templates\faq.html:142 .\templates\rules.html:282
+#: .\templates\faq.html:143 .\templates\rules.html:282
 #, python-format
 msgid ""
 "Both cars arrive at similar speed/position, with the attacker at least 25%% "
 "alongside the defender."
 msgstr ""
 
-#: .\templates\faq.html:143
+#: .\templates\faq.html:144
 msgid "The attacker\\"
 msgstr ""
 
-#: .\templates\faq.html:145
+#: .\templates\faq.html:146
 msgid ""
 "If these conditions are not met, the attacker must abort the overtake and "
 "allow the defender to take their line."
 msgstr ""
 
-#: .\templates\faq.html:149
+#: .\templates\faq.html:150
 msgid "What distance should drivers maintain between each other?"
 msgstr ""
 
-#: .\templates\faq.html:150
+#: .\templates\faq.html:151
 msgid ""
 "When battling (or lapping), drivers must leave enough space. Abruptly "
 "closing the gap is classified as Moderate."
 msgstr ""
 
-#: .\templates\faq.html:153
+#: .\templates\faq.html:154
 msgid "What are the rules for lapped drivers?"
 msgstr ""
 
-#: .\templates\faq.html:154
+#: .\templates\faq.html:155
 msgid ""
 "Blue flag rules apply. Lapped drivers must maintain a predictable line and "
 "facilitate overtaking by lifting off the throttle. They must yield within a "
 "maximum of 4 corners."
 msgstr ""
 
-#: .\templates\faq.html:157
+#: .\templates\faq.html:158
 msgid "How many direction changes are allowed when defending on a straight?"
 msgstr ""
 
-#: .\templates\faq.html:158
+#: .\templates\faq.html:159
 msgid ""
 "When defending on a straight, a driver may make one direction change. Two or "
 "more direction changes (e.g., zig-zag) are prohibited and classified as "
 "Moderate."
 msgstr ""
 
-#: .\templates\faq.html:161
+#: .\templates\faq.html:162
 msgid "What should a driver do after a partial track departure?"
 msgstr ""
 
-#: .\templates\faq.html:162
+#: .\templates\faq.html:163
 msgid ""
 "A driver who partially leaves the track (3 wheels off) must yield to drivers "
 "on track and avoid collisions or obstructions. Not doing so is considered "
 "Moderate."
 msgstr ""
 
-#: .\templates\faq.html:165
+#: .\templates\faq.html:166
 msgid "How is ballast used in the championship?"
 msgstr ""
 
-#: .\templates\faq.html:166 .\templates\rules.html:341
+#: .\templates\faq.html:167 .\templates\rules.html:341
 msgid ""
 "Ballast is used to balance performance. If a car demonstrates excessive "
 "superiority, organizers may apply ballast (with prior notice)."
 msgstr ""
 
-#: .\templates\faq.html:169
+#: .\templates\faq.html:170
 msgid "What happens if a driver has absences in the championship?"
 msgstr ""
 
-#: .\templates\faq.html:170
+#: .\templates\faq.html:171
 #, python-format
 msgid ""
 "Drivers are expected to comply with the schedule. Three unjustified absences "
@@ -597,63 +625,63 @@ msgid ""
 "than 90%% of drivers are absent."
 msgstr ""
 
-#: .\templates\faq.html:173
+#: .\templates\faq.html:174
 msgid "How can protests be submitted?"
 msgstr ""
 
-#: .\templates\faq.html:174
+#: .\templates\faq.html:175
 msgid ""
-"Protests must be sent by email to  simracingeurope@gmail.com. Public complaints "
-"against the organizers or SimRacingEU are prohibited."
-msgstr ""
-
-#: .\templates\faq.html:177
-msgid "What should a driver do if they lose control of the car?"
+"Protests must be sent by email to simracingeurope@gmail.com. Public "
+"complaints against the organizers or ForoAssetto are prohibited."
 msgstr ""
 
 #: .\templates\faq.html:178
+msgid "What should a driver do if they lose control of the car?"
+msgstr ""
+
+#: .\templates\faq.html:179
 msgid ""
 "A driver who loses control must stop immediately. Partial track departure "
 "incidents that cause a drastic loss of speed or direction changes may be "
 "penalized."
 msgstr ""
 
-#: .\templates\faq.html:181
+#: .\templates\faq.html:182
 msgid "What are the rules for pit stops?"
 msgstr ""
 
-#: .\templates\faq.html:182
+#: .\templates\faq.html:183
 msgid ""
 "Drivers must not cross the white line at pit entry or exit. RealPenalty "
 "applies penalties (e.g., drive-through) for infractions."
 msgstr ""
 
-#: .\templates\faq.html:185
+#: .\templates\faq.html:186
 msgid "What rules apply to parallel vehicles?"
 msgstr ""
 
-#: .\templates\faq.html:186
+#: .\templates\faq.html:187
 msgid ""
 "Vehicles are considered parallel if any part of them overlaps. Each driver "
 "must stay in their \"imaginary lane\", even in scenarios with multiple cars."
 msgstr ""
 
-#: .\templates\faq.html:189
+#: .\templates\faq.html:190
 msgid "What should a driver do if their car is damaged and immobilized?"
 msgstr ""
 
-#: .\templates\faq.html:190
+#: .\templates\faq.html:191
 msgid ""
 "If a car becomes immobilized, the \"return to pits\" button should be used. "
 "Exploiting this function to gain an advantage is considered a Severe "
 "infraction."
 msgstr ""
 
-#: .\templates\faq.html:193
+#: .\templates\faq.html:194
 msgid "What is considered exploitation of rules or the game?"
 msgstr ""
 
-#: .\templates\faq.html:194
+#: .\templates\faq.html:195
 msgid ""
 "Deliberate shortcuts on track, using walls to gain speed, or using invalid "
 "laps to gain advantage are considered Severe infractions. Examples include "
@@ -661,80 +689,78 @@ msgid ""
 "settings."
 msgstr ""
 
-#: .\templates\faq.html:197
+#: .\templates\faq.html:198
 msgid "How should escape areas be used?"
 msgstr ""
 
-#: .\templates\faq.html:198
+#: .\templates\faq.html:199
 msgid ""
 "The use of escape areas must avoid gaining advantages. Repeating this action "
 "may be considered Moderate or Severe."
 msgstr ""
 
-#: .\templates\faq.html:201
+#: .\templates\faq.html:202
 msgid "Can championship rules be changed?"
 msgstr ""
 
-#: .\templates\faq.html:202
+#: .\templates\faq.html:203
 msgid ""
 "Yes, these regulations are subject to updates. Version numbers reflect "
 "revisions."
 msgstr ""
 
-
-
-#: .\templates\faq.html:209
+#: .\templates\faq.html:210
 msgid "What software is mandatory to participate?"
 msgstr ""
 
-#: .\templates\faq.html:210
+#: .\templates\faq.html:211
 msgid "It is mandatory to use the latest version of Real Penalty."
 msgstr ""
 
-#: .\templates\faq.html:213
+#: .\templates\faq.html:214
 msgid "What software is recommended?"
 msgstr ""
 
-#: .\templates\faq.html:214
+#: .\templates\faq.html:215
 msgid ""
 "It is highly recommended to use the Helicorsa application, which is included "
 "in the Real Penalty package, to improve on-track visibility."
 msgstr ""
 
-#: .\templates\faq.html:217
+#: .\templates\faq.html:218
 msgid "Is it mandatory to be in Discord voice channels during events?"
 msgstr ""
 
-#: .\templates\faq.html:218
+#: .\templates\faq.html:219
 msgid ""
 "Yes, it is mandatory to be present in Discord voice channels during "
 "qualifying sessions and races. Absence without valid reason will be "
 "considered a moderate penalty (severe in case of recurrence)."
 msgstr ""
 
-#: .\templates\faq.html:221
+#: .\templates\faq.html:222
 msgid "Where can I find information about events?"
 msgstr ""
 
-#: .\templates\faq.html:222
+#: .\templates\faq.html:223
 msgid "Event information is available at the following link:"
 msgstr ""
 
-#: .\templates\faq.html:225
+#: .\templates\faq.html:226
 msgid "How will I know the number of laps for each race?"
 msgstr ""
 
-#: .\templates\faq.html:226
+#: .\templates\faq.html:227
 msgid ""
 "Drivers should know the number of laps, which will be available through ACSM "
 "from the start of the championship."
 msgstr ""
 
-#: .\templates\faq.html:237
+#: .\templates\faq.html:238
 msgid "What are the track limits?"
 msgstr ""
 
-#: .\templates\faq.html:238
+#: .\templates\faq.html:239
 msgid ""
 "Each circuit has defined its lateral limits, generally marked by solid white "
 "lines. Some circuits include curbs and green zones as part of the track. The "
@@ -744,15 +770,19 @@ msgid ""
 "recognition during events."
 msgstr ""
 
-#: .\templates\faq.html:245
+#: .\templates\faq.html:246
 msgid "How are championship points awarded?"
 msgstr ""
 
-#: .\templates\faq.html:246
+#: .\templates\faq.html:247
 msgid ""
 "Detailed information about the championship scoring system will be provided "
 "in a separate document or on the championship rules page. Typically, points "
 "are awarded to drivers who finish in the top positions of each race."
+msgstr ""
+
+#: .\templates\faq.html:311
+msgid "No results found"
 msgstr ""
 
 #: .\templates\index.html:9
@@ -780,7 +810,8 @@ msgstr ""
 
 #: .\templates\index.html:18
 msgid ""
-"SimRacing Collective Championship, an innovative, free-to-enter tournament designed to unite the continent's finest virtual racing talent"
+"SimRacing Collective Championship, an innovative, free-to-enter tournament "
+"designed to unite the continent's finest virtual racing talent"
 msgstr ""
 
 #: .\templates\index.html:19
@@ -1667,14 +1698,24 @@ msgstr ""
 msgid "Staff SimRacingEU"
 msgstr ""
 
-#: .\simracingeu\views.py:41
-msgid "Please complete all required fields."
+#: .\templates\subscription.html:5
+msgid "Subscribe for News"
 msgstr ""
 
-#: .\simracingeu\views.py:59
-msgid "Your message has been sent successfully!"
+#: .\templates\subscription.html:22
+msgid "Don't Miss Out!"
 msgstr ""
 
-#: .\simracingeu\views.py:62
-msgid "There was an error sending your message. Please try again later."
+#: .\templates\subscription.html:23
+msgid ""
+"Subscribe to our newsletter to receive the latest news about upcoming "
+"championships, special events, and exclusive content from SimRacing EU."
+msgstr ""
+
+#: .\templates\subscription.html:27
+msgid "Enter your email address"
+msgstr ""
+
+#: .\templates\subscription.html:30
+msgid "Subscribe Now"
 msgstr ""

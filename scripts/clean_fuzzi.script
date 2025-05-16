@@ -1,0 +1,4 @@
+msgattrib --clear-fuzzy -o D:\Projects\simracingeu\simracingeu\locale\pt\LC_MESSAGES\django.po D:\Projects\simracingeu\simracingeu\locale\pt\LC_MESSAGES\django.po     
+msgattrib --clear-fuzzy -o D:\Projects\simracingeu\simracingeu\locale\fr\LC_MESSAGES\django.po D:\Projects\simracingeu\simracingeu\locale\fr\LC_MESSAGES\django.po     
+msgattrib --clear-fuzzy -o D:\Projects\simracingeu\simracingeu\locale\es\LC_MESSAGES\django.po D:\Projects\simracingeu\simracingeu\locale\es\LC_MESSAGES\django.po     
+msgattrib --clear-fuzzy -o D:\Projects\simracingeu\simracingeu\locale\it\LC_MESSAGES\django.po D:\Projects\simracingeu\simracingeu\locale\it\LC_MESSAGES\django.po     

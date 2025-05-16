@@ -1,4 +1,4 @@
-from communities.models import Championship
+from communities.models import Championship, Subscription
 
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
@@ -20,7 +20,7 @@ def calendar_view(request):
     for championship in championships:
         championship_data = {
             'name': championship.nombre,
-            'events': list(championship.event_set.values('nombre', 'fecha', 'formato'))
+            'events': list(championship.event_set.values('nombre', 'fecha', 'formato').order_by('fecha'))
         }
         championships_data.append(championship_data)
     
@@ -64,3 +64,14 @@ def contact(request):
         return redirect('contact')
 
     return render(request, 'contact.html')
+
+
+def subscribe(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        if not Subscription.objects.filter(email=email).exists():
+            Subscription.objects.create(email=email)
+            messages.success(request, _('Thanks for subscribing!'))
+        else:
+            messages.info(request, _('This email is already subscribed.'))
+    return render(request, 'subscription.html')

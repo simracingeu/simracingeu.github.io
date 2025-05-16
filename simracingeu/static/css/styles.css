@@ -352,7 +352,18 @@ body {
 }
 
 #add-community-form input[type="text"],
-#add-community-form input[type="file"] {
+#add-community-form input[type="file"],
+#add-driver-form input[type="text"],
+#add-driver-form input[type="file"],
+.championship-poster {
+    width: 600px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#add-driver-form select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -360,54 +371,42 @@ body {
     box-sizing: border-box; 
 }
 
-#add-community-form input[type="file"] {
+#add-community-form input[type="file"],
+#add-driver-form input[type="file"] {
     padding: 5px; 
 }
 
-#add-community-form button {
-    padding: 12px 25px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-#add-community-form button[type="submit"] {
-    background-color: #0d6efd;
-    color: white;
-}
-
-#add-community-form button[type="submit"]:hover {
-    background-color: #0b5ed7;
-}
-
-#add-community-form button[type="button"] {
-    background-color: #6c757d;
-    color: white;
-    margin-left: 10px;
-}
-
-#add-community-form button[type="button"]:hover {
-    background-color: #5c636a;
-}
-
-.form-button {
+#add-community-form button,
+#add-driver-form button {
     padding: 12px 25px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-    background-color: #5cb85c;
+}
+
+#add-community-form button[type="submit"],
+#add-driver-form button[type="submit"] {
+    background-color: #5cb85c; 
     color: white;
 }
 
-.form-button:hover {
+#add-community-form button[type="submit"]:hover,
+#add-driver-form button[type="submit"]:hover {
     background-color: #4cae4c;
+}
+
+#add-community-form button[type="button"],
+#add-driver-form button[type="button"] {
+    background-color: #f0ad4e;
+    color: white;
+    margin-left: 10px;
+}
+
+#add-community-form button[type="button"]:hover,
+#add-driver-form button[type="button"]:hover {
+    background-color: #ec971f;
 }
 
 #communities-list {
@@ -636,7 +635,7 @@ header {
 }
 
 #add-community-form button[type="submit"] {
-    background-color: #5cb85c;
+    background-color: #0d6efd;
     color: white;
 }
 
@@ -645,7 +644,7 @@ header {
 }
 
 #add-community-form button[type="button"] {
-    background-color: #f0ad4e;
+    background-color: #6c757d;
     color: white;
     margin-left: 10px;
 }
@@ -870,4 +869,49 @@ footer {
         flex-direction: column; 
         align-items: center; 
     }
+}
+
+/* Estilos para el menú de navegación */
+.navbar-nav .nav-link {
+    font-family: 'Racing Sans One', sans-serif !important;
+    text-transform: uppercase;
+    color: white !important;
+}
+
+/* Estilos para el formulario de suscripción */
+.subscription-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.subscription-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.subscription-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.subscription-form button {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.subscription-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255,107,107,0.3);
 }

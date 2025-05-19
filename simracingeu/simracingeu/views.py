@@ -25,8 +25,8 @@ def calendar_view(request):
         championships_data.append(championship_data)
     
     if request.GET.get('modal') == 'true':
-        return render(request, '_calendar_content.html', {'championships': championships})
-    return render(request, 'calendar.html', {'championships': championships})
+        return render(request, '_calendar_content.html', {'championships': championships_data})
+    return render(request, 'calendar.html', {'championships': championships_data})
 
 
 

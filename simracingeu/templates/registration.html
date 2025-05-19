@@ -5,31 +5,29 @@
 {% block content %}
 <p>{% trans 'Select a game to register a community or a driver' %}</p>
 <div class="game-container mt-4">
-
-        <div class="game-block">
-            <img src="{% static 'img/ac.png' %}" alt="Assetto Corsa Logo" class="main-logo" id="ac-logo">
-            <div id="ac-options" class="options-container" style="display: none; flex-direction: column; gap: 10px;">
-                <button id="view-calendar-btn" class="btn btn-primary btn-sm">{% trans 'View event calendar' %}</button>
-                <button class="btn btn-success btn-sm">{% trans 'Add community' %}</button>
-                <button class="btn btn-success btn-sm">{% trans 'Add driver' %}</button>
-            </div>
+    <div class="game-block">
+        <img src="{% static 'img/ac.png' %}" alt="Assetto Corsa Logo" class="main-logo" id="ac-logo">
+        <div id="ac-options" class="options-container" style="display: none; flex-direction: column; gap: 10px;">
+            <button id="view-calendar-btn" class="btn btn-primary btn-sm">{% trans 'View event calendar' %}</button>
+            <button class="btn btn-success btn-sm">{% trans 'Add community' %}</button>
+            <button class="btn btn-success btn-sm">{% trans 'Add driver' %}</button>
         </div>
-        <div class="game-block">
-            <img src="{% static 'img/acc.png' %}" alt="Assetto Corsa Competizione Logo" class="main-logo">
-            <p>{% trans 'coming soon' %}</p>
-        </div>
-        <div class="game-block">
-            <img src="{% static 'img/lmu.png' %}" alt="Le Mans Ultimate Logo" class="main-logo">
-            <p>{% trans 'coming soon' %}</p>
-        </div>
-        <div class="game-block">
-            <img src="{% static 'img/evo_bk.png' %}" alt="Assetto Corsa EVO" class="main-logo">
-            <p>{% trans 'coming soon' %}</p>
-        </div>
-        <div class="game-block">
-            <img src="{% static 'img/renn_bk.png' %}" alt="Rennsport" class="main-logo">
-            <p>{% trans 'coming soon' %}</p>
-        </div>
+    </div>
+    <div class="game-block">
+        <img src="{% static 'img/acc.png' %}" alt="Assetto Corsa Competizione Logo" class="main-logo">
+        <p>{% trans 'coming soon' %}</p>
+    </div>
+    <div class="game-block">
+        <img src="{% static 'img/lmu.png' %}" alt="Le Mans Ultimate Logo" class="main-logo">
+        <p>{% trans 'coming soon' %}</p>
+    </div>
+    <div class="game-block">
+        <img src="{% static 'img/evo_bk.png' %}" alt="Assetto Corsa EVO" class="main-logo">
+        <p>{% trans 'coming soon' %}</p>
+    </div>
+    <div class="game-block">
+        <img src="{% static 'img/renn_bk.png' %}" alt="Rennsport" class="main-logo">
+        <p>{% trans 'coming soon' %}</p>
     </div>
 </div>
 
@@ -45,7 +43,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                {% include 'calendar.html' with game_filter=True %}
+                
             </div>
         </div>
     </div>

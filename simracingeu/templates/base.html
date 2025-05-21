@@ -53,6 +53,61 @@
     <meta name="keywords" content="simracing, Assetto Corsa, ACC, Le Mans Ultimate, simracing championships, online racing, European simracing community" />
     <meta name="author" content="SimRacingEU" />
 
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="{% block og_title %}SimRacing EU{% endblock %}" />
+    <meta property="og:description" content="{% block og_description %}Únete a nuestra comunidad europea de simracing con campeonatos en Assetto Corsa, ACC y Le Mans Ultimate. Carreras semanales, juego limpio y emoción garantizada.{% endblock %}" />
+    <meta property="og:image" content="{% block og_image %}{% static 'img/simracingeu_og_image.png' %}{% endblock %}" />
+    <meta property="og:url" content="{% block og_url %}https://simracingeu.club{{ request.path }}{% endblock %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SimRacing EU" />
+    <meta property="og:locale" content="{{ CURRENT_LANGUAGE_CODE|default:'es' }}" />
+    {% get_available_languages as LANGUAGES_SEO %}
+    {% for lang_code, lang_name in LANGUAGES_SEO %}
+        {% if lang_code != CURRENT_LANGUAGE_CODE %}
+    <meta property="og:locale:alternate" content="{{ lang_code }}" />
+        {% endif %}
+    {% endfor %}
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SimRacingEU" /> {# Reemplazar con el handle de Twitter si existe #}
+    <meta name="twitter:title" content="{% block twitter_title %}{% block title_twitter %}SimRacing EU{% endblock %}{% endblock %}" />
+    <meta name="twitter:description" content="{% block twitter_description %}Únete a nuestra comunidad europea de simracing con campeonatos en Assetto Corsa, ACC y Le Mans Ultimate. Carreras semanales, juego limpio y emoción garantizada.{% endblock %}" />
+    <meta name="twitter:image" content="{% block twitter_image %}{% static 'img/simracingeu_twitter_card.png' %}{% endblock %}" />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://simracingeu.club{{ request.path }}" />
+
+    <!-- Schema.org markup for Google+ -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "SimRacing EU",
+      "url": "https://simracingeu.club",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://simracingeu.club/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Community",
+      "name": "SimRacing EU",
+      "url": "https://simracingeu.club",
+      "logo": "{% static 'img/simracingeu_logo_schema.png' %}",
+      "sameAs": [
+        "https://www.facebook.com/groups/1226619792144781", {# Reemplazar con URL real #}
+        "https://www.twitter.com/simracingeu", {# Reemplazar con URL real #}
+        "https://www.instagram.com/simracingeu" {# Reemplazar con URL real #}
+        // Añadir más perfiles sociales si existen
+      ]
+    }
+    </script>
+
     <link rel="alternate" hreflang="es" href="https://simracingeu.club/es/" />
     <link rel="alternate" hreflang="fr" href="https://simracingeu.club/fr/" />
     <link rel="alternate" hreflang="it" href="https://simracingeu.club/it/" />

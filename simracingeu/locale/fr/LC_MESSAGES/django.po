@@ -275,7 +275,7 @@ msgstr "Rechercher des questions..."
 
 #: .\templates\faq.html:15
 msgid "Expand/Collapse All"
-msgstr ""
+msgstr "Tout développer/réduire"
 
 #: .\templates\faq.html:22
 msgid "How do I register for the championship?"
@@ -347,7 +347,7 @@ msgstr "Avertissement verbal ou ajout de jusqu'à 5 secondes au résultat."
 
 #: .\templates\faq.html:47
 msgid "Automatic RP Penalty:"
-msgstr "Pénalité RP automatique :"
+msgstr "Pénalité RP automatique:"
 
 #: .\templates\faq.html:47
 msgid ""
@@ -379,7 +379,7 @@ msgstr "Divisé en mineur (temps seulement) et majeur (lest ou points)."
 
 #: .\templates\faq.html:56
 msgid "Severe Penalty:"
-msgstr "Pénalité sévère :"
+msgstr "Pénalité sévère:"
 
 #: .\templates\faq.html:58
 msgid "Event disqualification (no points)."
@@ -1043,11 +1043,11 @@ msgstr ""
 
 #: .\templates\index.html:29
 msgid "Assetto Corsa (AC)"
-msgstr "Événements Assetto Corsa"
+msgstr "Assetto Corsa"
 
 #: .\templates\index.html:30
 msgid "Assetto Corsa Competizione (ACC)"
-msgstr "Événements Assetto Corsa"
+msgstr "Assetto Corsa Competizione"
 
 #: .\templates\index.html:31
 msgid "Le Mans Ultimate (LMU)"
@@ -1055,7 +1055,7 @@ msgstr "Le Mans Ultimate (LMU)"
 
 #: .\templates\index.html:32
 msgid "Assetto Corsa EVO"
-msgstr "Événements Assetto Corsa"
+msgstr "Assetto Corsa EVO"
 
 #: .\templates\index.html:33
 msgid "Rennsport"
@@ -1083,7 +1083,7 @@ msgstr ""
 
 #: .\templates\index.html:42
 msgid "ELITE Tier:"
-msgstr "Niveau ELITE :"
+msgstr "Niveau ELITE:"
 
 #: .\templates\index.html:42
 msgid "Europe's top virtual drivers compete for continental victory."
@@ -1093,7 +1093,7 @@ msgstr ""
 
 #: .\templates\index.html:43
 msgid "CHALLENGER Tier:"
-msgstr "Niveau CHALLENGER :"
+msgstr "Niveau CHALLENGER:"
 
 #: .\templates\index.html:43
 msgid "Talented competitors from across Europe develop their racing craft."
@@ -1103,7 +1103,7 @@ msgstr ""
 
 #: .\templates\index.html:44
 msgid "CLUB Tier:"
-msgstr "Niveau CLUB :"
+msgstr "Niveau CLUB:"
 
 #: .\templates\index.html:44
 msgid ""

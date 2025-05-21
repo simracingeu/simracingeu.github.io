@@ -6,6 +6,7 @@ from django.contrib import messages
 from django.conf import settings
 from django.utils.translation import gettext as _
 import logging
+import requests
 
 logger = logging.getLogger(__name__)
 
@@ -35,17 +36,34 @@ def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name', '').strip()
         email = request.POST.get('email', '').strip()
-        message = request.POST.get('message', '').strip()
+        message_content = request.POST.get('message', '').strip() # Renamed to avoid conflict with django messages
+        recaptcha_response = request.POST.get('g-recaptcha-response')
 
-        if not all([name, email, message]):
+        if not all([name, email, message_content]):
             messages.error(request, _('Please complete all required fields.'))
+            return redirect('contact')
+
+        # Verify reCAPTCHA
+        if not recaptcha_response:
+            messages.error(request, _('Please complete the CAPTCHA.'))
+            return redirect('contact')
+
+        data = {
+            'secret': settings.RECAPTCHA_SECRET_KEY,
+            'response': recaptcha_response
+        }
+        r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+        result = r.json()
+
+        if not result.get('success'):
+            messages.error(request, _('Invalid CAPTCHA. Please try again.'))
             return redirect('contact')
 
         subject = f'Mensaje de contacto de {name}'
         message_body = (
             f"Nombre: {name}\n"
             f"Email: {email}\n\n"
-            f"Mensaje:\n{message}"
+            f"Mensaje:\n{message_content}"
         )
 
         try:

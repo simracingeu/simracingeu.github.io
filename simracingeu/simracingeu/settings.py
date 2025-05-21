@@ -151,6 +151,10 @@ LOCALIZATION = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# reCAPTCHA settings
+RECAPTCHA_SITE_KEY = '6LcMY0MrAAAAADc5rZTqeW9NBYgwsqnsX24Avosr'  
+RECAPTCHA_SECRET_KEY = '6LcMY0MrAAAAANNblOg9GCTFPXmnHPaYi9rFB-yJ' 
+
 STATIC_URL = 'static/'
 
 EMAIL_HOST_USER = "simracingeurope@gmail.com"

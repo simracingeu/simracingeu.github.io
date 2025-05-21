@@ -1022,7 +1022,7 @@ msgstr "Eventos Assetto Corsa"
 
 #: .\templates\index.html:30
 msgid "Assetto Corsa Competizione (ACC)"
-msgstr "Eventos Assetto Corsa"
+msgstr "Eventos Assetto Corsa Competizione"
 
 #: .\templates\index.html:31
 msgid "Le Mans Ultimate (LMU)"
@@ -1030,7 +1030,7 @@ msgstr "Le Mans Ultimate (LMU)"
 
 #: .\templates\index.html:32
 msgid "Assetto Corsa EVO"
-msgstr "Eventos Assetto Corsa"
+msgstr "Assetto Corsa EVO"
 
 #: .\templates\index.html:33
 msgid "Rennsport"
